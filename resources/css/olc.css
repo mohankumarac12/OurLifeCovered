@@ -345,6 +345,9 @@ body {
       @media (max-width: 970px) {
         body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
           text-align: center; } }
+      body div.container-fluid div#hero div.cta-container div.row div.error-text {
+        color: #ff3e3e;
+        padding: 0 15px 5px; }
       body div.container-fluid div#hero div.cta-container div.row form {
         overflow: auto;
         margin-bottom: 0; }
@@ -372,13 +375,16 @@ body {
               max-width: 400px;
               margin: 0 auto;
               padding: 0; } }
-          @media (max-width: 1320px) {
-            body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
-              font-size: 19px;
-              height: 43px; } }
-          @media (max-width: 970px) {
-            body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
-              box-shadow: none; } }
+          body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+            border: none;
+            outline: none; }
+            @media (max-width: 1320px) {
+              body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+                font-size: 19px;
+                height: 43px; } }
+            @media (max-width: 970px) {
+              body div.container-fluid div#hero div.cta-container div.row form div.col-sm-4 input.btn {
+                box-shadow: none; } }
     @media (max-width: 1320px) {
       body div.container-fluid div#hero div.scrollprompt {
         top: 500px;
@@ -541,6 +547,8 @@ body {
           width: 100%;
           max-width: 300px;
           padding: 12px; }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn:hover {
+            color: white; }
           @media (max-width: 768px) {
             body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
               font-size: 13px; } }
@@ -1160,7 +1168,28 @@ body {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
                     body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {
                       font-size: 11px;
-                      width: 130px; } }
+                      width: 140px; } }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-smoker,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-smoker, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-smoker,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-smoker {
+                    min-width: 133px; }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-gener,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-gener, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-gener,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-gener {
+                    min-width: 95px; }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-state,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-state, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-state,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-state {
+                    min-width: 190px; }
+                    @media (max-width: 768px) {
+                      body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-state,
+                      body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-state, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-state,
+                      body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-state {
+                        min-width: 140px; } }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-coverage,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-coverage, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select#calc-coverage,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select#calc-coverage {
+                    min-width: 118px; }
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text label,
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select label, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text label,
               body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select label {
@@ -1297,15 +1326,24 @@ body {
                 -webkit-box-ordinal-group: 3;
                     -ms-flex-order: 2;
                         order: 2; }
-                @media (max-width: 768px) {
-                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after {
-                    font-size: 11px;
-                    top: 8px; } }
+                body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after {
+                  font-family: FontAwesome;
+                  font-size: 10px;
+                  line-height: 1;
+                  position: absolute;
+                  top: 11px;
+                  right: 9px;
+                  content: '\f078';
+                  pointer-events: none; }
+                  @media (max-width: 768px) {
+                    body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper:after {
+                      font-size: 11px;
+                      top: 8px; } }
                 body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select {
                   font-size: 15px;
                   font-weight: 700;
                   line-height: inherit;
-                  width: 160px;
+                  width: 175px;
                   margin: 0;
                   padding: 3px 26px 5px 10px;
                   vertical-align: middle;
@@ -1320,7 +1358,7 @@ body {
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select {
                       font-size: 11px;
-                      width: 130px; } }
+                      width: 150px; } }
             body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-checkbox, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-checkbox {
               position: relative; }
               body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-checkbox.margin-top-s, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-checkbox.margin-top-s {
@@ -1588,129 +1626,134 @@ body {
     max-width: 560px;
     margin: 0 auto 75px;
     padding: 0; }
-  body div.background-wrap#quote_singlecarrier section#quote-page div.container span.error-text,
-  body div.background-wrap#quote_singlecarrier section#quote-page div.container span.success-text {
-    font-weight: 900;
-    margin-bottom: 14px;
-    text-align: center; }
-  @media (max-width: 768px) {
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote {
-      float: none;
-      width: 100%;
-      max-width: 560px;
-      margin: 0 auto; } }
-  @media (max-width: 768px) {
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote#original-quote {
-      margin: 0 auto 50px; } }
-  body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box {
-    margin-right: 0;
-    padding: 37px;
-    background: #e0e0e0; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.tab-heading {
-      position: absolute;
-      top: -13px;
-      right: 0;
-      left: 0;
-      margin: auto;
+  body div.background-wrap#quote_singlecarrier {
+    padding: 100px 0; }
+    @media (max-width: 768px) {
+      body div.background-wrap#quote_singlecarrier {
+        padding: 75px 0; } }
+    body div.background-wrap#quote_singlecarrier section#quote-page div.container span.error-text,
+    body div.background-wrap#quote_singlecarrier section#quote-page div.container span.success-text {
+      font-weight: 900;
+      margin-bottom: 14px;
       text-align: center; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.tab-heading span {
-        font-size: 17px;
-        font-weight: 900;
-        float: none !important;
-        padding: 5px 10px;
+    @media (max-width: 768px) {
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote {
+        float: none;
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto; } }
+    @media (max-width: 768px) {
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote#original-quote {
+        margin: 0 auto 50px; } }
+    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box {
+      margin-right: 0;
+      padding: 37px;
+      background: #e0e0e0; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.tab-heading {
+        position: absolute;
+        top: -13px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.tab-heading span {
+          font-size: 17px;
+          font-weight: 900;
+          float: none !important;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          color: white;
+          background: #f498c2; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center img.transamerica {
+        width: 175px;
+        vertical-align: middle; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class {
+        font-weight: 600;
+        color: #f498c2; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.currency {
+          font-size: 20px;
+          line-height: 47px;
+          vertical-align: top; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.price {
+          font-size: 46px;
+          line-height: 46px; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.rate-name {
+          font-size: 25px;
+          color: #515151; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class {
+        font-weight: 600;
+        padding-top: 12px;
+        padding-left: 0; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left {
+          text-align: center; }
+          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.currency {
+            font-size: 15px;
+            line-height: 29px;
+            padding-left: 10px;
+            vertical-align: text-bottom; }
+          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.price {
+            font-size: 25px;
+            line-height: 25px;
+            vertical-align: top; }
+          body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.freq {
+            font-size: 11px; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.rate-name {
+          font-size: 11px; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div {
+        font-size: 14px;
+        font-weight: 600; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders span {
+        float: right; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div#preselected-coverage {
+        height: .1em;
+        margin: 12px 0;
+        padding-bottom: .3em;
+        opacity: .4;
+        background-color: white; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div#preselected-term {
+        height: .1em;
+        margin: 12px 0;
+        padding-bottom: .3em;
+        opacity: .4;
+        background-color: white; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage {
+        margin-bottom: 15px; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage div.text-center h4 {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 1.4;
+          margin-top: 0;
+          margin-bottom: 3px;
+          text-transform: uppercase; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage div.text-center h3 {
+          font-size: 28px;
+          margin-top: 0; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center a.btn {
+        font-size: 20px;
+        font-weight: normal;
+        font-weight: 600;
+        line-height: 1;
+        width: 200px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+        padding: 11px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
         text-transform: uppercase;
         color: white;
-        background: #f498c2; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center img.transamerica {
-      width: 175px;
-      vertical-align: middle; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class {
-      font-weight: 600;
-      color: #f498c2; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.currency {
-        font-size: 20px;
-        line-height: 47px;
-        vertical-align: top; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.price {
-        font-size: 46px;
-        line-height: 46px; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.best-class div.text-center span.rate-name {
-        font-size: 25px;
-        color: #515151; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class {
-      font-weight: 600;
-      padding-top: 12px;
-      padding-left: 0; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left {
-        text-align: center; }
-        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.currency {
-          font-size: 15px;
-          line-height: 29px;
-          padding-left: 10px;
-          vertical-align: text-bottom; }
-        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.price {
-          font-size: 25px;
-          line-height: 25px;
-          vertical-align: top; }
-        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-left span.freq {
-          font-size: 11px; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.row.margin-bottom-s div.standard-class div.text-center span.rate-name {
-        font-size: 11px; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div {
-      font-size: 14px;
-      font-weight: 600; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders span {
-      float: right; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div#preselected-coverage {
-      height: .1em;
-      margin: 12px 0;
-      padding-bottom: .3em;
-      opacity: .4;
-      background-color: white; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.sliders div#preselected-term {
-      height: .1em;
-      margin: 12px 0;
-      padding-bottom: .3em;
-      opacity: .4;
-      background-color: white; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage {
-      margin-bottom: 15px; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage div.text-center h4 {
-        font-size: 13px;
-        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: #71c97a;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
+        body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center a.btn:hover {
+          background: #5bb262; }
+      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center p.meta {
+        font-size: 12px;
         line-height: 1.4;
-        margin-top: 0;
-        margin-bottom: 3px;
-        text-transform: uppercase; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.recommended-coverage div.text-center h3 {
-        font-size: 28px;
-        margin-top: 0; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center a.btn {
-      font-size: 20px;
-      font-weight: normal;
-      font-weight: 600;
-      line-height: 1;
-      width: 200px;
-      margin-top: 28px;
-      margin-bottom: 28px;
-      padding: 11px;
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease;
-      text-transform: uppercase;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      outline: none;
-      background: #71c97a;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none; }
-      body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center a.btn:hover {
-        background: #5bb262; }
-    body div.background-wrap#quote_singlecarrier section#quote-page div.container div.row div.quote div.box form div.text-center p.meta {
-      font-size: 12px;
-      line-height: 1.4;
-      margin-top: 25px; }
+        margin-top: 25px; }
   body div.background-wrap#quote_multicarrier {
     position: relative;
     padding-bottom: 150px; }
@@ -2504,6 +2547,7 @@ body {
                 height: 41.5px;
                 margin: 0;
                 padding: 0 38px 0 11px;
+                text-indent: -2px;
                 color: #2b2b2b;
                 box-shadow: none;
                 -webkit-appearance: none;
@@ -2662,9 +2706,3 @@ body {
               body footer div.container div.row div.col-md-6 ul li a:hover, body footer div.container div.row div.col-md-6 ul li a.active {
                 color: white;
                 border-bottom: 1px solid white; }
-.error-text {
-	color: #ff3e3e !important;
-	padding-left: 16px;
-	top: -13px;
-    position: relative;
-}

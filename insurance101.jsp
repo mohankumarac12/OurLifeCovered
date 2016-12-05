@@ -95,7 +95,7 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>The younger you get your coverage, the lower your premiums may be. The longer you wait, the more likely you are to develop medical conditions that increase your premium costs. If you buy when you're young and in great health, your premium is locked in – for up to 30 years.</p>
+                                        <p>The younger you get your coverage, the lower your premiums may be. The longer you wait, the more likely you are to develop medical conditions that increase your premium costs. If you buy when you're young and in great health, your premium is locked in &mdash; for up to 30 years.</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier.  Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate – saving you time and money.</p>
+                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier.  Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate &mdash; saving you time and money.</p>
                                     </div>
                                 </div>
                             </div>
