@@ -1,0 +1,3129 @@
+$text: #515151;
+$pink: #f498c2;
+$green: #71c97a; //Primary Action Button
+$greendark: #5bb262; //Primary Action Button : hover
+$blue: #337ab7; // Regular Links
+$teal: #3094a5; // Regular Links : hover
+$lightgrey: #f7f7f7; // Content page jumbotron header background
+$midgrey: #b2b2b2; // Content page jumbotron header text
+$slategrey: #aeafae; // Secondary Action Button
+$darkgrey: #595959; // Secondary Action Button : hover
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    :-moz-placeholder {
+        @content;
+    }
+    ::-moz-placeholder {
+        @content;
+    }
+    :-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin OpenSans300() {
+    font-family: 'open-sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+}
+
+::selection {
+    color: inherit;
+    background: rgba(black,.1);
+    text-shadow: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+a:link {
+    text-decoration: none;
+    color: $blue;
+
+    -webkit-tap-highlight-color: rgba(black,.1);
+    &:hover {
+        color: $teal;
+    }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    sup {
+        font-weight: 600;
+    }
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    outline: none;
+}
+
+.wf-loading {
+    visibility: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-bottom-s {
+    margin-bottom: 15px;
+}
+
+.margin-top-s {
+    margin-top: 15px;
+}
+
+.margin-bottom-m {
+    margin-bottom: 35px;
+}
+
+.margin-top-m {
+    margin-top: 35px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+body {
+    line-height: 1.42857143;
+    color: $text;
+    background: white;
+
+    @include OpenSans300();
+    div#loading {
+        position: fixed;
+        z-index: 1001;
+        top: 40%;
+        left: 50%;
+        display: none;
+        width: 78px;
+        height: 78px;
+        margin-left: -37px;
+        border: none;
+        border-radius: 10px;
+        background: none;
+    }
+    header {
+        padding: 26px 0;
+        background: $pink;
+        @media (max-width: 768px) {
+            padding: 20px 15px;
+        }
+        div.container {
+            @media (max-width: 768px) {
+                margin: 0;
+                padding: 0;
+            }
+            div.row {
+                @media (max-width: 768px) {
+                    margin: 0;
+                    padding: 0;
+                }
+                div.col-md-12 {
+                    display: flex;
+                    overflow: auto;
+
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (max-width: 768px) {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    a.open-home-page-copy {
+                        float: left;
+                        width: 260px;
+                        padding: 0 0 0 20px !important;
+                        @media (max-width: 768px) {
+                            padding: 0 !important;
+                        }
+                        img.logo {
+                            display: inline-block;
+                            width: 225px;
+                            height: auto;
+                        }
+                        sup {
+                            font-size: 9px;
+                            font-weight: 600;
+                            display: inline-block;
+                            color: white;
+                        }
+                        span.logo-phno {
+                            font-size: 15px;
+                            display: block;
+                            margin-left: 2px;
+                            color: white;
+                        }
+                    }
+                    ul#top_nav_menu {
+                        display: flex !important;
+                        float: right;
+                        width: calc(100% - 275px);
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        text-align: right;
+
+                        align-items: center;
+                        justify-content: flex-end;
+                        @media (max-width: 1200px) {
+                            position: fixed;
+                            z-index: 100;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 100vh;
+                            padding: 25px;
+                            transition: all .5s ease;
+                            transform: translateY(-100vh);
+                            text-align: center;
+                            pointer-events: none;
+                            background: rgba($pink, .97);
+
+                            align-items: center;
+                            justify-content: center;
+                            &.open {
+                                transform: translateY(0%);
+                                pointer-events: auto;
+                                opacity: 1;
+                            }
+                        }
+                        li {
+                            @media (max-width: 1200px) {
+                                width: 100%;
+                            }
+                            a {
+                                font-size: 16px;
+                                font-weight: 600;
+                                display: block;
+                                margin: 0 20px;
+                                padding: 0 2px;
+                                transition: all .3s ease;
+                                text-transform: uppercase;
+                                color: white;
+                                border-top: 2px solid transparent;
+                                border-bottom: 2px solid transparent;
+                                &:hover,
+                                &.active {
+                                    @media (min-width: 1201px) {
+                                        border-bottom: 2px solid $pink;
+                                    }
+                                }
+                                @media (max-width: 1200px) {
+                                    font-size: 6vw;
+                                    padding: 2vh 0;
+                                }
+                            }
+                        }
+                    }
+                    a#open_menu {
+                        display: none;
+                        @media (max-width: 1200px) {
+                            display: block;
+                            float: right;
+                            padding: 15px;
+                            color: white;
+                            @media (max-width: 768px) {
+                                margin-right: -15px;
+                            }
+                            &:hover {
+                                color: white;
+                            }
+                            i {
+                                font-size: 20px;
+                                display: block;
+                                height: 17.16px;
+                            }
+                        }
+                    }
+                    a#close_menu {
+                        position: fixed;
+                        z-index: 101;
+                        top: 17px;
+                        right: 0;
+                        padding: 15px;
+                        transition: all .5s ease;
+                        transform: translateY(-100vh);
+                        pointer-events: none;
+                        color: white;
+                        &.open {
+                            transform: translateY(0%);
+                            pointer-events: auto;
+                            opacity: 1;
+                        }
+                        &:hover {
+                            color: white;
+                        }
+                        i {
+                            font-size: 25px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.container-fluid {
+        div#hero {
+            background: $pink;
+            div.carousel {
+                ol.carousel-indicators {
+                    bottom: 0;
+                }
+                div.carousel-inner {
+                    @media (max-width:667px) {
+                        height: 113.9430284857571vw;
+                    }
+                    @media (max-width:460px) {
+                        height: auto;
+                    }
+                    div.item {
+                        @media (max-width:667px) {
+                            height: 100%;
+                        }
+                        @media (max-width:460px) {
+                            height: auto;
+                        }
+                        img {
+                            width: 100%;
+                            @media (max-width:667px) {
+                                width: 209.8950524737631vw;
+                                max-width: none;
+                            }
+                        }
+                        div.carousel-caption {
+                            bottom: auto;
+                            left: auto;
+                            @media (max-width: 1320px) {
+                                right: 20px;
+                                width: 51%;
+                            }
+                            @media (max-width: 970px) {
+                                top: 50%;
+                                padding: 0;
+                                transform: translateY(-50%);
+                            }
+                            @media (max-width: 768px) {
+                                top: 10px;
+                                transform: none;
+                            }
+                            @media (max-width:667px) {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                width: 100%;
+                                padding: 10px 15px 35px;
+                                background: rgba(black, .7);
+                            }
+                            @media (max-width:460px) {
+                                position: relative;
+                                bottom: auto;
+                                height: 62.5vw;
+                            }
+                            h4.hero-caption {
+                                @media (max-width: 1320px) {
+                                    font-size: 28px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 21px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 5.25vw;
+                                }
+                            }
+                            h4.hero-caption-bold {
+                                @media (max-width: 1320px) {
+                                    font-size: 36px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 27px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 6.75vw;
+                                }
+                            }
+                            p {
+                                @media (max-width: 1320px) {
+                                    font-size: 18px;
+                                }
+                                @media (max-width:667px) {
+                                    font-size: 14px;
+                                }
+                                @media (max-width:460px) {
+                                    font-size: 3.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.cta-container {
+                @media (max-width: 1320px) {
+                    top: 340px;
+                    right: 20px;
+                    width: 51%;
+                }
+                @media (max-width: 970px) {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 100%;
+                    border-radius: 0;
+                    background: transparent;
+                }
+                div.row {
+                    margin: 0;
+                    div.col-sm-12 {
+                        h3 {
+                            @media (max-width: 1320px) {
+                                font-size: 23px;
+                            }
+                            @media (max-width: 970px) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    form {
+                        overflow: auto;
+                        margin-bottom: 0;
+                        div.col-sm-8 {
+                            @media (max-width: 970px) {
+                                float: none;
+                                width: 100%;
+                                max-width: 400px;
+                                margin: 0 auto;
+                                margin-bottom: 10px;
+                                padding: 0;
+                            }
+                            select.form-control {
+                                @media (max-width: 1320px) {
+                                    font-size: 13px;
+                                    height: 43px;
+                                }
+                                @media (max-width: 970px) {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        div.col-sm-4 {
+                            padding-left: 0;
+                            @media (max-width: 970px) {
+                                float: none;
+                                width: 100%;
+                                max-width: 400px;
+                                margin: 0 auto;
+                                padding: 0;
+                            }
+                            input.btn {
+                                @media (max-width: 1320px) {
+                                    font-size: 19px;
+                                    height: 43px;
+                                }
+                                @media (max-width: 970px) {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.scrollprompt {
+                @media (max-width: 1320px) {
+                    top: 500px;
+                    right: 20px;
+                    width: 51%;
+                }
+                @media (max-width: 970px) {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 100%;
+                    padding: 0 15px 30px;
+                    text-align: center;
+                }
+                div.row {
+                    div.col-sm-12 {
+                        @media (max-width: 1320px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width: 970px) {
+                            text-shadow: none;
+                        }
+                        button.btn {
+                            cursor: default;
+                            color: white !important;
+                            outline: none;
+                            &:hover,
+                            &:active {
+                                background-color: rgba(0, 0, 0, .1);
+                                box-shadow: none;
+                            }
+                            @media (max-width: 1320px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.quiz {
+            min-height: 500px;
+            padding: 20px 10px;
+            div.quiz-header {
+                margin: 0;
+                div.col-md-12 {
+                    padding: 0;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            h1 {
+                                height: 54px;
+                                @media (max-width: 768px) {
+                                    width: 285px;
+                                    height: 41px;
+                                }
+                            }
+                            h2 {
+                                line-height: 1;
+                                @media (max-width: 768px) {
+                                    font-size: 41px;
+                                }
+                            }
+                            h3 {
+                                @media (max-width: 768px) {
+                                    font-size: 19px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div#quiz-inner {
+                div.quiz-content {
+                    margin: 0;
+                    div.col-xs-8 {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 0;
+                        div.quiz-btn-row {
+                            margin: 0;
+                            div.col-xs-4 {
+                                width: calc(100% / 3);
+                                padding: 0;
+                                button {
+                                    outline: none;
+                                    @media (max-width: 600px) {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                    @media (max-width: 400px) {
+                                        width: 80px;
+                                        height: 80px;
+                                    }
+                                    span {
+                                        @media (max-width: 460px) {
+                                            font-size: 12px;
+                                            bottom: -27px;
+                                            left: 50%;
+                                            width: 120%;
+                                            transform: translateX(-50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.hide-item {
+                        div.col-xs-8 {
+                            float: none;
+                            width: calc(100% - 200px);
+                            margin: 0 auto;
+                            padding: 0 20px;
+                            @media (max-width: 768px) {
+                                width: calc(100% - 160px);
+                            }
+                            @media (max-width: 600px) {
+                                width: calc(100% - 60px);
+                            }
+                            div.quiz-btn-row {
+                                div.col-xs-4 {
+                                    width: 50%;
+                                    margin: 0;
+                                }
+                            }
+                            h4 {
+                                @media (max-width: 768px) {
+                                    font-size: 20px !important;
+                                }
+                            }
+                            p {
+                                font-size: 15px;
+                                @media (max-width: 768px) {
+                                    font-size: 11px;
+                                }
+                            }
+                            div.btn {
+                                top: calc(50% - 10px);
+                                transform: translateY(-50%);
+                                @media (max-width: 768px) {
+                                    top: calc(50% - 7px);
+                                    width: 80px;
+                                    height: 80px;
+                                    background-size: 200%;
+                                }
+                                @media (max-width: 600px) {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                &:active {
+                                    box-shadow: none;
+                                }
+                                span {
+                                    @media (max-width: 768px) {
+                                        font-size: 12px;
+                                        top: 75px;
+                                        left: 50%;
+                                        width: 120%;
+                                        transform: translateX(-50%);
+                                    }
+                                    @media (max-width: 600px) {
+                                        display: none;
+                                    }
+                                }
+                                &.goback {
+                                    left: -100px;
+                                    @media (max-width: 768px) {
+                                        left: -80px;
+                                    }
+                                    @media (max-width: 600px) {
+                                        left: -30px;
+                                    }
+                                    &:hover {
+                                        @media (max-width: 768px) {
+                                            background-position: left -160px;
+                                        }
+                                        @media (max-width: 600px) {
+                                            background-position: left -60px;
+                                        }
+                                    }
+                                }
+                                &.goforward {
+                                    right: -100px;
+                                    @media (max-width: 768px) {
+                                        right: -80px;
+                                    }
+                                    @media (max-width: 600px) {
+                                        right: -30px;
+                                    }
+                                    &:hover {
+                                        @media (max-width: 768px) {
+                                            background-position: right -160px;
+                                        }
+                                        @media (max-width: 600px) {
+                                            background-position: right -60px;
+                                        }
+                                    }
+                                }
+                            }
+                            a.btn {
+                                width: 100%;
+                                max-width: 300px;
+                                padding: 12px;
+                                @media (max-width: 768px) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.home-divider {
+            div.container {
+                width: 100%;
+                div.col-md-6 {
+                    float: none;
+                    width: 100%;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 0;
+                    text-align: center;
+                    h2 {
+                        @media (max-width: 768px) {
+                            font-size: 23px;
+                        }
+                        @media (max-width: 460px) {
+                            font-size: 17px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    h3 {
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                            margin-top: 15px;
+                        }
+                        @media (max-width: 460px) {
+                            font-size: 13px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        div.value-statement {
+            div.row {
+                margin: 0;
+                div.col-md-12 {
+                    padding: 0;
+                    h1 {
+                        @media (max-width: 768px) {
+                            font-size: 30px;
+                        }
+                    }
+                    h2 {
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                &.product-features {
+                    margin-bottom: 20px;
+                    div.col-xs-4 {
+                        @media (max-width: 505px) {
+                            float: none;
+                            width: 100%;
+                            max-width: 135px;
+                            margin: 0 auto 50px;
+                            padding: 0;
+                        }
+                        img {
+                            @media (max-width: 768px) {
+                                height: 49px;
+                            }
+                        }
+                        span {
+                            font-size: 16px;
+                            @media (max-width: 768px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div#footer-carousel {
+            div#footerCarousel {
+                ol.carousel-indicators {
+                    bottom: 0;
+                }
+                div.carousel-inner {
+                    @media (max-width:800px) {
+                        // height: 113.9430284857571vw;
+                    }
+                    @media (max-width:600px) {
+                        height: auto;
+                    }
+                    div.item {
+                        @media (max-width:800px) {
+                            height: auto;
+                        }
+                        // @media (max-width:460px) {
+                        //     height: auto;
+                        // }
+                        img {
+                            width: 100%;
+                            @media (max-width:800px) {
+                                width: 250vw;
+                                max-width: none;
+                            }
+                        }
+                        div.carousel-caption {
+                            top: 50%;
+                            right: 20px;
+                            bottom: auto;
+                            left: auto;
+                            width: 40%;
+                            padding: 0;
+                            transform: translateY(-50%);
+                            // @media (max-width: 768px) {
+                            //     top: 10px;
+                            //     transform: none;
+                            // }
+                            @media (max-width:800px) {
+                                top: auto;
+                                right: auto;
+                                bottom: 0;
+                                width: 100%;
+                                padding: 10px 15px 35px;
+                                transform: none;
+                                background: rgba(black, .7);
+                            }
+                            @media (max-width:600px) {
+                                position: relative;
+                                bottom: auto;
+                                height: 52vw;
+                            }
+                            h4.hero-caption {
+                                @media (max-width: 1320px) {
+                                    font-size: 23px;
+                                }
+                                @media (max-width:600px) {
+                                    font-size: 5vw;
+                                }
+                            }
+                            p {
+                                @media (max-width: 1320px) {
+                                    font-size: 14px;
+                                }
+                                @media (max-width:800px) {
+                                    color: white;
+                                }
+                                @media (max-width:600px) {
+                                    font-size: 3.25vw;
+                                }
+                            }
+                            a.btn {
+                                @media (max-width:600px) {
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.main-section {
+        min-height: calc(100vh - 217px);
+        padding: 100px 0;
+        @media (max-width: 1200px) {
+            min-height: calc(100vh - 279.16px);
+        }
+        @media (max-width: 740px) {
+            min-height: calc(100vh - 405.16px);
+            padding: 50px 0;
+        }
+        &#insurance101 {
+            padding: 0;
+            div.container {
+                width: 100%;
+                padding: 0;
+                div.row {
+                    margin: 0;
+                    div.col-md-12 {
+                        padding: 0;
+                        div.insurance101-header {
+                            padding: 35px;
+                            text-align: center;
+                            background: $lightgrey;
+                            h1 {
+                                font-size: 30px;
+                                font-weight: 600;
+                                margin: 0;
+                                margin-bottom: 20px;
+                                color: $midgrey;
+                            }
+                            p {
+                                font-size: 16px;
+                                display: block;
+                                max-width: 530px;
+                                margin: 0 auto;
+                                color: #777;
+                            }
+                        }
+                        div.toggle-tabs {
+                            margin-top: 70px;
+                            text-align: center;
+                            border-bottom: 1px solid #3ca5d1;
+                            a.tab {
+                                position: relative;
+                                display: inline-block;
+                                width: 185px;
+                                padding: 0 5px 20px;
+                                text-align: center;
+                                @media (max-width: 570px) {
+                                    width: 32%;
+                                }
+                                &:nth-of-type(2) {
+                                    border-right: 1px solid #ececec;
+                                    border-left: 1px solid #ececec;
+                                }
+                                &:hover,
+                                &.active {
+                                    img {
+                                        filter: grayscale(0%);
+                                    }
+                                    span {
+                                        color: #3ca5d1;
+                                    }
+                                }
+                                &.active {
+                                    &:after {
+                                        position: absolute;
+                                        bottom: -16px;
+                                        left: 50%;
+                                        display: block;
+                                        width: 20px;
+                                        height: 16px;
+                                        content: '';
+                                        transform: translateX(-50%);
+                                        border-width: 16px 10px 0 10px;
+                                        border-style: solid;
+                                        border-color: #3ca5d1 transparent transparent transparent;
+                                    }
+                                }
+                                img {
+                                    display: inline-block;
+                                    height: 40px;
+                                    transition: all .3s ease;
+
+                                    filter: grayscale(100%);
+                                    @media (max-width: 570px) {
+                                        height: 25px;
+                                    }
+                                }
+                                span {
+                                    font-size: 15px;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-top: 5px;
+                                    transition: all .3s ease;
+                                    color: #8c8c8c;
+                                    @media (max-width: 570px) {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        div.page {
+                            display: none;
+                            width: 100%;
+                            max-width: 1160px;
+                            margin: 0 auto;
+                            padding-top: 45px;
+                            &.visible {
+                                display: block;
+                            }
+                            img {
+                                display: block;
+                                width: 100%;
+                            }
+                            h2 {
+                                font-size: 25px;
+                                font-weight: 700;
+                                margin: 0 0 25px;
+                                color: #2b2b2b;
+                                @media (max-width: 768px) {
+                                    font-size: 19px;
+                                }
+                            }
+                            h3 {
+                                font-size: 19px;
+                                font-weight: 700;
+                                margin: 10px 0 0;
+                                color: #2b2b2b;
+                            }
+                            p {
+                                font-size: 16px;
+                                color: #2b2b2b;
+                                @media (max-width: 768px) {
+                                    font-size: 12px;
+                                }
+                            }
+                            &#the_basics {
+                                div#basics_intro {
+                                    overflow: auto;
+                                    width: 100%;
+                                    max-width: 1060px;
+                                    margin: 0 auto;
+                                    padding: 0 0 70px;
+                                    div.textarea {
+                                        padding-right: 50px;
+                                        @media (max-width: 768px) {
+                                            padding-right: 15px;
+                                            padding-bottom: 20px;
+                                        }
+                                    }
+                                }
+                                div#app_process {
+                                    div.imgarea {
+                                        padding-right: 50px;
+                                        @media (max-width: 768px) {
+                                            padding-right: 15px;
+                                            padding-bottom: 30px;
+                                            img {
+                                                max-width: 400px;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                    }
+                                    div.textarea {
+                                        div#nums {
+                                            margin-top: 25px;
+                                            div.single-num {
+                                                overflow: auto;
+                                                margin-bottom: 45px;
+                                                &:last-of-type {
+                                                    margin-bottom: 10px;
+                                                }
+                                                span.pinknum {
+                                                    font-size: 30px;
+                                                    line-height: 48px;
+                                                    display: block;
+                                                    float: left;
+                                                    width: 48px;
+                                                    height: 48px;
+                                                    margin-right: 25px;
+                                                    text-align: center;
+                                                    color: white;
+                                                    border-radius: 100%;
+                                                    background: $pink;
+                                                }
+                                                div.textwrapper {
+                                                    float: right;
+                                                    width: calc(100% - 73px);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &#seven_buts {
+                                div#accordion {
+                                    width: 100%;
+                                    max-width: 705px;
+                                    margin: 0 auto;
+                                    padding: 0 15px;
+                                    h3 {
+                                        margin-bottom: 65px;
+                                    }
+                                    div.panel {
+                                        margin-bottom: 20px;
+                                        border: none;
+                                        border-radius: 0;
+                                        box-shadow: none;
+                                        div.panel-heading {
+                                            position: relative;
+                                            padding-left: 55px;
+                                            border: none;
+                                            background: none;
+                                            h4.panel-title {
+                                                font-size: 17px;
+                                                font-weight: 700;
+                                                color: #409dc5;
+                                                a {
+                                                    color: inherit;
+                                                    &:before {
+                                                        font-family: FontAwesome;
+                                                        font-size: 12px;
+                                                        line-height: 30px;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 0;
+                                                        display: block;
+                                                        width: 28px;
+                                                        height: 28px;
+                                                        content: '\f068';
+                                                        transform: translateY(-50%);
+                                                        text-align: center;
+                                                        color: white;
+                                                        border-radius: 100%;
+                                                        background: $pink;
+                                                    }
+                                                    &.collapsed {
+                                                        &:before {
+                                                            content: '\f067';
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        div.panel-collapse {
+                                            padding-left: 55px;
+                                            div.panel-body {
+                                                padding: 0;
+                                                border: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &#whats_right {
+                                max-width: 100%;
+                                h2 {
+                                    font-size: 21px;
+                                    margin-bottom: 20px;
+                                    @media (max-width: 768px) {
+                                        font-size: 16px;
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                                p {
+                                    font-size: 14px;
+                                    @media (max-width: 768px) {
+                                        font-size: 12px;
+                                    }
+                                }
+                                div#corporate_partner {
+                                    position: relative;
+                                    width: 100%;
+                                    max-width: 642px;
+                                    margin: 0 auto;
+                                    padding: 0 15px 50px;
+                                    img#lh-logo {
+                                        position: absolute;
+                                        top: 35px;
+                                        left: -200px;
+                                        width: 120px;
+                                        @media (max-width: 1070px) {
+                                            position: relative;
+                                            top: auto;
+                                            left: auto;
+                                            float: left;
+                                            margin: 5px 20px 20px 0;
+                                        }
+                                        @media (max-width: 768px) {
+                                            position: relative;
+                                            top: auto;
+                                            left: auto;
+                                            float: left;
+                                            margin: 5px 10px 10px 0;
+                                        }
+                                    }
+                                    div.video-js {
+                                        margin-top: 35px;
+                                    }
+                                }
+                                div#lend_hand {
+                                    padding: 65px 0;
+                                    background: $lightgrey;
+                                    @media (max-width: 768px) {
+                                        padding: 49px 0;
+                                    }
+                                    div.content-wrapper {
+                                        overflow: auto;
+                                        width: 100%;
+                                        max-width: 930px;
+                                        margin: 0 auto;
+                                        div.col-sm-7 {
+                                            @media (max-width: 768px) {
+                                                padding-top: 20px;
+                                            }
+                                            a#donate {
+                                                font-size: 19px;
+                                                font-weight: 700;
+                                                display: inline-block;
+                                                margin-top: 10px;
+                                                padding: 13px 35px;
+                                                color: white;
+                                                background: #3ca5d1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#contact-us {
+            form {
+                div.inline-text {
+                    font-size: 16px;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    input {
+                        font-size: 16px;
+                        width: 100%;
+                        padding-bottom: 5px;
+                        text-align: right;
+                        border: none;
+                        border-bottom: 2px dotted rgba($midgrey, .5);
+                    }
+                    label {
+                        font-size: 16px;
+                        font-weight: 700;
+                        position: absolute;
+                        bottom: 3px;
+                        left: 0;
+                        display: inline-block;
+                        margin-bottom: 5px;
+                        pointer-events: none;
+                    }
+                }
+                textarea {
+                    width: 100%;
+                    padding: 10px 14px;
+                    border: 2px rgba($midgrey,.5) dotted;
+                    background: none;
+                }
+                input[type='button'] {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 1;
+                    padding: 12px 16px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    background: $green;
+                }
+            }
+        }
+        &#financial-ratings {
+            div.col-md-8 {
+                width: 100%;
+                margin: 0 auto;
+                table {
+                    th,
+                    td {
+                        line-height: 1;
+                        padding: 6px 8px;
+                    }
+                }
+            }
+        }
+    }
+    div.background-wrap {
+        // min-height: calc(100vh - 217px);
+        // padding: 100px 0;
+        @media (max-width: 1200px) {
+            min-height: calc(100vh - 279.16px);
+        }
+        @media (max-width: 740px) {
+            min-height: calc(100vh - 405.16px);
+            padding: 50px 0;
+        }
+        &#calculator,
+        &#quote_form {
+            section.quote-header {
+                margin-bottom: 50px;
+                div.container {
+                    width: 100%;
+                    padding: 25px 0 35px;
+                    background: $lightgrey;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            float: none;
+                            padding: 0;
+                            h1 {
+                                font-size: 30px;
+                                font-weight: 600;
+                                color: $midgrey;
+                            }
+                            p {
+                                font-size: 16px;
+                                display: block;
+                                max-width: 440px;
+                                margin: 0 auto;
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+            }
+            section.quote-tabs {
+                width: 100%;
+                max-width: 530px;
+                margin: 0 auto;
+                padding: 0 15px 20px;
+                div.container {
+                    width: 100%;
+                    padding: 0;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            display: flex;
+                            float: none;
+                            padding: 0;
+
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            a.tab {
+                                font-size: 20px;
+                                line-height: 1;
+                                width: calc(50% - 1.25px);
+                                padding: 11px;
+                                transition: all .3s ease;
+                                text-align: center;
+                                color: white;
+                                background: $slategrey;
+                                @media (max-width: 768px) {
+                                    font-size: 16px;
+                                }
+                                &:hover,
+                                &.active {
+                                    background: $darkgrey;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section.quote {
+                width: 100%;
+                max-width: 1080px;
+                margin: 0 auto;
+                padding: 0 15px;
+                div.container {
+                    width: 100%;
+                    padding: 0;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            float: none;
+                            padding: 0;
+                            form {
+                                // float: left;
+                                width: calc(50% - 25px);
+                                max-width: 560px;
+                                margin: 0 auto 75px;
+                                padding: 0;
+                                @media (max-width: 830px) {
+                                    float: none;
+                                    width: 100%;
+                                    max-width: 500px;
+                                    margin: 0 auto 50px;
+                                }
+                                div.inline-text,
+                                div.inline-select {
+                                    display: flex;
+                                    margin: 0;
+                                    padding: 10px 0 10px 12px;
+                                    border-bottom: 2px dotted $lightgrey;
+
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @media (max-width: 768px) {
+                                        padding: 9px 0 9px 9px;
+                                    }
+                                    &.required {
+                                        &:before {
+                                            top: calc(50% - 1px);
+                                            left: 0;
+                                            transform: translateY(-50%);
+                                        }
+                                    }
+                                    input[type='text'] {
+                                        font-size: 18px;
+                                        font-weight: normal;
+                                        line-height: 1;
+                                        float: right;
+                                        width: 200px;
+                                        padding: 4px 12px;
+                                        text-align: right;
+                                        color: #4a4a4a;
+                                        border: none;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        background: $lightgrey;
+
+                                        order: 2;
+                                        appearance: none;
+                                        @media (max-width: 768px) {
+                                            font-size: 14px;
+                                            width: 150px;
+                                            padding: 3px 8px;
+                                        }
+                                    }
+                                    span.select-wrapper {
+                                        position: relative;
+                                        display: inline-block;
+                                        float: right;
+
+                                        order: 2;
+                                        &:after {
+                                            font-family: FontAwesome;
+                                            font-size: 10px;
+                                            line-height: 1;
+                                            position: absolute;
+                                            top: 11px;
+                                            right: 9px;
+                                            content: '\f078';
+                                            pointer-events: none;
+                                            @media (max-width: 768px) {
+                                                font-size: 11px;
+                                                top: 8px;
+                                            }
+                                        }
+                                        select {
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            line-height: inherit;
+                                            margin: 0;
+                                            padding: 3px 26px 5px 10px;
+                                            vertical-align: middle;
+                                            text-transform: none;
+                                            border: 2px solid $lightgrey;
+                                            border-radius: 5px;
+                                            outline: none;
+                                            background: transparent;
+
+                                            appearance: none;
+                                            @media (max-width: 768px) {
+                                                font-size: 11px;
+                                                width: 130px;
+                                            }
+                                        }
+                                    }
+                                    label {
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        line-height: 1;
+                                        position: relative;
+                                        bottom: auto;
+                                        left: auto;
+                                        float: left;
+                                        margin: 0 auto 0 0;
+                                        text-align: left;
+
+                                        order: 1;
+                                        @media (max-width: 768px) {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                div.incrementer {
+                                    position: relative;
+                                    display: flex;
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 10px 0 10px 12px;
+                                    text-align: left;
+                                    border-bottom: 2px dotted rgba(255, 255, 255, .35);
+                                    border-bottom: 2px dotted $lightgrey;
+
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @media (max-width: 768px) {
+                                        padding: 9px 0 9px 9px;
+                                    }
+                                    span {
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        line-height: 1;
+                                        position: relative;
+                                        bottom: auto;
+                                        left: auto;
+                                        float: left;
+                                        margin: 0;
+                                        @media (max-width: 768px) {
+                                            font-size: 12px;
+                                        }
+                                        @media (max-width: 480px) {
+                                            width: calc(100% - 110px);
+                                            padding-top: 0;
+                                            text-align: left;
+                                        }
+                                    }
+                                    div.text-right {
+                                        text-align: right;
+                                        @media (max-width: 480px) {
+                                            width: 90px;
+                                        }
+                                        a.btn {
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            line-height: 26px;
+                                            width: 26px;
+                                            padding: 0 9px;
+                                            transition: all .3s ease;
+                                            text-align: center;
+                                            vertical-align: baseline;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            border: none;
+                                            background: $green;
+                                            &:hover {
+                                                background: $greendark;
+                                            }
+                                            @media (max-width: 480px) {
+                                                font-size: 14px;
+                                                line-height: 24px;
+                                                width: 24px;
+                                            }
+                                        }
+                                        input {
+                                            font-size: 22px;
+                                            line-height: 1;
+                                            display: inline;
+                                            width: 40px;
+                                            height: 33px;
+                                            padding: 0 11px;
+                                            text-align: center !important;
+                                            border: none;
+                                            background: 0 0;
+                                            @media (max-width: 480px) {
+                                                font-size: 18px;
+                                                width: 32px;
+                                                height: 25px;
+                                            }
+                                        }
+                                    }
+                                }
+                                div#children {
+                                    div.child {
+                                        display: flex;
+                                        margin: 0;
+                                        padding: 10px 0 10px 12px;
+                                        border-bottom: 2px dotted $lightgrey;
+
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        @media (max-width: 768px) {
+                                            padding: 9px 0 9px 9px;
+                                        }
+                                        p {
+                                            margin: 0;
+                                            span {
+                                                font-size: 16px;
+                                                font-weight: normal;
+                                                line-height: 1;
+                                                position: relative;
+                                                position: relative;
+                                                bottom: auto;
+                                                left: auto;
+                                                float: left;
+                                                margin: 0;
+                                                @media (max-width: 768px) {
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                        div.select-wrapper {
+                                            position: relative;
+                                            display: inline-block;
+                                            float: right;
+
+                                            order: 2;
+                                            &:after {
+                                                @media (max-width: 768px) {
+                                                    font-size: 11px;
+                                                    top: 8px;
+                                                }
+                                            }
+                                            select {
+                                                font-size: 15px;
+                                                font-weight: 700;
+                                                line-height: inherit;
+                                                width: 160px;
+                                                margin: 0;
+                                                padding: 3px 26px 5px 10px;
+                                                vertical-align: middle;
+                                                text-transform: none;
+                                                border: 2px solid $lightgrey;
+                                                border-radius: 5px;
+                                                outline: none;
+                                                background: transparent;
+
+                                                appearance: none;
+                                                @media (max-width: 768px) {
+                                                    font-size: 11px;
+                                                    width: 130px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                div.inline-checkbox {
+                                    position: relative;
+                                    &.margin-top-s {
+                                        margin-top: 15px;
+                                    }
+                                    input[type='checkbox'] {
+                                        display: none;
+                                        &:checked + label {
+                                            &:before {
+                                                content: '\f046';
+                                            }
+                                        }
+                                    }
+                                    label {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                        padding-left: 20px;
+                                        cursor: pointer;
+                                        @media (max-width: 768px) {
+                                            font-size: 11px;
+                                        }
+                                        &:before {
+                                            font-family: FontAwesome;
+                                            position: absolute;
+                                            left: 0;
+                                            display: inline-block;
+                                            content: '\f096';
+                                        }
+                                    }
+                                }
+                                div.text-center {
+                                    input[type='button'] {
+                                        font-size: 20px;
+                                        font-weight: normal;
+                                        font-weight: 600;
+                                        line-height: 1;
+                                        width: 200px;
+                                        margin-top: 28px;
+                                        margin-bottom: 28px;
+                                        padding: 11px;
+                                        transition: all .3s ease;
+                                        text-transform: uppercase;
+                                        border: none;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        background: $green;
+
+                                        appearance: none;
+                                        &:hover {
+                                            background: $greendark;
+                                        }
+                                        @media (max-width: 830px) {
+                                            margin-bottom: 25px;
+                                        }
+                                        @media (max-width: 768px) {
+                                            font-size: 16px;
+                                            width: 150px;
+                                            margin-top: 21px;
+                                            padding: 8px;
+                                        }
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                            div#disclaimers {
+                                float: none;
+                                width: calc(50% - 25px);
+                                max-width: 560px;
+                                margin: 0 auto 75px;
+                                padding: 0;
+                                @media (max-width: 830px) {
+                                    float: none;
+                                    width: 100%;
+                                    max-width: 500px;
+                                    margin: 0 auto 50px;
+                                }
+                                p.disclaimers-content {
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    margin: 0 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#quote_form_natlang {
+            section.quote-header {
+                div.container {
+                    width: 100%;
+                    padding: 25px 0 35px;
+                    background: $lightgrey;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            float: none;
+                            padding: 0;
+                            h1 {
+                                font-size: 30px;
+                                font-weight: 600;
+                                color: $midgrey;
+                            }
+                            p {
+                                font-size: 16px;
+                                display: block;
+                                max-width: 440px;
+                                margin: 0 auto;
+                                color: #777;
+                            }
+                        }
+                    }
+                }
+            }
+            section.quote {
+                width: 100%;
+                max-width: 1080px;
+                margin: 0 auto;
+                padding: 0 15px;
+                div.container {
+                    width: 100%;
+                    padding: 0;
+                    div.row {
+                        margin: 0;
+                        div.col-md-12 {
+                            float: none;
+                            padding: 0;
+                            form {
+                                // float: left;
+                                max-width: 590px;
+                                margin: 0 auto 75px;
+                                padding: 90px 0 0;
+                                @media (max-width: 830px) {
+                                    float: none;
+                                    width: 100%;
+                                    max-width: 500px;
+                                    margin: 0 auto 50px;
+                                }
+                                span#tell-story {
+                                    font-size: 17px;
+                                    font-weight: 700;
+                                    display: inline-block;
+                                    margin-bottom: 25px;
+                                    color: #333;
+                                }
+                                div.inline-text,
+                                div.inline-select {
+                                    margin-bottom: 9px;
+
+                                    @include placeholder {
+                                        color: white;
+                                    }
+                                    label {
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        margin: 0;
+                                        color: #333;
+                                    }
+                                    input,
+                                    select {
+                                        font-size: 17px;
+                                        width: auto;
+                                        min-width: 0;
+                                        max-width: none;
+                                        padding: 10px;
+                                        color: white;
+                                        color: white;
+                                        border: none;
+                                        border-radius: 0;
+                                        outline: none;
+                                        background: $pink;
+
+                                        appearance: none;
+                                    }
+                                    input {
+                                        &#calc-first-name {
+                                            width: 208px;
+                                        }
+                                        &#calc-date-of-birth {
+                                            width: 120px;
+                                        }
+                                        &#calc-annual-income {
+                                            width: 93px;
+                                        }
+                                    }
+                                }
+                                div.inline-text {
+                                    &.email {
+                                        margin: 25px 0;
+                                        padding: 25px 0;
+                                        border-top: 1px dashed #d1d1d1;
+                                        border-bottom: 1px dashed #d1d1d1;
+                                        label {
+                                            font-weight: 700;
+                                            margin-bottom: 10px;
+                                        }
+                                        input {
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 400px;
+                                            color: #333;
+                                            border: 1px solid #c9c9c9;
+                                            border-radius: 5px;
+                                            background: white;
+                                        }
+                                    }
+                                }
+                                div.inline-select {
+                                    span.select-wrapper {
+                                        font-size: 100%;
+                                        position: relative;
+                                        display: inline-block;
+                                        &:after {
+                                            font-family: FontAwesome;
+                                            font-size: 10px;
+                                            line-height: 1;
+                                            position: absolute;
+                                            top: 16px;
+                                            right: 10px;
+                                            content: '\f078';
+                                            pointer-events: none;
+                                            color: white;
+                                        }
+                                        select {
+                                            padding-right: 30px;
+                                        }
+                                    }
+                                }
+                                p#check-all {
+                                    font-size: 17px;
+                                    font-weight: 700;
+                                    margin: 0;
+                                    color: #333;
+                                }
+                                div.inline-checkbox {
+                                    position: relative;
+                                    &.margin-top-s {
+                                        margin-top: 15px;
+                                    }
+                                    input[type='checkbox'] {
+                                        display: none;
+                                        &:checked + label {
+                                            &:before {
+                                                content: '\f046';
+                                            }
+                                        }
+                                    }
+                                    label {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        display: inline-block;
+                                        margin-bottom: 5px;
+                                        padding-left: 20px;
+                                        cursor: pointer;
+                                        @media (max-width: 768px) {
+                                            font-size: 11px;
+                                        }
+                                        &:before {
+                                            font-family: FontAwesome;
+                                            position: absolute;
+                                            left: 0;
+                                            display: inline-block;
+                                            content: '\f096';
+                                        }
+                                    }
+                                }
+                                div.text-center {
+                                    input[type='button'] {
+                                        font-size: 20px;
+                                        font-weight: normal;
+                                        font-weight: 600;
+                                        line-height: 1;
+                                        width: 200px;
+                                        margin-top: 28px;
+                                        margin-bottom: 28px;
+                                        padding: 11px;
+                                        transition: all .3s ease;
+                                        text-transform: uppercase;
+                                        border: none;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        background: $green;
+
+                                        appearance: none;
+                                        &:hover {
+                                            background: $greendark;
+                                        }
+                                        @media (max-width: 830px) {
+                                            margin-bottom: 25px;
+                                        }
+                                        @media (max-width: 768px) {
+                                            font-size: 16px;
+                                            width: 150px;
+                                            margin-top: 21px;
+                                            padding: 8px;
+                                        }
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#calculator {
+            section.quote {
+                div.container {
+                    div.row {
+                        div.col-md-12 {
+                            form {
+                                float: none;
+                                width: 100%;
+                                max-width: 560px;
+                                margin: 0 auto 75px;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#quote_singlecarrier {
+            section#quote-page {
+                div.container {
+                    span.error-text,
+                    span.success-text {
+                        font-weight: 900;
+                        margin-bottom: 14px;
+                        text-align: center;
+                    }
+                    div.row {
+                        div.quote {
+                            @media (max-width: 768px) {
+                                float: none;
+                                width: 100%;
+                                max-width: 560px;
+                                margin: 0 auto;
+                            }
+                            &#original-quote {
+                                @media (max-width: 768px) {
+                                    margin: 0 auto 50px;
+                                }
+                            }
+                            div.box {
+                                margin-right: 0;
+                                padding: 37px;
+                                background: #e0e0e0;
+                                form {
+                                    div.tab-heading {
+                                        position: absolute;
+                                        top: -13px;
+                                        right: 0;
+                                        left: 0;
+                                        margin: auto;
+                                        text-align: center;
+                                        span {
+                                            font-size: 17px;
+                                            font-weight: 900;
+                                            float: none !important;
+                                            padding: 5px 10px;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            background: $pink;
+                                        }
+                                    }
+                                    div.text-center {
+                                        img.transamerica {
+                                            width: 175px;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                    div.row.margin-bottom-s {
+                                        div.best-class {
+                                            font-weight: 600;
+                                            color: $pink;
+                                            div.text-center {
+                                                span.currency {
+                                                    font-size: 20px;
+                                                    line-height: 47px;
+                                                    vertical-align: top;
+                                                }
+                                                span.price {
+                                                    font-size: 46px;
+                                                    line-height: 46px;
+                                                }
+                                                span.rate-name {
+                                                    font-size: 25px;
+                                                    color: $text;
+                                                }
+                                            }
+                                        }
+                                        div.standard-class {
+                                            font-weight: 600;
+                                            padding-top: 12px;
+                                            padding-left: 0;
+                                            div.text-left {
+                                                text-align: center;
+                                                span.currency {
+                                                    font-size: 15px;
+                                                    line-height: 29px;
+                                                    padding-left: 10px;
+                                                    vertical-align: text-bottom;
+                                                }
+                                                span.price {
+                                                    font-size: 25px;
+                                                    line-height: 25px;
+                                                    vertical-align: top;
+                                                }
+                                                span.freq {
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                            div.text-center {
+                                                span.rate-name {
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    div.sliders {
+                                        div {
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                        }
+                                        span {
+                                            float: right;
+                                        }
+                                        div#preselected-coverage {
+                                            height: .1em;
+                                            margin: 12px 0;
+                                            padding-bottom: .3em;
+                                            opacity: .4;
+                                            background-color: white;
+                                        }
+                                        div#preselected-term {
+                                            height: .1em;
+                                            margin: 12px 0;
+                                            padding-bottom: .3em;
+                                            opacity: .4;
+                                            background-color: white;
+                                        }
+                                    }
+                                    div.recommended-coverage {
+                                        margin-bottom: 15px;
+                                        div.text-center {
+                                            h4 {
+                                                font-size: 13px;
+                                                font-weight: 600;
+                                                line-height: 1.4;
+                                                margin-top: 0;
+                                                margin-bottom: 3px;
+                                                text-transform: uppercase;
+                                            }
+                                            h3 {
+                                                font-size: 28px;
+                                                margin-top: 0;
+                                            }
+                                        }
+                                    }
+                                    div.text-center {
+                                        a.btn {
+                                            font-size: 20px;
+                                            font-weight: normal;
+                                            font-weight: 600;
+                                            line-height: 1;
+                                            width: 200px;
+                                            margin-top: 28px;
+                                            margin-bottom: 28px;
+                                            padding: 11px;
+                                            transition: all .3s ease;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            border: none;
+                                            border-radius: 5px;
+                                            outline: none;
+                                            background: $green;
+
+                                            appearance: none;
+                                            &:hover {
+                                                background: $greendark;
+                                            }
+                                        }
+                                        p.meta {
+                                            font-size: 12px;
+                                            line-height: 1.4;
+                                            margin-top: 25px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#quote_multicarrier {
+            position: relative;
+            padding-bottom: 150px;
+            @media (max-width: 503px) {
+                padding-bottom: 210px;
+            }
+            section#quote-page {
+                div.container {
+                    position: relative;
+                    display: flex;
+                    overflow: auto;
+
+                    justify-content: space-between;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                    div.column {
+                        float: left;
+                        width: calc(50% - 25px);
+                        border: 1px solid #dfdfdf;
+                        @media (max-width: 991px) {
+                            float: none;
+                            width: 100%;
+                        }
+                        &:first-of-type {
+                            form {
+                                h2 {
+                                    background: $pink;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            form {
+                                h2 {
+                                    background: $midgrey;
+                                }
+                            }
+                        }
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0;
+
+                            flex-grow: 2;
+                            div.row {
+                                margin: 0;
+                                padding: 20px;
+                                &:before,
+                                &:after {
+                                    display: none;
+                                }
+                                div.best-class {
+                                    padding-top: 10px;
+                                    text-align: center;
+                                    sup {
+                                        font-size: 48px;
+                                        top: -1em;
+                                        color: $pink;
+                                        @media (max-width: 1200px) {
+                                            font-size: 36px;
+                                        }
+                                    }
+                                    span {
+                                        font-size: 67px;
+                                        font-weight: 700;
+                                        line-height: 1;
+                                        color: $pink;
+                                        @media (max-width: 1200px) {
+                                            font-size: 50px;
+                                        }
+                                        @media (max-width: 414px) {
+                                            font-size: 38px;
+                                        }
+                                        &.freq {
+                                            font-size: 35px;
+                                            line-height: 0;
+                                            position: relative;
+                                            top: -.65em;
+                                            vertical-align: baseline;
+                                            color: $pink;
+                                            @media (max-width: 1200px) {
+                                                font-size: 26px;
+                                            }
+                                            @media (max-width: 414px) {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                                div.comparison {
+                                    width: 240px;
+                                    margin: 0 auto;
+                                    h5 {
+                                        font-size: 24px;
+                                        line-height: 1.21;
+                                        text-align: center;
+                                        color: $lightgrey;
+                                        @media (max-width: 1200px) {
+                                            font-size: 18px;
+                                        }
+                                        output {
+                                            font-family: inherit;
+                                            font-size: inherit;
+                                            line-height: inherit;
+                                            display: inline;
+                                            letter-spacing: inherit;
+                                            color: inherit;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.online {
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 50px;
+                            @media (max-width: 991px) {
+                                margin-right: 0;
+                                // margin-bottom: 56px;
+
+                                order: 1;
+                            }
+                            h2 {
+                                // height: 16px;
+                                @media (max-width: 991px) {
+                                    height: auto;
+                                }
+                            }
+                            div.row {
+                                width: 100%;
+
+                                flex-grow: 2;
+                                div#transamerica_logo {
+                                    width: 250px;
+                                    margin: 20px auto;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                                div#class_category {
+                                    margin: -15px 0 15px;
+                                    span.rate-name {
+                                        font-size: 36px;
+                                        display: block;
+                                        text-align: center;
+                                        color: white;
+                                        @media (max-width: 1200px) {
+                                            font-size: 27px;
+                                        }
+                                    }
+                                }
+                                div.recommended-coverage {
+                                    display: flex;
+                                    overflow: auto;
+                                    margin-top: 30px;
+                                    padding: 10px 0;
+                                    background: transparent;
+                                    background: $lightgrey;
+                                    box-shadow: none;
+
+                                    justify-content: space-between;
+                                    div.col-md-6 {
+                                        width: calc(50% - 10px);
+                                        text-align: center;
+                                        &:last-of-type {
+                                            float: right;
+                                            border-left: 1px solid #ddd;
+                                        }
+                                        h4 {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            margin: 0 0 5px;
+                                            text-transform: none;
+                                            color: $darkgrey;
+                                        }
+                                        h3 {
+                                            font-size: 23px;
+                                            font-weight: 700;
+                                            margin: 0 0 5px;
+                                            color: $midgrey;
+                                            @media (max-width: 500px) {
+                                                font-size: 17px;
+                                            }
+                                            output {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                line-height: inherit;
+                                                display: inline;
+                                                letter-spacing: inherit;
+                                                color: inherit;
+                                            }
+                                        }
+                                    }
+                                }
+                                div#apply_button {
+                                    padding: 35px 0 50px;
+                                    text-align: center;
+                                    @media (max-width: 1200px) {
+                                        padding: 35px 0 15px;
+                                    }
+                                    @media (max-width: 991px) {
+                                        padding: 35px 0 50px;
+                                    }
+                                    a.btn {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        line-height: 1;
+                                        width: 250px;
+                                        padding: 12px 16px;
+                                        transition: all .3s ease;
+                                        text-transform: uppercase;
+                                        color: #fff;
+                                        border: none;
+                                        border-radius: 4px;
+                                        background: $green;
+                                        &:hover {
+                                            background: $greendark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.call {
+                            display: flex;
+                            flex-direction: column;
+                            @media (max-width: 991px) {
+                                margin-bottom: 50px;
+
+                                order: 3;
+                            }
+                            div.row {
+                                display: flex;
+                                overflow: auto;
+                                margin: 0 20px;
+                                padding: 20px 0;
+
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                @media (max-width: 1200px) {
+                                    // margin-bottom: 15px;
+                                }
+                                &:nth-of-type(2) {
+                                    border-top: 1px dashed #d1d1d1;
+                                    border-bottom: 1px dashed #d1d1d1;
+                                }
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+                                div.column {
+                                    width: calc(50% - 10px);
+                                    border: none;
+                                    @media (max-width: 414px) {
+                                        width: 100%;
+                                        text-align: center;
+                                        &:first-of-type {
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                    &:last-of-type {
+                                        overflow: auto;
+                                        width: 100%;
+                                        margin-top: 15px;
+                                        div.coverage-term {
+                                            float: left;
+                                            width: 50%;
+                                        }
+                                        div.phone {
+                                            float: right;
+                                            width: 50%;
+                                            text-align: right;
+                                            p {
+                                                color: $darkgrey;
+                                                a {
+                                                    font-size: 18px;
+                                                    font-weight: 700;
+                                                    display: block;
+                                                    color: $darkgrey;
+                                                    @media (max-width: 1200px) {
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    h6 {
+                                        font-size: 24px;
+                                        font-weight: 600;
+                                        margin: 0;
+                                        color: #58a5be;
+                                        @media (max-width: 1200px) {
+                                            font-size: 18px;
+                                        }
+                                        sup {
+                                            font-size: 59%;
+                                            top: -.45em;
+                                            padding-left: 1px;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 16px;
+                                        line-height: 1.4;
+                                        margin: 0;
+                                        color: #919191;
+                                        @media (max-width: 1200px) {
+                                            font-size: 12px;
+                                        }
+                                        span {
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    div.multicarrier-class {
+                                        margin: 0;
+                                        padding-top: 0;
+                                        text-align: right;
+                                        @media (max-width: 414px) {
+                                            text-align: center;
+                                        }
+                                        span {
+                                            font-size: 40px;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            color: $pink;
+                                            @media (max-width: 1200px) {
+                                                font-size: 30px;
+                                            }
+                                            &.freq {
+                                                font-size: 24px;
+                                                line-height: 0;
+                                                position: relative;
+                                                top: -.45em;
+                                                vertical-align: baseline;
+                                                @media (max-width: 1200px) {
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                        }
+                                        sup {
+                                            font-size: 24px;
+                                            top: -1.3em;
+                                            @media (max-width: 1200px) {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                    div.comparison {
+                                        width: 100%;
+                                        max-width: 115px;
+                                        h5 {
+                                            font-size: 20px;
+                                            @media (max-width: 1200px) {
+                                                font-size: 15px;
+                                                margin: -10px 0 0;
+                                            }
+                                            output {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                line-height: inherit;
+                                                display: inline;
+                                                letter-spacing: inherit;
+                                                color: inherit;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        h2 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 1.46;
+                            width: 100%;
+                            margin: 0;
+                            padding: 6px 0;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: white;
+                        }
+                    }
+                    div#legal_policy {
+                        clear: both;
+                        width: 100%;
+                        padding: 15px 0 20px;
+                        @media (max-width: 991px) {
+                            padding: 10px 0 30px;
+
+                            order: 2;
+                        }
+                        a {
+                            // color: $lightgrey;
+                            i.fa {
+                                font-size: 20px;
+                                padding-left: 3px;
+                                transform: translateY(2px);
+                            }
+                        }
+                    }
+                }
+            }
+            section#range_sliders {
+                position: fixed;
+                z-index: 99;
+                bottom: 0;
+                display: flex;
+                overflow: auto;
+                width: 100%;
+                padding: 0;
+                border-top: 1px solid #dfdfdf;
+                background: white;
+
+                flex-wrap: wrap;
+                &.unfix {
+                    position: absolute;
+                }
+                div.sliders {
+                    float: left;
+                    width: 50%;
+                    padding: 20px 25px 25px;
+                    text-align: center;
+                    @media (max-width: 729px) {
+                        padding: 15px 20px 20px;
+                    }
+                    @media (max-width: 503px) {
+                        float: none;
+                        width: 100%;
+                    }
+                    &:first-of-type {
+                        border-right: 1px solid #dfdfdf;
+                        @media (max-width: 503px) {
+                            border-right: none;
+                            border-bottom: 1px solid #dfdfdf;
+                        }
+                    }
+                    span.slider-label {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #727272;
+                        @media (max-width: 729px) {
+                            font-size: 12px;
+                        }
+                    }
+                    span.quote-coverage,
+                    span.quote-term {
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 1;
+                        display: block;
+                        margin-bottom: 25px;
+                        color: #919191;
+                        @media (max-width: 729px) {
+                            font-size: 27px;
+                        }
+                        output {
+                            font-family: inherit;
+                            font-size: inherit;
+                            line-height: inherit;
+                            display: inline;
+                            letter-spacing: inherit;
+                            color: inherit;
+                        }
+                    }
+                    span.range-slider {
+                        position: relative;
+                        display: inline-block;
+                        overflow: auto;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 12px 0;
+                        input {
+                            position: relative;
+                            z-index: 5;
+                            width: 100%;
+                            height: 4px;
+                            margin: 0;
+                            opacity: 0;
+
+                            appearance: none;
+                            &::-webkit-slider-thumb {
+                                position: relative;
+                                z-index: 100;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 100%;
+
+                                appearance: none;
+                                @media (max-width: 729px) {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                        span.slider-container {
+                            position: absolute;
+                            z-index: 3;
+                            top: 50%;
+                            left: 9px;
+                            display: inline-block;
+                            box-sizing: border-box;
+                            width: calc(100% - 25px);
+                            transform: translateY(-50%);
+                            span.bar {
+                                z-index: 1;
+                                display: inline-block;
+                                overflow: hidden;
+                                width: 100%;
+                                height: 4px;
+                                border-radius: 10px;
+                                background-color: #979797;
+                                span {
+                                    display: inline-block;
+                                    float: left;
+                                    width: 0;
+                                    height: 11px;
+                                    background: $pink;
+                                }
+                            }
+                            span.bar-btn {
+                                position: absolute;
+                                z-index: 3;
+                                top: 50%;
+                                display: inline-block;
+                                width: 25px;
+                                height: 25px;
+                                margin-left: -9px;
+                                content: '';
+                                transform: translateY(-50%);
+                                border-radius: 100%;
+                                background-color: $pink;
+                                @media (max-width: 729px) {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-left: -6.5px;
+                                }
+                            }
+                        }
+                    }
+                    div.ui-slider {
+                        height: 4px;
+                        padding: 0;
+                        border: none;
+                        border-radius: 10px;
+                        background: #eaeaea;
+                        span.ui-slider-handle {
+                            background: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.cover {
+        padding-top: 125px;
+        padding-bottom: 125px;
+        @media (max-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        div.col-md-12 {
+            float: none;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            @media (max-width: 768px) {
+                max-width: 560px;
+            }
+            h1 {
+                font-size: 72px;
+                line-height: .97;
+                margin-bottom: 30px;
+                letter-spacing: .8px;
+                @media (max-width: 768px) {
+                    font-size: 54px;
+                    letter-spacing: .6px;
+                }
+                br {
+                    @media (max-width: 530px) {
+                        display: none;
+                    }
+                }
+            }
+            p {
+                font-size: 28px;
+                line-height: 1.25;
+                margin-bottom: 20px;
+                letter-spacing: .3px;
+                @media (max-width: 768px) {
+                    font-size: 21px;
+                    margin-bottom: 15px;
+                    letter-spacing: .225px;
+                }
+                br {
+                    @media (max-width: 530px) {
+                        display: none;
+                    }
+                }
+                strong {
+                    letter-spacing: -.03em;
+                }
+            }
+            a.btn {
+                font-size: 28px;
+                font-weight: normal;
+                line-height: 1;
+                margin-top: 25px;
+                padding: 22.5px 45.24px;
+                letter-spacing: .3px;
+                opacity: 1;
+                @media (max-width: 768px) {
+                    font-size: 21px;
+                    margin-top: 19px;
+                    padding: 17px 34px;
+                    letter-spacing: .225px;
+                }
+                &#how_much_do_i_need {
+                    width: 285px;
+                    @media (max-width: 768px) {
+                        width: 220px;
+                    }
+                    @media (max-width: 483px) {
+                        margin-right: 0;
+                    }
+                }
+                &#i_know_what_i_need {
+                    width: 285px;
+                    @media (max-width: 768px) {
+                        width: 220px;
+                    }
+                }
+            }
+            div.form-wrapper {
+                display: flex;
+                overflow: auto;
+                width: 100%;
+                max-width: 500px;
+                margin: 20px auto 0;
+                background: $midgrey;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
+
+                flex-wrap: wrap;
+                div.primary-container {
+                    width: 100%;
+                    padding: 30px 40px;
+                    border-bottom: solid 2px $lightgrey;
+                    @media (max-width: 768px) {
+                        padding: 23px 30px;
+                    }
+                    @media (max-width: 500px) {
+                        padding: 15px;
+                    }
+                    h4 {
+                        font-size: 48px;
+                        line-height: .92;
+                        letter-spacing: .4px;
+                        @media (max-width: 768px) {
+                            font-size: 36px;
+                            letter-spacing: .3px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1;
+                        margin: 0;
+                        letter-spacing: .2px;
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                            letter-spacing: .15px;
+                        }
+                        a {
+                            text-decoration: underline;
+                        }
+                    }
+                    form {
+                        margin-top: 20px;
+
+                        @include placeholder {
+                            color: $lightgrey;
+                        }
+                        div.select-wrapper {
+                            position: relative;
+                            display: inline-block;
+                            &:after {
+                                font: normal normal normal 14px/1 FontAwesome;
+                                position: absolute;
+                                top: 11px;
+                                right: 11px;
+                                content: '\f078';
+                                pointer-events: none;
+                            }
+                            input,
+                            select {
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 1;
+                                height: 50px;
+                                padding: 12.5px;
+                                letter-spacing: .3px;
+                                border: none;
+                                border-radius: 5px;
+                                outline: none;
+                                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                                appearance: none;
+                                @media (max-width: 768px) {
+                                    font-size: 18px;
+                                    height: 37.5px;
+                                    padding: 9.375px;
+                                    letter-spacing: .225px;
+                                }
+                            }
+                            select {
+                                display: inline;
+                                width: 200px;
+                                color: $lightgrey;
+                                background: white;
+                            }
+                            input[type='text'] {
+                                width: 200px;
+                                color: $darkgrey;
+                                background: white;
+                                @media (max-width: 768px) {
+                                    width: 150px;
+                                }
+                            }
+                            input[type='submit'] {
+                                width: 50px;
+                                margin-left: 20px;
+                                background: $pink;
+                                @media (max-width: 768px) {
+                                    width: 37.5px;
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                a.secondary-container {
+                    display: block;
+                    float: left;
+                    width: 50%;
+                    padding: 10px 45px;
+                    transition: all .3s ease;
+                    @media (max-width: 768px) {
+                        padding: 10px 34px;
+                    }
+                    @media (max-width: 450px) {
+                        float: none;
+                        width: 100%;
+                        padding: 15px;
+                    }
+                    &:first-of-type {
+                        border-right: 1px solid $lightgrey;
+                        @media (max-width: 450px) {
+                            border-right: none;
+                            border-bottom: 2px solid $lightgrey;
+                        }
+                    }
+                    &:last-of-type {
+                        border-left: 1px solid $lightgrey;
+                        @media (max-width: 450px) {
+                            border-left: none;
+                        }
+                    }
+                    &:hover {
+                        background: $pink;
+                    }
+                    h5 {
+                        font-size: 24px;
+                        font-style: normal;
+                        line-height: 1.13;
+                        margin: 0;
+                        letter-spacing: .3px;
+                        color: white;
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                            letter-spacing: .225px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#affordability_hero {
+        padding-bottom: 10px;
+        background-image: url('../images/affordability-bg.jpg');
+        background-position: top right;
+        background-size: cover;
+        @media (max-width: 630px) {
+            background-position: 72% 50%;
+        }
+        div.container {
+            div.row {
+                &:last-of-type {
+                    text-align: left;
+                    small {
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+                div.col-md-12 {
+                    float: none;
+                    width: 100%;
+                    max-width: 1130px;
+                    margin: 0 auto;
+                    h1 {
+                        font-size: 48px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        margin: 0 0 20px;
+                        color: white;
+                        @media (max-width: 991px) {
+                            font-size: 36px;
+                            margin: 0 0 10px;
+                        }
+                        @media (max-width: 600px) {
+                            font-size: 27px;
+                        }
+                        @media (max-width: 460px) {
+                            font-size: 20px;
+                        }
+                    }
+                    div.form-wrapper {
+                        max-width: 775px;
+                        background: transparent;
+                        box-shadow: none;
+                        div.primary-container {
+                            padding: 24px 40px 30px;
+                            border: none;
+                            border-radius: 10px 10px 0 0;
+                            background: rgba(black,.18);
+                            @media (max-width: 768px) {
+                                padding: 23px 30px;
+                            }
+                            @media (max-width: 500px) {
+                                padding: 20px;
+                            }
+                            form {
+                                margin: 0;
+                                div.select-wrapper {
+                                    text-align: left;
+                                    &:nth-of-type(2) {
+                                        margin: 0 28px;
+                                    }
+                                    @media (max-width: 630px) {
+                                        width: 100%;
+                                        margin: 0 0 10px !important;
+                                    }
+                                    &:after {
+                                        font-size: 12px;
+                                        top: calc(50% + 18px);
+                                        right: 12px;
+                                        content: '\f04b';
+                                        transform: translateY(-50%) rotate(90deg);
+                                        color: #828282;
+                                    }
+                                    label {
+                                        font-size: 21px;
+                                        font-weight: 700;
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        color: white;
+                                    }
+                                    select {
+                                        font-size: 22px;
+                                        line-height: 1.2;
+                                        display: block;
+                                        width: auto;
+                                        height: 41.5px;
+                                        margin: 0;
+                                        // min-width: 110px;
+                                        padding: 0 38px 0 11px;
+                                        color: #2b2b2b;
+                                        box-shadow: none;
+
+                                        appearance: none;
+                                        @media (max-width: 630px) {
+                                            font-size: 17px;
+                                            width: 100%;
+                                            height: 35px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div.secondary-container {
+                            padding: 15px 40px;
+                            border-radius: 0 0 10px 10px;
+                            background: rgba(black, .38);
+                            p#initialQuote {
+                                font-size: 18px;
+                                line-height: 1.952380952380952;
+                                margin: 0;
+                                color: white;
+                                @media (max-width: 768px) {
+                                    font-size: 14px;
+                                }
+                                span.quoted-amount {
+                                    font-weight: 700;
+                                    line-height: 1;
+                                    display: inline-block;
+                                    padding: 5px 8px 7px;
+                                    color: white;
+                                    background: $pink;
+                                    &#totalCoverage {
+                                        width: 120px;
+                                        @media (max-width: 768px) {
+                                            width: 90px;
+                                        }
+                                    }
+                                    &#totalSavings {
+                                        width: 63px;
+                                        @media (max-width: 768px) {
+                                            width: 47px;
+                                        }
+                                    }
+                                }
+                                sup {
+                                    font-size: 80%;
+                                    top: -.4em;
+                                }
+                            }
+                        }
+                        div.gobutton-container {
+                            width: 100%;
+                            margin: 30px auto 100px;
+                            @media (max-width: 768px) {
+                                margin: 23px auto 75px;
+                            }
+                            input.btn {
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-weight: 700;
+                                line-height: 1;
+                                width: 250px;
+                                padding: 20px;
+                                transition: all .3s ease;
+                                text-transform: uppercase;
+                                color: white;
+                                border: none;
+                                border-radius: 5px;
+                                outline: none;
+                                background: $green;
+
+                                appearance: none;
+                                &:hover {
+                                    background: $greendark;
+                                }
+                                @media (max-width: 768px) {
+                                    font-size: 15px;
+                                    width: 188px;
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        position: relative;
+        background-color: $darkgrey;
+        div.container {
+            div.row {
+                overflow: auto;
+                padding: 40px 20px;
+                &:before,
+                &:after {
+                    display: none !important;
+                }
+                div.col-md-6 {
+                    width: auto;
+                    &:first-of-type {
+                        width: calc(100% - 300px);
+                        margin-top: 16px;
+                        @media (max-width: 1200px) {
+                            width: 100%;
+                            margin-top: 0;
+                        }
+                    }
+                    @media (max-width: 1200px) {
+                        float: none;
+                        width: 100%;
+                    }
+                    &.text-right {
+                        float: right;
+                        width: 270px;
+                        margin: 0;
+                        text-align: right;
+                        @media (max-width: 1200px) {
+                            float: none;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            padding-top: 20px;
+                            text-align: center;
+                        }
+                        a.main_logo {
+                            display: inline-block;
+                            width: 220px;
+                            padding: 0 0 0 20px !important;
+                            img.logo {
+                                display: inline-block;
+                                width: 185px;
+                                height: auto;
+                            }
+                            sup {
+                                font-size: 7px;
+                                font-weight: 600;
+                                top: -.7em;
+                                display: inline-block;
+                                color: white;
+                            }
+                        }
+                        span {
+                            font-size: 13px;
+                            color: white;
+                        }
+                        small {
+                            font-size: 10px;
+                        }
+                        a.secondary {
+                            text-decoration: underline;
+                            color: white;
+                        }
+                    }
+                    ul {
+                        overflow: auto;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        @media (max-width: 1200px) {
+                            text-align: center;
+                        }
+                        li {
+                            display: inline-block;
+                            margin-right: 15px;
+                            &:last-of-type {
+                                margin-right: 0;
+                            }
+                            @media (max-width: 1200px) {
+                                margin: 0 4px;
+                            }
+                            @media (max-width: 740px) {
+                                display: block;
+                            }
+                            a {
+                                font-size: 14px;
+                                transition: all .3s ease;
+                                color: white;
+                                border-top: 1px solid transparent;
+                                border-bottom: 1px solid transparent;
+                                &:hover,
+                                &.active {
+                                    color: white;
+                                    border-bottom: 1px solid white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

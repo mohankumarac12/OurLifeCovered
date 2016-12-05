@@ -1,0 +1,15 @@
+select{
+  background:#fff;
+  background: rgba(255,255,255,.8);
+}
+.progress-bar{
+  filter:none!important;
+}
+input[type="range"]{
+  background: none;
+  border: 1px solid #fff;
+}
+
+select::-ms-expand {
+    display: none;
+}
