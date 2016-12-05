@@ -1,0 +1,22 @@
+/**
+ * @license jahashtable, a JavaScript implementation of a hash table. It creates a single constructor function called
+ * Hashtable in the global scope.
+ *
+ * http://www.timdown.co.uk/jshashtable/
+ * Copyright %%build:year%% Tim Down.
+ * Version: %%build:version%%
+ * Build date: %%build:date%%
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+var Hashtable=function(t){function n(t){return typeof t==p?t:""+t}function e(t){var r;return typeof t==p?t:typeof t.hashCode==y?(r=t.hashCode(),typeof r==p?r:e(r)):n(t)}function r(t,n){for(var e in n)n.hasOwnProperty(e)&&(t[e]=n[e])}function i(t,n){return t.equals(n)}function u(t,n){return typeof n.equals==y?n.equals(t):t===n}function o(n){return function(e){if(null===e)throw new Error("null is not a valid "+n);if(e===t)throw new Error(n+" must not be undefined")}}function s(t,n,e,r){this[0]=t,this.entries=[],this.addEntry(n,e),null!==r&&(this.getEqualityFunction=function(){return r})}function l(t){return function(n){for(var e=this.entries.length,r,i=this.getEqualityFunction(n);e--;)if(r=this.entries[e],i(n,r[0]))switch(t){case E:return!0;case K:return r;case q:return[e,r[1]]}return!1}}function a(t){return function(n){for(var e=n.length,r=0,i=this.entries,u=i.length;u>r;++r)n[e+r]=i[r][t]}}function f(t,n){for(var e=t.length,r;e--;)if(r=t[e],n===r[0])return e;return null}function h(t,n){var e=t[n];return e&&e instanceof s?e:null}function c(){var n=[],i={},u={replaceDuplicateKey:!0,hashCode:e,equals:null},o=arguments[0],l=arguments[1];l!==t?(u.hashCode=o,u.equals=l):o!==t&&r(u,o);var a=u.hashCode,c=u.equals;this.properties=u,this.put=function(t,e){g(t),d(e);var r=a(t),o,l,f=null;return o=h(i,r),o?(l=o.getEntryForKey(t),l?(u.replaceDuplicateKey&&(l[0]=t),f=l[1],l[1]=e):o.addEntry(t,e)):(o=new s(r,t,e,c),n.push(o),i[r]=o),f},this.get=function(t){g(t);var n=a(t),e=h(i,n);if(e){var r=e.getEntryForKey(t);if(r)return r[1]}return null},this.containsKey=function(t){g(t);var n=a(t),e=h(i,n);return e?e.containsKey(t):!1},this.containsValue=function(t){d(t);for(var e=n.length;e--;)if(n[e].containsValue(t))return!0;return!1},this.clear=function(){n.length=0,i={}},this.isEmpty=function(){return!n.length};var y=function(t){return function(){for(var e=[],r=n.length;r--;)n[r][t](e);return e}};this.keys=y("keys"),this.values=y("values"),this.entries=y("getEntries"),this.remove=function(t){g(t);var e=a(t),r,u=null,o=h(i,e);return o&&(u=o.removeEntryForKey(t),null!==u&&0==o.entries.length&&(r=f(n,e),n.splice(r,1),delete i[e])),u},this.size=function(){for(var t=0,e=n.length;e--;)t+=n[e].entries.length;return t}}var y="function",p="string",v="undefined";if(typeof encodeURIComponent==v||Array.prototype.splice===t||Object.prototype.hasOwnProperty===t)return null;var g=o("key"),d=o("value"),E=0,K=1,q=2;return s.prototype={getEqualityFunction:function(t){return typeof t.equals==y?i:u},getEntryForKey:l(K),getEntryAndIndexForKey:l(q),removeEntryForKey:function(t){var n=this.getEntryAndIndexForKey(t);return n?(this.entries.splice(n[0],1),n[1]):null},addEntry:function(t,n){this.entries.push([t,n])},keys:a(0),values:a(1),getEntries:function(t){for(var n=t.length,e=0,r=this.entries,i=r.length;i>e;++e)t[n+e]=r[e].slice(0)},containsKey:l(E),containsValue:function(t){for(var n=this.entries,e=n.length;e--;)if(t===n[e][1])return!0;return!1}},c.prototype={each:function(t){for(var n=this.entries(),e=n.length,r;e--;)r=n[e],t(r[0],r[1])},equals:function(t){var n,e,r,i=this.size();if(i==t.size()){for(n=this.keys();i--;)if(e=n[i],r=t.get(e),null===r||r!==this.get(e))return!1;return!0}return!1},putAll:function(t,n){for(var e=t.entries(),r,i,u,o,s=e.length,l=typeof n==y;s--;)r=e[s],i=r[0],u=r[1],l&&(o=this.get(i))&&(u=n(i,o,u)),this.put(i,u)},clone:function(){var t=new c(this.properties);return t.putAll(this),t}},c.prototype.toQueryString=function(){for(var t=this.entries(),e=t.length,r,i=[];e--;)r=t[e],i[e]=encodeURIComponent(n(r[0]))+"="+encodeURIComponent(n(r[1]));return i.join("&")},c}();
