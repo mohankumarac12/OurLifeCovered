@@ -411,8 +411,8 @@ body {
                         }
                     }
                     div.error-text {
-                        color: #ff3e3e;
                         padding: 0 15px 5px;
+                        color: #ff3e3e;
                     }
                     form {
                         overflow: auto;
@@ -1401,6 +1401,9 @@ body {
                                             background: transparent;
 
                                             appearance: none;
+                                            &::-ms-expand {
+                                                display: none;
+                                            }
                                             @media (max-width: 768px) {
                                                 font-size: 11px;
                                                 width: 140px;
@@ -1581,6 +1584,9 @@ body {
                                                 background: transparent;
 
                                                 appearance: none;
+                                                &::-ms-expand {
+                                                    display: none;
+                                                }
                                                 @media (max-width: 768px) {
                                                     font-size: 11px;
                                                     width: 150px;
@@ -1766,6 +1772,9 @@ body {
                                         background: $pink;
 
                                         appearance: none;
+                                        &::-ms-expand {
+                                            display: none;
+                                        }
                                     }
                                     input {
                                         &#calc-first-name {
@@ -1818,6 +1827,9 @@ body {
                                         }
                                         select {
                                             padding-right: 30px;
+                                            &::-ms-expand {
+                                                display: none;
+                                            }
                                         }
                                     }
                                 }
@@ -2801,6 +2813,9 @@ body {
                                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
 
                                 appearance: none;
+                                &::-ms-expand {
+                                    display: none;
+                                }
                                 @media (max-width: 768px) {
                                     font-size: 18px;
                                     height: 37.5px;
@@ -2813,6 +2828,9 @@ body {
                                 width: 200px;
                                 color: $lightgrey;
                                 background: white;
+                                &::-ms-expand {
+                                    display: none;
+                                }
                             }
                             input[type='text'] {
                                 width: 200px;
@@ -2974,6 +2992,9 @@ body {
                                         box-shadow: none;
 
                                         appearance: none;
+                                        &::-ms-expand {
+                                            display: none;
+                                        }
                                         @media (max-width: 630px) {
                                             font-size: 17px;
                                             width: 100%;

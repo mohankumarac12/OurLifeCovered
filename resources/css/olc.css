@@ -346,8 +346,8 @@ body {
         body div.container-fluid div#hero div.cta-container div.row div.col-sm-12 h3 {
           text-align: center; } }
       body div.container-fluid div#hero div.cta-container div.row div.error-text {
-        color: #ff3e3e;
-        padding: 0 15px 5px; }
+        padding: 0 15px 5px;
+        color: #ff3e3e; }
       body div.container-fluid div#hero div.cta-container div.row form {
         overflow: auto;
         margin-bottom: 0; }
@@ -1163,6 +1163,10 @@ body {
                   -webkit-appearance: none;
                      -moz-appearance: none;
                           appearance: none; }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select::-ms-expand,
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select::-ms-expand, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select::-ms-expand,
+                  body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select::-ms-expand {
+                    display: none; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
@@ -1355,6 +1359,8 @@ body {
                   -webkit-appearance: none;
                      -moz-appearance: none;
                           appearance: none; }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select::-ms-expand, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select::-ms-expand {
+                    display: none; }
                   @media (max-width: 768px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div#children div.child div.select-wrapper select {
                       font-size: 11px;
@@ -1518,6 +1524,11 @@ body {
                 -webkit-appearance: none;
                    -moz-appearance: none;
                         appearance: none; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input::-ms-expand,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text select::-ms-expand,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input::-ms-expand,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select::-ms-expand {
+                  display: none; }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input#calc-first-name,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input#calc-first-name {
                 width: 208px; }
@@ -1559,6 +1570,8 @@ body {
                 color: white; }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {
                 padding-right: 30px; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select::-ms-expand {
+                  display: none; }
             body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form p#check-all {
               font-size: 17px;
               font-weight: 700;
@@ -2400,6 +2413,9 @@ body {
                 -webkit-appearance: none;
                    -moz-appearance: none;
                         appearance: none; }
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input::-ms-expand,
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
+                  display: none; }
                 @media (max-width: 768px) {
                   body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input,
                   body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
@@ -2412,6 +2428,8 @@ body {
                 width: 200px;
                 color: #f7f7f7;
                 background: white; }
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
+                  display: none; }
               body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input[type='text'] {
                 width: 200px;
                 color: #595959;
@@ -2553,6 +2571,8 @@ body {
                 -webkit-appearance: none;
                    -moz-appearance: none;
                         appearance: none; }
+                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
+                  display: none; }
                 @media (max-width: 630px) {
                   body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
                     font-size: 17px;
