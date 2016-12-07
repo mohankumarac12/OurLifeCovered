@@ -16,7 +16,7 @@
                     <form action="" id="contact-form" name="contactForm">
                         <div class="error-text">                                
                         </div>
-                        <div class="success-text" style="font-size:150%">                                
+                        <div class="success-text" style="font-size:145%">                                
                         </div>
                         <span class="hide-contact-fields">
                             <div class="inline-text required">
@@ -35,6 +35,14 @@
                                 <input class=" " type="text" id="contact-form-best-time" name="contact-form-best-time" maxlength="25">
                                 <label class=" " for="contact-form-best-time">Best Time To Call</label>
                             </div>
+							<div class="inline-select required">
+								<select name="time-zone" class="small" id="contact-time-zone" required="">
+									<option value="">- Select a Time Zone -</option>
+								    <option value="PT">Pacific Time</option>
+								    <option value="CT">Central Time</option>
+								    <option value="ET">Eastern Time</option>
+								</select>
+							</div>
                             <div class="">
                                 <label style="font-size:16px" for="contact-form-comments">Comments</label>
                                 <textarea id="contact-form-comments" name="contact-form-comments" rows="5" cols="55" maxlength="800"></textarea><grammarly-btn><div style="visibility: hidden; z-index: 2;" class="_9b5ef6-textarea_btn _9b5ef6-not_focused" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div></div></grammarly-btn>

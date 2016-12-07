@@ -19,6 +19,7 @@
     <!-- <script src="https://use.typekit.net/qns3hng.js"></script> -->
     <script src="https://use.typekit.net/flk8jvc.js"></script>
     <script>
+    var domainName = 'devweb01.eastus.cloudapp.azure.com';
     try {
         Typekit.load({
             async: false
