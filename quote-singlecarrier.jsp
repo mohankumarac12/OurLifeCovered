@@ -1,5 +1,9 @@
 <%@include file="header.jsp" %>
-<body onload='loadSingleCarrierWithQuoteData("${src}","${sessionProfile.pathId}")'>
+<script type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+</script> 
+<body onload='noBack();loadSingleCarrierWithQuoteData("${src}","${sessionProfile.pathId}")' onpageshow="if (event.persisted) noBack();" onunload="">
     <div id="quote_singlecarrier" class="background-wrap">
         <section id="quote-page">
             <div class="container">
@@ -77,7 +81,7 @@
                                      <!-- <p class="meta">As a highly fit person, you may qualify for preferred plus class coverage. However, this is non-binding prior to your application.</p> -->
                                      <p class="meta">No quotes are final until underwriting is completed.  Other underwriting classes, face amounts and payment modes are available.  Premiums will be lower if paid annually.  Rates subject to change without notice.</p>
                                      <p class="meta">The recommended coverage amount is determined by Two Rivers Agency.  Two Rivers Agency is an independent contractor representing Transamerica Life Insurance Company.</p>
-                                     <p class="meta">The Two Rivers Agency (Rivers Run Insurance Agency in CA) is a wholly-owned subsidiary of <strong>RGAx</strong>. Â©2016 RGAx LLC All Rights Reserved.</p>
+                                     <p class="meta">The Two Rivers Agency (Rivers Run Insurance Agency in CA) is a wholly-owned subsidiary of <strong>RGAx</strong>.©2016 RGAx LLC All Rights Reserved.</p>
                                      <p class="meta">AT 1536928 TRWeb 0616</p>
                                 </div>
                                 <input type="hidden" id="original-quote-originalCoverageAmnt" name="originalCoverageAmnt">
@@ -157,7 +161,7 @@
                                      <!-- <p class="meta">As a highly fit person, you may qualify for preferred plus class coverage. However, this is non-binding prior to your application.</p> -->
                                      <p class="meta">No quotes are final until underwriting is completed.  Other underwriting classes, face amounts and payment modes are available.  Premiums will be lower if paid annually.  Rates subject to change without notice.</p>
                                      <p class="meta">The recommended coverage amount is determined by Two Rivers Agency.  Two Rivers Agency is an independent contractor representing Transamerica Life Insurance Company.</p>
-                                     <p class="meta">The Two Rivers Agency (Rivers Run Insurance Agency in CA) is a wholly-owned subsidiary of <strong>RGAx</strong>. Â©2016 RGAx LLC All Rights Reserved.</p>
+                                     <p class="meta">The Two Rivers Agency (Rivers Run Insurance Agency in CA) is a wholly-owned subsidiary of <strong>RGAx</strong>.©2016 RGAx LLC All Rights Reserved.</p>
                                      <p class="meta">AT 1536928 TRWeb 0616</p>
                                 </div>
                                 <input type="hidden" id="comparison-quote-selectedCoverageAmnt" name="selectedCoverageAmnt">

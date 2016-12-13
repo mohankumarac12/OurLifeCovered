@@ -58,7 +58,7 @@ sessionStorage.setItem('src',"${src}");
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <small>*Coverage amounts are estimates. Our licensed agent will provide an exact amount.</small>
+                    <small>*Coverage amounts are estimates for the applicable gender and age range. Proceed to "start my quote" for age-specific rates.</small>
                 </div>
             </div>
         </div>

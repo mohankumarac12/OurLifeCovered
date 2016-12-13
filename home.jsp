@@ -159,7 +159,7 @@
             </div>
             <div class="col-xs-4">
                 <img src="resources/images/list-icon.png" class="center-block"  alt=""/>
-                <span>See quotes from multiple providers</span>
+                <span>See Your Quote</span>
             </div>
             <div class="col-xs-4">
                 <img src="resources/images/quote-icon.png" class="center-block"  alt=""/>
@@ -167,7 +167,9 @@
             </div>
         </div>
     </div>
+   	
     <div id="footer-carousel">
+    <p id="astrik-home">*Individual cases may vary due to dependencies on specific underwriting criteria in the application process.</p>
         <div id="footerCarousel" class = "carousel slide">
             <ol class = "carousel-indicators ">
                 <li data-target = "#footerCarousel" data-slide-to = "0" class="active"></li>
@@ -195,7 +197,7 @@
                     <img src = "resources/images/carousel-3.jpg">
                     <div class="carousel-caption">
                         <h4 class="hero-caption">Already know your number?</h4>
-                        <p>If you already have a good idea about how much coverage you need to protect your family, Enter it here and we’ll get your quote started.</p>
+                        <p>If you already have a good idea about how much coverage you need to protect your family, enter it here and we’ll get your quote started.</p>
                         <a class="btn" href="getQuote-form.do">Get a Quote</a>
                     </div>
                 </div>

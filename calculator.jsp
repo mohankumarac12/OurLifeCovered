@@ -16,17 +16,17 @@ sessionStorage.setItem('src',"${src}");
 			</div>
 		</div>
 	</section>
-	<section class="quote-tabs">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<a href="findPath.do" class="tab">Quick Facts</a> <a
-						href="calculator.do" class="tab active">Full Calculator</a>
+	<section id="needs-calculator" class="quote">
+		<section class="quote-tabs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<a href="findPath.do" class="tab">Quick Facts</a> <a
+							href="calculator.do" class="tab active">Full Calculator</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="needs-calculator" class="quote">
+		</section>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12" id="needsCalculatorErrorMsgId">
@@ -122,7 +122,17 @@ sessionStorage.setItem('src',"${src}");
 		</div>
 	</section>
 		<section id="calculator-report" class="quote" style="display: none">
-			<div class="container">
+			<section class="quote-tabs">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="findPath.do" class="tab active">Quick Facts</a> <a
+								href="calculator.do" class="tab">Full Calculator</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="quote_form" class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<form action="" id="needs-calculator-demographics-form"
@@ -267,33 +277,23 @@ sessionStorage.setItem('src',"${src}");
 										<option value="30">30</option>
 								</select>
 								</span>
-							</div>
+							</div>							
 							<div class="inline-checkbox margin-top-s">
-								<input type="checkbox" name="us_citizen" id="calc-us_citizen"
-									checked=""> <label for="calc-us_citizen"></label> I am
-								a U.S. Citizen.
-							</div>
-							<div class="inline-checkbox">
-								<input type="checkbox" name="policy_owner"
-									id="calc-policy_owner" checked=""> <label
-									for="calc-policy_owner"></label> I, or my spouse, will be the
-								policy owner.
-							</div>
-							<div class="inline-checkbox">
-								<input type="checkbox" name="not_replacing"
-									id="calc-not_replacing" checked=""> <label
-									for="calc-not_replacing"></label> I am not replacing an
-								existing policy.
-							</div>
-							<div class="inline-checkbox">
-								<input type="checkbox" name="allow_marketing"
-									id="calc-allow_marketing" checked=""> <label
-									for="calc-allow_marketing"></label><span class="last-checkbox"> By providing your contact
-								information above, you agree to this website's Privacy Policy,
-								and you consent to receive offers and marketing communications
-								at the email address or telephone numbers you provided,
-								including autodialed, pre-recorded calls, SMS or MMS messages.</span>
-							</div>
+                                <input type="checkbox" name="us_citizen" id="calc-us_citizen" checked="">
+                                <label for="calc-us_citizen">I am a U.S. Citizen.</label>
+                            </div>
+                            <div class="inline-checkbox">
+                                <input type="checkbox" name="policy_owner" id="calc-policy_owner" checked="">
+                                <label for="calc-policy_owner">I, or my spouse, will be the policy owner.</label>
+                            </div>
+                            <div class="inline-checkbox">
+                                <input type="checkbox" name="not_replacing" id="calc-not_replacing" checked="">
+                                <label for="calc-not_replacing">I am not replacing an existing policy.</label>
+                            </div>
+                            <div class="inline-checkbox">
+                                <input type="checkbox" name="allow_marketing" id="calc-allow_marketing" checked="">
+                                <label for="calc-allow_marketing">By providing your contact information above, you agree to this website's Privacy Policy, and you consent to receive offers and marketing communications at the email address or telephone numbers you provided, including autodialed, pre-recorded calls, SMS or MMS messages.</label>
+                            </div>
 							<div class="text-center">
 								<input type="button" class="btn btn-primary"
 									value="See Your Quote" id="quote-form-submit" wpvalue="next"
@@ -313,7 +313,7 @@ sessionStorage.setItem('src',"${src}");
 								produced automatically.</p>
 							<p class="disclaimers-content">
 								Final rates are always subject to underwriting approval by the
-								insurance company. <a href="legalInformation.do">Click here</a> to better
+								insurance company. <a href="policyForms.do">Click here</a> to better
 								understand the underwriting criteria. You have an option of
 								continuing with Two Rivers Agency and apply online, or having
 								Health IQ contact you shortly to gather additional information
@@ -323,7 +323,7 @@ sessionStorage.setItem('src',"${src}");
 								questions to more accurately estimate your rate. Please read
 								through our <a href="legalInformation.do">legal policy</a> to better
 								understand the processing and information being made available.
-								<a href="privacypolicy.do">Click here</a> for policy forms and
+								<a href="policyForms.do">Click here</a> for policy forms and
 								descriptions of available plans.
 							</p>
 						</div>
