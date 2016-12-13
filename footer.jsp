@@ -16,7 +16,7 @@
 		        </div>
 		        <div class="col-md-6 text-right">
 		            <a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
-		                <img class="logo" src="resources/images/logo.svg"><sup>SM</sup>
+		                <img class="logo" src="resources/images/logo.svg">
 		            </a>
 		            <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
 		            <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> RGAx. All rights reserved.</small>

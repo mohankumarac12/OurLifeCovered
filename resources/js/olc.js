@@ -468,7 +468,7 @@ $(document).ready(function() {
                     }
                 }
             },
-    		forty: {
+            forty: {
                 twentyfive: {
                     male: {
                         premium: 100,
@@ -708,7 +708,7 @@ $(document).ready(function() {
         coverage = coverageObj.coverage;
         /*This block of code for restricting the coverage maximum to 2M. by venkat*/
         if(coverage>2e6)
-        	coverage = 2000000;
+            coverage = 2000000;
         
         var coverageAsDollar = '$' + coverage.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 
@@ -840,9 +840,6 @@ $(document).ready(function() {
     });
 
     $(".btn.quiz").click(function() {
-
-        $("div.quiz-header h1").hide();
-        $("div.quiz-header h3").hide();
 
         var clickedLink = this.id;
         var nextPage;

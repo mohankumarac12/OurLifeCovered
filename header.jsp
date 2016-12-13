@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="resources/css/jquery-ui.css">
     <link rel="stylesheet" href="resources/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="resources/css/bootstrap.css">
-    <link rel="stylesheet" href="resources/css/olc.css?v=2.0.12">
+    <link rel="stylesheet" href="resources/css/bootstrap.css?v=3.0.0">
+    <link rel="stylesheet" href="resources/css/olc.css?v=3.0.0">
     <!--[if IE 9]>
         <link rel="stylesheet" href="resources/css/ie9.css">
     <![endif]-->
@@ -105,10 +105,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <a id="#myLifeCoveredHeader" href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="open-home-page-copy">
-    						<img class="logo" src="resources/images/logo.svg"><sup>SM</sup>
-                            <span class="logo-phno">${phoneNumber}</span>
+    						<img class="logo" src="resources/images/logo.svg">
     					</a>
+                        <div class="header-call">Have questions? Call us at ${phoneNumber}</div>
+                        <div class="header-call-mobile">Questions? Call ${phoneNumber}</div>
                         <ul id="top_nav_menu">
+                            <li class="menu-header mobile-only">Navigate</li>
                             <li>
                                 <a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
                             </li>
@@ -118,6 +120,7 @@
                             <li>
                                 <a href="getQuote-form.do">Get a Quote</a>
                             </li>
+                            <li class="nav-call mobile-only"><b>Have questions?</b><br>Call us at ${phoneNumber}</li>
                         </ul>
                         <a href="#" id="open_menu">
                             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -127,5 +130,6 @@
                         </a>
                     </div>
                 </div>
+                <div class="header-call-small">Questions? Call us at ${phoneNumber}</div>
             </div>
         </header>
