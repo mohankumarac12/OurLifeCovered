@@ -191,7 +191,8 @@ body {
                     }
                     div.header-call {
                         font-size: 15px;
-                        display: block;
+                        // display: block;
+                        display: none;
                         float: right;
                         color: #fcecf3;
                         @media (max-width: 768px) {
@@ -204,7 +205,8 @@ body {
                         float: right;
                         color: #fcecf3;
                         @media (max-width: 768px) {
-                            display: block;
+                            // display: block;
+                            display: none;
                         }
                         @media (max-width: 584px) {
                             display: none;
@@ -273,7 +275,8 @@ body {
                                 &.mobile-only {
                                     @media (max-width: 584px) {
                                         font-size: 14px;
-                                        display: inline-block !important;
+                                        // display: inline-block !important;
+                                        display: none !important;
                                         padding: 25px 0 15px 20px;
                                         color: #ccc;
                                     }
@@ -641,6 +644,9 @@ body {
                                 @media (max-width: 768px) {
                                     font-size: 13px;
                                 }
+                                &:hover {
+                                    color: white !important;
+                                }
                             }
                         }
                     }
@@ -726,6 +732,16 @@ body {
             }
         }
         div#footer-carousel {
+            p#astrik-home {
+                font-size: 14px;
+                width: 98%;
+                margin: 0 auto;
+                padding: 0 35px 20px;
+                color: #a5a5a5;
+                @media (max-width: 1200px) {
+                    text-align: center;
+                }
+            }
             div#footerCarousel {
                 ol.carousel-indicators {
                     bottom: 0;
@@ -1228,6 +1244,7 @@ body {
                             h1 {
                                 font-size: 30px;
                                 font-weight: 600;
+                                text-transform: uppercase;
                                 color: $midgrey;
                             }
                             p {

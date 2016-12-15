@@ -144,7 +144,7 @@ body {
           color: white; }
       body header div.container div.row div.col-md-12 div.header-call {
         font-size: 15px;
-        display: block;
+        display: none;
         float: right;
         color: #fcecf3; }
         @media (max-width: 768px) {
@@ -157,7 +157,7 @@ body {
         color: #fcecf3; }
         @media (max-width: 768px) {
           body header div.container div.row div.col-md-12 div.header-call-mobile {
-            display: block; } }
+            display: none; } }
         @media (max-width: 584px) {
           body header div.container div.row div.col-md-12 div.header-call-mobile {
             display: none; } }
@@ -225,7 +225,7 @@ body {
         @media (max-width: 584px) {
           body header div.container div.row div.col-md-12 ul#top_nav_menu li.nav-call.mobile-only {
             font-size: 14px;
-            display: inline-block !important;
+            display: none !important;
             padding: 25px 0 15px 20px;
             color: #ccc; } }
         body header div.container div.row div.col-md-12 ul#top_nav_menu li a {
@@ -528,6 +528,8 @@ body {
           @media (max-width: 768px) {
             body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn {
               font-size: 13px; } }
+          body div.container-fluid div.quiz div#quiz-inner div.quiz-content.hide-item div.col-xs-8 a.btn:hover {
+            color: white !important; }
   body div.container-fluid div.home-divider div.container {
     width: 100%; }
     body div.container-fluid div.home-divider div.container div.col-md-6 {
@@ -583,6 +585,15 @@ body {
         @media (max-width: 768px) {
           body div.container-fluid div.value-statement div.row.product-features div.col-xs-4 span {
             font-size: 12px; } }
+  body div.container-fluid div#footer-carousel p#astrik-home {
+    font-size: 14px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 35px 20px;
+    color: #a5a5a5; }
+    @media (max-width: 1200px) {
+      body div.container-fluid div#footer-carousel p#astrik-home {
+        text-align: center; } }
   body div.container-fluid div#footer-carousel div#footerCarousel ol.carousel-indicators {
     bottom: 0; }
   @media (max-width: 600px) {
@@ -978,6 +989,7 @@ body {
           body div.background-wrap#calculator section.quote-header div.container div.row div.col-md-12 h1, body div.background-wrap#quote_form section.quote-header div.container div.row div.col-md-12 h1 {
             font-size: 30px;
             font-weight: 600;
+            text-transform: uppercase;
             color: #b2b2b2; }
           body div.background-wrap#calculator section.quote-header div.container div.row div.col-md-12 p, body div.background-wrap#quote_form section.quote-header div.container div.row div.col-md-12 p {
             font-size: 16px;
