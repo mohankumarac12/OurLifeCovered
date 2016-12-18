@@ -29,6 +29,7 @@
 	<script src="resources/js/events.js"></script>
 	<script type="text/javascript" src="resources/js/native.js"></script>
 	<script type="text/javascript" src="resources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.ui.touch-punch.min.js"></script>
 	<script type="text/javascript" src="resources/js/hashtable.js"></script>
 	<script type="text/javascript" src="resources/js/jquery.numberformatter-1.2.4.js"></script>
 	<script type="text/javascript" src="resources/js/myLifeCoveredRGility.js"></script>
