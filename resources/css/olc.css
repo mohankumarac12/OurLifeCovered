@@ -2636,85 +2636,79 @@ body {
   body footer {
     position: relative;
     background-color: #595959; }
-    body footer div.container div.row {
-      overflow: auto;
-      padding: 40px 20px; }
-      body footer div.container div.row:before, body footer div.container div.row:after {
-        display: none !important; }
-      body footer div.container div.row div.col-md-6 {
-        width: auto; }
-        body footer div.container div.row div.col-md-6:first-of-type {
-          width: calc(100% - 300px);
-          margin-top: 16px; }
-          @media (max-width: 1200px) {
-            body footer div.container div.row div.col-md-6:first-of-type {
-              width: 100%;
-              margin-top: 0; } }
-        @media (max-width: 1200px) {
-          body footer div.container div.row div.col-md-6 {
-            float: none;
-            width: 100%; } }
-        body footer div.container div.row div.col-md-6.text-right {
-          float: right;
-          width: 270px;
-          margin: 0;
-          text-align: right; }
-          @media (max-width: 1200px) {
-            body footer div.container div.row div.col-md-6.text-right {
-              float: none;
-              margin: 0 auto;
-              margin-top: 10px;
-              padding-top: 20px;
-              text-align: center; } }
-          body footer div.container div.row div.col-md-6.text-right a.main_logo {
-            display: inline-block;
-            width: 220px;
-            padding: 0 0 0 20px !important; }
-            body footer div.container div.row div.col-md-6.text-right a.main_logo img.logo {
+    body footer div.container {
+      width: 100%; }
+      body footer div.container div.row {
+        overflow: auto;
+        padding: 40px 20px; }
+        body footer div.container div.row:before, body footer div.container div.row:after {
+          display: none !important; }
+        body footer div.container div.row div.col-md-12 {
+          float: none;
+          width: 100%; }
+          body footer div.container div.row div.col-md-12.sitemap {
+            width: 100%;
+            margin-top: 0; }
+          body footer div.container div.row div.col-md-12.social-icons {
+            margin: 40px 0;
+            text-align: center; }
+            body footer div.container div.row div.col-md-12.social-icons a {
               display: inline-block;
-              width: 185px;
-              height: auto; }
-            body footer div.container div.row div.col-md-6.text-right a.main_logo sup {
-              font-size: 7px;
-              font-weight: 600;
-              top: -.7em;
-              display: inline-block;
-              color: white; }
-          body footer div.container div.row div.col-md-6.text-right span {
-            font-size: 13px;
-            color: white; }
-          body footer div.container div.row div.col-md-6.text-right small {
-            font-size: 10px; }
-          body footer div.container div.row div.col-md-6.text-right a.secondary {
-            text-decoration: underline;
-            color: white; }
-        body footer div.container div.row div.col-md-6 ul {
-          overflow: auto;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          list-style: none; }
-          @media (max-width: 1200px) {
-            body footer div.container div.row div.col-md-6 ul {
-              text-align: center; } }
-          body footer div.container div.row div.col-md-6 ul li {
-            display: inline-block;
-            margin-right: 15px; }
-            body footer div.container div.row div.col-md-6 ul li:last-of-type {
-              margin-right: 0; }
-            @media (max-width: 1200px) {
-              body footer div.container div.row div.col-md-6 ul li {
-                margin: 0 4px; } }
-            @media (max-width: 740px) {
-              body footer div.container div.row div.col-md-6 ul li {
-                display: block; } }
-            body footer div.container div.row div.col-md-6 ul li a {
-              font-size: 14px;
+              width: 50px;
+              height: 50px;
+              margin: 0 10px;
+              padding: 16px 0 12px;
               -webkit-transition: all .3s ease;
               transition: all .3s ease;
               color: white;
-              border-top: 1px solid transparent;
-              border-bottom: 1px solid transparent; }
-              body footer div.container div.row div.col-md-6 ul li a:hover, body footer div.container div.row div.col-md-6 ul li a.active {
+              border-radius: 5px;
+              background: #434343; }
+              body footer div.container div.row div.col-md-12.social-icons a:hover {
+                background: #f498c2; }
+              body footer div.container div.row div.col-md-12.social-icons a i {
+                font-size: 20px;
+                color: inherit; }
+          body footer div.container div.row div.col-md-12.text-right {
+            float: none;
+            width: 270px;
+            margin: 10px auto 0;
+            text-align: center; }
+            body footer div.container div.row div.col-md-12.text-right a.main_logo {
+              display: inline-block;
+              width: 220px;
+              margin: 0 auto 10px; }
+              body footer div.container div.row div.col-md-12.text-right a.main_logo img.logo {
+                width: 100%; }
+            body footer div.container div.row div.col-md-12.text-right span {
+              font-size: 13px;
+              color: white; }
+            body footer div.container div.row div.col-md-12.text-right small {
+              font-size: 10px; }
+            body footer div.container div.row div.col-md-12.text-right a.secondary {
+              text-decoration: underline;
+              color: white; }
+          body footer div.container div.row div.col-md-12 ul {
+            overflow: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center; }
+            body footer div.container div.row div.col-md-12 ul li {
+              display: inline-block;
+              margin: 0 10px;
+              float: none; }
+              @media (max-width: 870px) {
+                body footer div.container div.row div.col-md-12 ul li {
+                  display: block;
+                  margin: 0; } }
+              body footer div.container div.row div.col-md-12 ul li a {
+                font-size: 14px;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
                 color: white;
-                border-bottom: 1px solid white; }
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid transparent; }
+                body footer div.container div.row div.col-md-12 ul li a:hover, body footer div.container div.row div.col-md-12 ul li a.active {
+                  color: white;
+                  border-bottom: 1px solid white; }

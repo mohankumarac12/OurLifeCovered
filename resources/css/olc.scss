@@ -3078,6 +3078,7 @@ body {
         position: relative;
         background-color: $darkgrey;
         div.container {
+            width: 100%;
             div.row {
                 overflow: auto;
                 padding: 40px 20px;
@@ -3085,47 +3086,46 @@ body {
                 &:after {
                     display: none !important;
                 }
-                div.col-md-6 {
-                    width: auto;
-                    &:first-of-type {
-                        width: calc(100% - 300px);
-                        margin-top: 16px;
-                        @media (max-width: 1200px) {
-                            width: 100%;
-                            margin-top: 0;
-                        }
-                    }
-                    @media (max-width: 1200px) {
-                        float: none;
+                div.col-md-12 {
+                    float: none;
+                    width: 100%;
+                    &.sitemap {
                         width: 100%;
+                        margin-top: 0;
+                    }
+                    &.social-icons {
+                        margin: 40px 0;
+                        text-align: center;
+                        a {
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            margin: 0 10px;
+                            padding: 16px 0 12px;
+                            transition: all .3s ease;
+                            color: white;
+                            border-radius: 5px;
+                            background: #434343;
+                            &:hover {
+                                background: $pink;
+                            }
+                            i {
+                                font-size: 20px;
+                                color: inherit;
+                            }
+                        }
                     }
                     &.text-right {
-                        float: right;
+                        float: none;
                         width: 270px;
-                        margin: 0;
-                        text-align: right;
-                        @media (max-width: 1200px) {
-                            float: none;
-                            margin: 0 auto;
-                            margin-top: 10px;
-                            padding-top: 20px;
-                            text-align: center;
-                        }
+                        margin: 10px auto 0;
+                        text-align: center;
                         a.main_logo {
                             display: inline-block;
                             width: 220px;
-                            padding: 0 0 0 20px !important;
+                            margin: 0 auto 10px;
                             img.logo {
-                                display: inline-block;
-                                width: 185px;
-                                height: auto;
-                            }
-                            sup {
-                                font-size: 7px;
-                                font-weight: 600;
-                                top: -.7em;
-                                display: inline-block;
-                                color: white;
+                                width: 100%;
                             }
                         }
                         span {
@@ -3146,20 +3146,14 @@ body {
                         margin: 0;
                         padding: 0;
                         list-style: none;
-                        @media (max-width: 1200px) {
-                            text-align: center;
-                        }
+                        text-align: center;
                         li {
                             display: inline-block;
-                            margin-right: 15px;
-                            &:last-of-type {
-                                margin-right: 0;
-                            }
-                            @media (max-width: 1200px) {
-                                margin: 0 4px;
-                            }
-                            @media (max-width: 740px) {
+                            margin: 0 10px;
+                            float: none;
+                            @media (max-width: 870px) {
                                 display: block;
+                                margin: 0;
                             }
                             a {
                                 font-size: 14px;

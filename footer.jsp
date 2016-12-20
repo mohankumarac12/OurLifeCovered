@@ -2,7 +2,7 @@
 	<footer>
 		<div class="container">
 		    <div class="row">
-		        <div class="col-md-6">
+		        <div class="col-md-12 sitemap">
 		            <ul>
 	                    <li><a id="mylifeCoveredHome" href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" wpvalue="home">Home</a></li>
 	                    <li><a id="mylifeCoveredaboutUS" href="aboutus.do" wpvalue="about">About Us</a></li>
@@ -14,9 +14,17 @@
 	                    <li><a id="mylifeCoveredFinancialRatings" href="financialRatings.do" wpvalue="financialRatings">Financial Ratings</a></li>
 	                </ul>
 		        </div>
-		        <div class="col-md-6 text-right">
-		            <a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
-		                <img class="logo" src="resources/images/logo.svg">
+		        <div class="col-md-12 social-icons">
+        	        <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+        	            <i class="fa fa-facebook" aria-hidden="true"></i>
+        	        </a>
+        	        <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+        	            <i class="fa fa-instagram" aria-hidden="true"></i>
+        	        </a>
+		        </div>
+		        <div class="col-md-12 text-right">
+		            <a href="home.php" class="main_logo">
+		                <img class="logo" src="resources/images/footer-logo.png">
 		            </a>
 		            <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
 		            <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> RGAx. All rights reserved.</small>
