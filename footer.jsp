@@ -23,7 +23,7 @@
         	        </a>
 		        </div>
 		        <div class="col-md-12 text-right">
-		            <a href="home.php" class="main_logo">
+		            <a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
 		                <img class="logo" src="resources/images/footer-logo.png">
 		            </a>
 		            <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
