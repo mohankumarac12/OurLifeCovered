@@ -1185,6 +1185,50 @@ body {
                         pointer-events: none;
                     }
                 }
+                div.inline-select {
+                    position: relative;
+                    margin: 5px 0 10px;
+                    &:after {
+                        font-family: FontAwesome;
+                        font-size: 10px;
+                        line-height: 1;
+                        position: absolute;
+                        top: 11px;
+                        right: 9px;
+                        content: '\f078';
+                        pointer-events: none;
+                    }
+                    select {
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: inherit;
+                        width: 100%;
+                        margin: 0;
+                        padding: 3px 26px 5px 10px;
+                        vertical-align: middle;
+                        text-transform: none;
+                        border: 2px solid $lightgrey;
+                        border-radius: 5px;
+                        outline: none;
+                        background: transparent;
+
+                        appearance: none;
+                        &::-ms-expand {
+                            display: none;
+                        }
+                    }
+                }
+                div.g-recaptcha {
+                    margin: 15px 0 auto;
+                    div {
+                        width: 100% !important;
+                        text-align: center;
+                        iframe {
+                            display: inline-block;
+                            max-width: 304px;
+                        }
+                    }
+                }
                 textarea {
                     width: 100%;
                     padding: 10px 14px;
@@ -1205,7 +1249,9 @@ body {
             }
         }
         &#financial-ratings {
+            overflow-x: hidden;
             div.col-md-8 {
+                overflow-x: scroll;
                 width: 100%;
                 margin: 0 auto;
                 table {
@@ -3149,8 +3195,8 @@ body {
                         text-align: center;
                         li {
                             display: inline-block;
-                            margin: 0 10px;
                             float: none;
+                            margin: 0 10px;
                             @media (max-width: 870px) {
                                 display: block;
                                 margin: 0;

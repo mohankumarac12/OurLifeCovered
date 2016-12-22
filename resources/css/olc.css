@@ -946,6 +946,44 @@ body {
         display: inline-block;
         margin-bottom: 5px;
         pointer-events: none; }
+    body section.main-section#contact-us form div.inline-select {
+      position: relative;
+      margin: 5px 0 10px; }
+      body section.main-section#contact-us form div.inline-select:after {
+        font-family: FontAwesome;
+        font-size: 10px;
+        line-height: 1;
+        position: absolute;
+        top: 11px;
+        right: 9px;
+        content: '\f078';
+        pointer-events: none; }
+      body section.main-section#contact-us form div.inline-select select {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: inherit;
+        width: 100%;
+        margin: 0;
+        padding: 3px 26px 5px 10px;
+        vertical-align: middle;
+        text-transform: none;
+        border: 2px solid #f7f7f7;
+        border-radius: 5px;
+        outline: none;
+        background: transparent;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
+        body section.main-section#contact-us form div.inline-select select::-ms-expand {
+          display: none; }
+    body section.main-section#contact-us form div.g-recaptcha {
+      margin: 15px 0 auto; }
+      body section.main-section#contact-us form div.g-recaptcha div {
+        width: 100% !important;
+        text-align: center; }
+        body section.main-section#contact-us form div.g-recaptcha div iframe {
+          display: inline-block;
+          max-width: 304px; }
     body section.main-section#contact-us form textarea {
       width: 100%;
       padding: 10px 14px;
@@ -961,13 +999,16 @@ body {
       border: none;
       border-radius: 4px;
       background: #71c97a; }
-    body section.main-section#financial-ratings div.col-md-8 {
-      width: 100%;
-      margin: 0 auto; }
-      body section.main-section#financial-ratings div.col-md-8 table th,
-      body section.main-section#financial-ratings div.col-md-8 table td {
-        line-height: 1;
-        padding: 6px 8px; }
+    body section.main-section#financial-ratings {
+      overflow-x: hidden; }
+      body section.main-section#financial-ratings div.col-md-8 {
+        overflow-x: scroll;
+        width: 100%;
+        margin: 0 auto; }
+        body section.main-section#financial-ratings div.col-md-8 table th,
+        body section.main-section#financial-ratings div.col-md-8 table td {
+          line-height: 1;
+          padding: 6px 8px; }
   @media (max-width: 1200px) {
     body div.background-wrap {
       min-height: calc(100vh - 279.16px); } }
@@ -2696,8 +2737,8 @@ body {
             text-align: center; }
             body footer div.container div.row div.col-md-12 ul li {
               display: inline-block;
-              margin: 0 10px;
-              float: none; }
+              float: none;
+              margin: 0 10px; }
               @media (max-width: 870px) {
                 body footer div.container div.row div.col-md-12 ul li {
                   display: block;

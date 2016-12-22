@@ -45,8 +45,10 @@
 							</div>
                             <div class="">
                                 <label style="font-size:16px" for="contact-form-comments">Comments</label>
-                                <textarea id="contact-form-comments" name="contact-form-comments" rows="5" cols="55" maxlength="800"></textarea><grammarly-btn><div style="visibility: hidden; z-index: 2;" class="_9b5ef6-textarea_btn _9b5ef6-not_focused" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div></div></grammarly-btn>
+                                <textarea id="contact-form-comments" name="contact-form-comments" rows="5" cols="55" maxlength="800"></textarea>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6LdK6w4UAAAAANjpS275dBIEfBbY0-4iVGQW6N4n" data-callback="wow()"></div>
+                            <!-- <button class="g-recaptcha" data-sitekey="6LdK6w4UAAAAANjpS275dBIEfBbY0-4iVGQW6N4n" data-callback="YourOnSubmitFn"> Submit </button> -->
                             <div class="text-center">
                                 <br>
                                 <input id="contact-form-submit" type="button" class="btn btn-primary" value="Submit" onclick="validateContactus()" wpvalue="submit">
