@@ -119,6 +119,15 @@ body {
     background: white;
 
     @include OpenSans300();
+
+    div#ta-code {
+        padding: 5px 0;
+        small {
+            font-size: 12px;
+            color: $midgrey;
+        }
+    }
+
     div#loading {
         position: fixed;
         z-index: 1001;
@@ -1971,9 +1980,9 @@ body {
             }
         }
         &#quote_singlecarrier {
-            padding: 100px 0;
+            padding: 100px 0 0;
             @media (max-width: 768px) {
-                padding: 75px 0;
+                padding: 75px 0 0;
             }
             section#quote-page {
                 div.container {
@@ -1984,6 +1993,7 @@ body {
                         text-align: center;
                     }
                     div.row {
+                        margin: 0 auto;
                         div.quote {
                             @media (max-width: 768px) {
                                 float: none;
@@ -1992,8 +2002,16 @@ body {
                                 margin: 0 auto;
                             }
                             &#original-quote {
+                                padding: 0 15px 0 0;
                                 @media (max-width: 768px) {
                                     margin: 0 auto 50px;
+                                    padding: 0;
+                                }
+                            }
+                            &#comparison-quote {
+                                padding: 0 0 0 15px;
+                                @media (max-width: 768px) {
+                                    padding: 0;
                                 }
                             }
                             div.box {
@@ -2025,7 +2043,8 @@ body {
                                         }
                                     }
                                     div.row.margin-bottom-s {
-                                        div.best-class {
+                                        margin: 15px 0;
+                                        div.standard-class {
                                             font-weight: 600;
                                             color: $pink;
                                             div.text-center {
@@ -2046,8 +2065,7 @@ body {
                                         }
                                         div.standard-class {
                                             font-weight: 600;
-                                            padding-top: 12px;
-                                            padding-left: 0;
+                                            color: $pink;
                                             div.text-left {
                                                 text-align: center;
                                                 span.currency {
@@ -2062,11 +2080,6 @@ body {
                                                     vertical-align: top;
                                                 }
                                                 span.freq {
-                                                    font-size: 11px;
-                                                }
-                                            }
-                                            div.text-center {
-                                                span.rate-name {
                                                     font-size: 11px;
                                                 }
                                             }
@@ -2145,6 +2158,32 @@ body {
                             }
                         }
                     }
+                    div#legal-code-wrap {
+                        width: 66.6666666667%;
+                        margin: 15px 0 0 16.66666667%;
+                        @media (max-width: 1199px) {
+                            width: 83.3333334%;
+                            margin: 15px 0 0 8.33333333%;
+                        }
+                        @media (max-width: 991px) {
+                            width: 100%;
+                            margin: 15px auto 0;
+                        }
+                        @media (max-width: 768px) {
+                            max-width: 560px;
+                        }
+                        div#legal_policy {
+                            padding-bottom: 50px;
+                            a {
+                                font-size: 18px;
+                                i.fa {
+                                    font-size: 20px;
+                                    padding-left: 3px;
+                                    transform: translateY(2px);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -2155,6 +2194,10 @@ body {
                 padding-bottom: 210px;
             }
             section#quote-page {
+                padding-bottom: 0;
+                @media (max-width: 503px) {
+                    padding-bottom: 50px;
+                }
                 div.container {
                     position: relative;
                     display: flex;
@@ -2541,12 +2584,18 @@ body {
                             order: 2;
                         }
                         a {
-                            // color: $lightgrey;
+                            font-size: 18px;
                             i.fa {
                                 font-size: 20px;
                                 padding-left: 3px;
                                 transform: translateY(2px);
                             }
+                        }
+                    }
+                    div#ta-code {
+                        padding-left: 0;
+                        @media (max-width: 991px) {
+                            order: 4;
                         }
                     }
                 }
@@ -2708,6 +2757,9 @@ body {
         @media (max-width: 768px) {
             padding-top: 50px;
             padding-bottom: 50px;
+        }
+        &#policy-forms {
+            padding-bottom: 0;
         }
         div.col-md-12 {
             float: none;

@@ -115,7 +115,10 @@
 		        </form>
 		    </div>
 		    <div id="legal_policy">
-		    	<a href="policyForms.do">Legal Policy <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		    	<a href="policyForms.do">Important Policy Information <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		    </div>
+		    <div id="ta-code">
+		    	<small>OLC116117</small>
 		    </div>
 	    </div>
 	</section>

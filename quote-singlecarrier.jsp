@@ -20,29 +20,29 @@
                                     <img class="transamerica" src="resources/images/transamerica.svg" alt="Transamerica Logo">
                                 </div>
                                 <div class="row margin-top-s margin-bottom-s trans-america">
-                                    <div class="best-class">
-                                        <div class="text-center">
-                                            <span class="currency">$</span>
-                                            <span class="price">24</span>
-                                            <span class="freq">/mo</span>
-                                            <br>
-                                        </div>
-                                        <div class="text-center">
-                                            <span class="rate-name">Preferred Plus Class</span>
-                                        </div>
-                                    </div>
                                     <div class="standard-class">
-                                        <div class="text-left">
-                                            <div class="text-center">
-                                                <span class="rate-name">Compare To</span>
-                                            </div>
+                                        <div class="text-center">
                                             <span class="currency">$</span>
-                                            <span class="price">24</span>
+                                            <span class="price">56.24</span>
                                             <span class="freq">/mo</span>
                                             <br>
                                         </div>
                                         <div class="text-center">
                                             <span class="rate-name">Standard Non-Smoker</span>
+                                        </div>
+                                    </div>
+                                    <div class="best-class" style="display:none;">
+                                        <div class="text-center">
+                                        <div class="text-center">
+                                                <span class="rate-name">Compare To</span>
+                                            </div>
+                                            <span class="currency">$</span>
+                                            <span class="price">36.64</span>
+                                            <span class="freq">/mo</span>
+                                            <br>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="rate-name">Preferred Plus Class</span>
                                         </div>
                                     </div>
                                 </div>
@@ -100,29 +100,29 @@
                                     <img class="transamerica" src="resources/images/transamerica.svg" alt="">
                                 </div>
                                 <div class="row margin-top-s margin-bottom-s trans-america">
-                                    <div class="best-class">
-                                        <div class="text-center">
-                                            <span class="currency">$</span>
-                                            <span class="price">24</span>
-                                            <span class="freq">/mo</span>
-                                            <br>
-                                        </div>
-                                        <div class="text-center">
-                                            <span class="rate-name">Preferred Plus Class</span>
-                                        </div>
-                                    </div>
                                     <div class="standard-class">
-                                        <div class="text-left">
-                                            <div class="text-center">
-                                                <span class="rate-name">Compare To</span>
-                                            </div>
+                                        <div class="text-center">
                                             <span class="currency">$</span>
-                                            <span class="price">24</span>
+                                            <span class="price">56.24</span>
                                             <span class="freq">/mo</span>
                                             <br>
                                         </div>
                                         <div class="text-center">
                                             <span class="rate-name">Standard Non-Smoker</span>
+                                        </div>
+                                    </div>
+                                     <div class="best-class" style="display:none;">
+                                        <div class="text-center">
+                                        <div class="text-center">
+                                                <span class="rate-name">Compare To</span>
+                                            </div>
+                                            <span class="currency">$</span>
+                                            <span class="price">36.64</span>
+                                            <span class="freq">/mo</span>
+                                            <br>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="rate-name">Preferred Plus Class</span>
                                         </div>
                                     </div>
                                 </div>
@@ -169,6 +169,14 @@
                                 <input type="hidden" id="comparison-quote_selected" name="path_selected">
                             </form>
                         </div>
+                    </div>
+                </div>
+                <div id="legal-code-wrap">
+                    <div id="legal_policy">
+                        <a href="policyForms.do">Important Policy Information <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div id="ta-code">
+                        <small>OLC114117</small>
                     </div>
                 </div>
             </div>
