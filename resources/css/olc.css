@@ -2252,7 +2252,7 @@ body {
         text-align: center; }
         @media (max-width: 729px) {
           body div.background-wrap#quote_multicarrier section#range_sliders div.sliders {
-            padding: 15px 20px 20px; } }
+            padding: 10px 20px 8px; } }
         @media (max-width: 503px) {
           body div.background-wrap#quote_multicarrier section#range_sliders div.sliders {
             float: none;
@@ -2281,7 +2281,8 @@ body {
           @media (max-width: 729px) {
             body div.background-wrap#quote_multicarrier section#range_sliders div.sliders span.quote-coverage,
             body div.background-wrap#quote_multicarrier section#range_sliders div.sliders span.quote-term {
-              font-size: 27px; } }
+              font-size: 22px;
+              margin-bottom: 15px; } }
           body div.background-wrap#quote_multicarrier section#range_sliders div.sliders span.quote-coverage output,
           body div.background-wrap#quote_multicarrier section#range_sliders div.sliders span.quote-term output {
             font-family: inherit;

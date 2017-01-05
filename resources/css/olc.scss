@@ -2639,7 +2639,7 @@ body {
                     padding: 20px 25px 25px;
                     text-align: center;
                     @media (max-width: 729px) {
-                        padding: 15px 20px 20px;
+                        padding: 10px 20px 8px;
                     }
                     @media (max-width: 503px) {
                         float: none;
@@ -2669,7 +2669,8 @@ body {
                         margin-bottom: 25px;
                         color: #919191;
                         @media (max-width: 729px) {
-                            font-size: 27px;
+                            font-size: 22px;
+                            margin-bottom: 15px;
                         }
                         output {
                             font-family: inherit;
