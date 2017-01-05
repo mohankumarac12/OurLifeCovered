@@ -385,6 +385,8 @@ body {
         @media (max-width: 1224px) {
           body div.container-fluid div#hero div.main-cta form.cta-form h3 {
             font-size: 18px; } }
+        body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control::-ms-expand {
+          display: none; }
         @media (max-width: 768px) {
           body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
             margin-bottom: 10px; } }
@@ -942,6 +944,8 @@ body {
         text-align: right;
         border: none;
         border-bottom: 2px dotted rgba(178, 178, 178, 0.5); }
+        body section.main-section#contact-us form div.inline-text input::-ms-clear {
+          display: none; }
       body section.main-section#contact-us form div.inline-text label {
         font-size: 16px;
         font-weight: 700;
@@ -1151,6 +1155,10 @@ body {
                 -webkit-appearance: none;
                    -moz-appearance: none;
                         appearance: none; }
+                body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text']::-ms-clear,
+                body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text']::-ms-clear, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text']::-ms-clear,
+                body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text']::-ms-clear {
+                  display: none; }
                 @media (max-width: 768px) {
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
                   body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select input[type='text'], body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text input[type='text'],
@@ -1325,6 +1333,8 @@ body {
                   text-align: center !important;
                   border: none;
                   background: 0 0; }
+                  body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.incrementer div.text-right input::-ms-clear, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.incrementer div.text-right input::-ms-clear {
+                    display: none; }
                   @media (max-width: 480px) {
                     body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.incrementer div.text-right input, body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.incrementer div.text-right input {
                       font-size: 18px;
@@ -1567,6 +1577,11 @@ body {
                 body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input::-ms-expand,
                 body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select::-ms-expand {
                   display: none; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input::-ms-clear,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text select::-ms-clear,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input::-ms-clear,
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select select::-ms-clear {
+                  display: none; }
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text input#calc-first-name,
               body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select input#calc-first-name {
                 width: 208px; }
@@ -1592,6 +1607,8 @@ body {
                 border: 1px solid #c9c9c9;
                 border-radius: 5px;
                 background: white; }
+                body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-text.email input::-ms-clear {
+                  display: none; }
             body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper {
               font-size: 100%;
               position: relative;
@@ -2501,6 +2518,9 @@ body {
                         appearance: none; }
                 body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input::-ms-expand,
                 body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
+                  display: none; }
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input::-ms-clear,
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-clear {
                   display: none; }
                 @media (max-width: 768px) {
                   body section.cover div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper input,

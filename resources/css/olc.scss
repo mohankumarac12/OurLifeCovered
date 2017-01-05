@@ -468,6 +468,9 @@ body {
                     div.row {
                         div.col-sm-8 {
                             select.form-control {
+                                &::-ms-expand {
+                                    display: none;
+                                }
                                 @media (max-width: 768px) {
                                     margin-bottom: 10px;
                                 }
@@ -1182,6 +1185,9 @@ body {
                         text-align: right;
                         border: none;
                         border-bottom: 2px dotted rgba($midgrey, .5);
+                        &::-ms-clear {
+                            display: none;
+                        }
                     }
                     label {
                         font-size: 16px;
@@ -1411,6 +1417,9 @@ body {
 
                                         order: 2;
                                         appearance: none;
+                                        &::-ms-clear {
+                                            display: none;
+                                        }
                                         @media (max-width: 768px) {
                                             font-size: 14px;
                                             width: 150px;
@@ -1562,6 +1571,9 @@ body {
                                             text-align: center !important;
                                             border: none;
                                             background: 0 0;
+                                            &::-ms-clear {
+                                                display: none;
+                                            }
                                             @media (max-width: 480px) {
                                                 font-size: 18px;
                                                 width: 32px;
@@ -1825,6 +1837,9 @@ body {
                                         &::-ms-expand {
                                             display: none;
                                         }
+                                        &::-ms-clear {
+                                            display: none;
+                                        }
                                     }
                                     input {
                                         &#calc-first-name {
@@ -1856,6 +1871,9 @@ body {
                                             border: 1px solid #c9c9c9;
                                             border-radius: 5px;
                                             background: white;
+                                            &::-ms-clear {
+                                                display: none;
+                                            }
                                         }
                                     }
                                 }
@@ -2907,6 +2925,9 @@ body {
 
                                 appearance: none;
                                 &::-ms-expand {
+                                    display: none;
+                                }
+                                &::-ms-clear {
                                     display: none;
                                 }
                                 @media (max-width: 768px) {
