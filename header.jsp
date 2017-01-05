@@ -1,4 +1,7 @@
 <html class="no-js" lang="">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 
 <head>
     <meta charset="utf-8">
@@ -25,6 +28,20 @@
             async: false
         });
     } catch (e) {}
+    </script>
+    <script type="text/javascript">
+    
+    openHomeLink = function() {
+    	var phoneNumber = "";
+    	 if("${phoneNumber}" != "")
+    	    	phoneNumber = "phoneNo="+"${phoneNumber}"+"&";
+    	    	
+    	var url = "home.do?"+phoneNumber+"src=${srcHome}";   	
+    	location.href = url;
+    	}
+    
+    
+   
     </script>
     <script>
     (function(i, s, o, g, r, a, m) {
@@ -105,16 +122,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a id="#myLifeCoveredHeader" href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="open-home-page-copy">
-    						<img class="logo" src="resources/images/logo.svg">
-    					</a>
-                        <div class="header-call">Have questions? Call us at ${phoneNumber}</div>
-                        <div class="header-call-mobile">Questions? Call ${phoneNumber}</div>
+                    
+                        <c:choose>
+							<c:when test="${isMultiCarrier eq 'true' }">				
+								<a id="#myLifeCoveredHeader" href="javascript:openHomeLink()" class="open-home-page-copy">
+									<img class="logo" src="resources/images/logo.svg">
+									<span class="logo-phno">${phoneNumber}</span>
+								</c:when>
+							<c:otherwise>
+			 					 <a id="#myLifeCoveredHeader" href="javascript:openHomeLink()" class="open-home-page-copy">
+									<img class="logo" src="resources/images/olc-logo-everplans.jpg"/><!-- <sup>SM</sup> -->
+									<%-- <span class="logo-phno">${phoneNumber}</span> --%>
+								</a>
+							</c:otherwise>
+						</c:choose>
                         <ul id="top_nav_menu">
-                            <li class="menu-header mobile-only">Navigate</li>
-                            <li>
-                                <a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
-                            </li>
+                       		<li class="menu-header mobile-only">Navigate</li>
+                       		<li>
+                       			<a href="javascript:openHomeLink()">Home</a>
+                       		</li>
                             <li>
                                 <a href="insurance101.do">Insurance 101</a>
                             </li>

@@ -113,7 +113,7 @@ sessionStorage.setItem('src',"${src}");
 						<div id="children"></div>
 						<div class="text-center">
 							<input id="calculate-need-submit" type="button"
-								onclick="validateNeeds()" class="btn btn-primary"
+								onclick="validateNeeds('standard')" class="btn btn-primary"
 								value="Calculate Need" wpvalue="calculate_need">
 						</div>
 					</form>

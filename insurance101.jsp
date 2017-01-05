@@ -119,7 +119,7 @@
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, it may not be enough to provide your family the help they need should something happen to you. In fact, many experts recommend 8-10 times your income in coverage to safeguard your dependents in future needs. And, in most cases, these policies do not go with you when you leave.</p>
+                                        <p>Many employers provide group life insurance to employees. While this may provide a healthy baseline, it may not be enough to provide your family the help they need should something happen to you. In fact, many experts recommend 8-10 times your income in coverage to safeguard your dependents in future needs. And, in most cases, these policies do not go with you when you leave.</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier. A Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate &mdash; saving you time and money.</p>
+                                        <p>Life insurance can be purchased through an agent, but it can also be purchased online directly through the carrier. Individual life insurance rates are filed with state regulators, and remain the same for both online purchases or with an insurance agent. We offer Transamerica Life Insurance Company for an immediate online purchase and partner with a call center in offering other insurance competitors so you get the best rate &mdash; saving you time and money.</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>A medical exam depends on the coverage amount selected.In most cases, your health and family history provide enough information to forgot a medical exam.Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium. For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
+                                        <p>A medical exam depends on the coverage amount selected. In most cases, your health and family history provide enough information to forgot a medical exam. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium. For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                             <h2>Have you met our corporate partner BFF?</h2>
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
                             <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a non profit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
-                            <p>Danica Patrick, professional race car driver and the 2016 spokes person for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
+                            <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
                             <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls ></video>
                             <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
                             <script id="pageScript" type="text/javascript">

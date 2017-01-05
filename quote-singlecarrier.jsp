@@ -4,6 +4,7 @@
     function noBack() { window.history.forward(); }
 </script> 
 <body onload='noBack();loadSingleCarrierWithQuoteData("${src}","${sessionProfile.pathId}")' onpageshow="if (event.persisted) noBack();" onunload="">
+	<div id="loading" class="loading" style="display: block;"><img src="resources/images/loading_spinner.svg" width="70" height="70" alt="Loading"></div>
     <div id="quote_singlecarrier" class="background-wrap">
         <section id="quote-page">
             <div class="container">
@@ -172,13 +173,13 @@
                     </div>
                 </div>
                 <div id="legal-code-wrap">
-                    <div id="legal_policy">
-                        <a href="policyForms.do">Important Policy Information <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                    <div id="ta-code">
-                        <small>OLC114117</small>
-                    </div>
-                </div>
+    				 	<div id="legal_policy">
+         					<a href="policyForms.do">Important Policy Information <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+     					</div>
+     				<div id="ta-code">
+         				<small>OLC114117</small>
+     				</div>
+			    </div>
             </div>
         </section>
     </div>

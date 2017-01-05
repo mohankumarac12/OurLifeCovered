@@ -1,27 +1,12 @@
-	<%@include file="header.jsp"%>
-	
-	<script type="text/javascript">
-		sessionStorage.setItem('src',"${src}");
-	</script>
-    <div id="quote_form" class="background-wrap">
+<%@include file="header.jsp" %>
+
+    <div id="quote_form_natlang" class="background-wrap">
         <section class="quote-header text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h1>FAST FACTS ABOUT YOU</h1>
-                        <p>To create your customized term life insurance quote, please answer a few quick questions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="quote-tabs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                       <!--  <a href="quote-form.do" class="tab active">Quick Facts</a>
-                        <a href="calculator.do" class="tab">Full Calculator</a> -->
-                        <a href="quick-iknow-form.do" class="tab active">Quick Facts</a> 
-                        <a href="calculator.do" class="tab">Full Calculator</a>
+                        <p>To create your customized term life insurance quote please fiÅll in the blanks and answer the questions below.</p>
                     </div>
                 </div>
             </div>
@@ -31,55 +16,37 @@
                 <div class="row">
                     <div class="col-md-12">
                         <form action="" id="needs-calculator-demographics-form" name="needsCalculatorDemographicsForm">
+                            <span id="tell-story">Tell us your story:</span>
                             <div class="error-text">
                             </div>
                             <div class="inline-text required">
-                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25">
-                                <label class=" " for="calc-first-name">First Name</label>
-                            </div>
-                            <div class="inline-text required">
-                                <input required="" class=" " type="text" id="calc-last-name" name="last-name" maxlength="25">
-                                <label class=" " for="calc-last-name">Last Name</label>
-                            </div>
-                            <div class="inline-text required">
-                                <input required="" class=" " type="text" pattern="[0-9]*" id="calc-date-of-birth" name="date-of-birth">
-                                <label class=" " for="calc-date-of-birth">Date of Birth</label>
-                            </div>
-                            <div class="inline-text required">
-                                <input required="" class="  " type="text" id="calc-email-address" name="email-address" maxlength="100">
-                                <label class=" " for="calc-email-address">Email Address</label>
-                            </div>
-                            <div class="inline-text required">
-                                <input class=" " type="text" pattern="[0-9]*" id="calc-form-phone" name="calc-form-phone">
-                                <label class=" " for="contact-form-phone">Phone Number</label>
+                                <label class=" " for="calc-first-name">Hi, my name is</label>
+                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name">
                             </div>
                             <!-- <div class="inline-text required">
-                                <input required="" class=" " type="text" id="calc-annual-income" name="annual-income" maxlength="25">
-                                <label class=" " for="calc-annual-income">Annual Income</label>
+                                <input type=hidden  type="text"  value="xyz" id="calc-last-name" name="last-name" maxlength="25">
+                                <label class=" " for="calc-last-name">Last Name</label>
+                            </div> -->
+                            <div class="inline-text required">
+                                <label class=" " for="calc-date-of-birth">and I was born on</label>
+                                <input required="" class=" " type="text" pattern="[0-9]*" id="calc-date-of-birth" name="date-of-birth" placeholder="your birthdate">.
+                            </div>
+                            <!--  <div class="inline-text required">
+                                <input type ="hidden"   value="1234567891" pattern="[0-9]*" id="calc-form-phone" name="calc-form-phone">
+                                
                             </div> -->
                             <div class="inline-select required complete">
-                                <label for="calc-smoker">Smoker or Non-smoker</label>
-                                <span class="select-wrapper small">
-                                    <select required="" name="smoker" id="calc-smoker" class="small">
-                                        <option value="2">Non-Smoker</option>
-                                        <option value="1">Smoker</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <div class="inline-select required complete">
-                                <label for="calc-gender">Biological Gender</label>
+                                <label for="calc-gender">I'm a</label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="gender" id="calc-gender" class="small">
-                                        <option value="M">Male</option>
-                                        <option value="F" selected>Female</option>
+                                        <option value="M">male</option>
+                                        <option value="F">female</option>
                                     </select>
                                 </span>
-                            </div>
-                            <div class="inline-select required ">
-                                <label for="calc-state">State</label>
+                                <label for="calc-state">living in</label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="state" id="calc-state" class="small">
-                                        <option value="">- Select a State -</option>
+                                        <option value="">select state</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
                                         <option value="AZ">Arizona</option>
@@ -132,13 +99,21 @@
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
                                     </select>
-                                </span>
+                                </span>.
                             </div>
-							<c:choose>
-								<c:when test="${isMultiCarrier eq 'true' }">				
-								<div class="inline-select required complete multiple">
-                                        <label for="calc-coverage1">Coverage</label>
-                                        <span class="select-wrapper  small">
+                            <div class="inline-select required complete">
+                                <label for="calc-smoker">I'm a</label>
+                                <span class="select-wrapper small">
+                                    <select required="" name="smoker" id="calc-smoker" class="small">
+                                        <option value="2">non-smoker</option>
+                                        <option value="1">smoker</option>
+                                    </select>
+                                </span>,
+                                <label class="inline-select required complete" for="calc-annual-income">and I want coverage amount as </label>
+                                <!-- <input required="" class=" " type="text" id="calc-annual-income" name="annual-income" maxlength="25" placeholder="$50,000"> -->
+                               <c:choose>
+								<c:when test="${isMultiCarrier eq 'true' }">
+                                 	<span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
                                                 <option value="25000" selected="">$25,000</option>
                                                 <option value="50000">$50,000</option>
@@ -150,12 +125,9 @@
                                                 <option value="1000000">$1,000,000</option> 
                                             </select>
                                         </span>
-                            </div>
-								</c:when>
+                               	</c:when>
 								<c:otherwise>
-			 					  <div class="inline-select required complete single">
-                                        <label for="calc-coverage1">Coverage</label>
-                                        <span class="select-wrapper  small">
+									<span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
                                                 <option value="100000" selected="">$100,000</option>
                                                 <option value="200000">$200,000</option>
@@ -167,11 +139,32 @@
                                                 <option value="2000000">$2,000,000</option> 
                                             </select>
                                         </span>
-                            </div>
 								</c:otherwise>
 							</c:choose>
+                                         <!-- <label>annually.</label> -->
+                            </div>
+                           <div class="inline-select required complete">
+                                <label for="calc-premium">I am looking for a policy that costs about</label>
+                                <span class="select-wrapper  small">
+                                    <select required name="rec-premium" id="calc-premium" class="small">
+                                        <option value="20">$20</option>
+                                        <option value="25" selected>$25</option>
+                                        <option value="30">$30</option>
+                                        <option value="35">$35</option>
+                                        <option value="40">$40</option>
+                                        <option value="45">$45</option>
+                                        <option value="50">$50</option>
+                                        <option value="60">$60</option>
+                                        <option value="70">$70</option>
+                                        <option value="80">$80</option>
+                                        <option value="90">$90</option>
+                                        <option value="100">$100</option>
+                                    </select>
+                                </span>
+                                <label>per month.</label>
+                            </div>
                             <div class="inline-select required ">
-                                <label for="rec-coverage" class="adj">Number of years to maintain coverage</label>
+                                <label for="rec-coverage" class="adj"> I require number of years to maintain coverage is </label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="rec-coverage" id="rec-coverage" class="small">
                                         <option value="10">10</option>
@@ -182,6 +175,11 @@
                                     </select>
                                 </span>
                             </div>
+                            <div class="inline-text required email">
+                                <label class=" " for="calc-email-address">Provide your email address:</label>
+                                <input required="" class="  " type="text" id="calc-email-address" name="email-address" maxlength="100">
+                            </div>
+                            <p id="check-all">Please check all that apply:</p>
                             <div class="inline-checkbox margin-top-s">
                                 <input type="checkbox" name="us_citizen" id="calc-us_citizen" checked="">
                                 <label for="calc-us_citizen">I am a U.S. Citizen.</label>
@@ -199,26 +197,15 @@
                                 <label for="calc-allow_marketing">By providing your contact information above, you agree to this website's Privacy Policy, and you consent to receive offers and marketing communications at the email address or telephone numbers you provided, including autodialed, pre-recorded calls, SMS or MMS messages.</label>
                             </div>
                             <div class="text-center">
-                               <!--  <input type="button" class="btn btn-primary" value="See Your Quote" id="quote-form-submit" wpvalue="next" onclick="validateQuote('iknowwhatiwant')"> -->
-                            <input type="button" class="btn btn-primary"
-									value="See Your Quote" id="quote-form-submit" wpvalue="next"
-									onclick="validateQuote('iknowwhatiwant')">
+                                <input type="button" class="btn btn-primary" value="Get Your Quote" id="quote-form-submit" wpvalue="next" onclick="validateQuote('iknowwhatiwant,natlang')">
                             </div>
                             <input type="hidden" id="calc-requested_coverage" name="requested_coverage">
                             <input type="hidden" id="calc-policy_term" name="policy_term">
                             <input type="hidden" id="calc-path_selected" name="path_selected" value="2">
                         </form>
-                        <div id="disclaimers" class="col-md-4 col-md-offset-1">
-                              <h4 class="text-center margin-bottom-s">Disclaimer</h4>
-                              <p class="disclaimers-content">The quotes that will be provided reflect the best values available based only on your selection of age, gender and smoking status. These quotes were produced automatically.</p>
-                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="policyForms.do">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having Health IQ contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, Health IQ will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.do">legal policy</a> to better understand the processing and information being made available. <a href="policyForms.do">Click here</a> for policy forms and descriptions of available plans.</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
-<%@include file="footer.jsp"%>
-</body>
-</html>
+<%@include file="footer.jsp" %>
