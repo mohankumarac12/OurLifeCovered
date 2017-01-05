@@ -1,11 +1,20 @@
 ﻿<%@include file="header.jsp" %>
+<script type="text/javascript">
+var pathName = window.location.href;
+if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
+	sessionStorage.setItem("isMultiCarrier",true);
+} else {
+	sessionStorage.setItem("isMultiCarrier",false);
+}
+
+</script>
 <div class="container-fluid">
     <div id="hero" class="homepage">
         <div class="main-cta">
             <div class="desktop-only">
                 <h4 class="hero-caption">Unlike the perfect selfies people share,</h4>
                 <h4 class="hero-caption-bold">Life. Isn't. Always. Pretty.</h4>
-                <p>Our Life Covered can help you find affordable life insurance on your terms, protecting your family from the unexpected.</p>
+                <p>Our Life Covered<sup>SM</sup> can help you find affordable life insurance on your terms, protecting your family from the unexpected.</p>
             </div>
             <div class="mobile-only">
                 <h4 class="hero-caption-bold">Find affordable life insurance on your terms.</h4>
@@ -130,7 +139,7 @@
                 <div class="col-xs-8 col-xs-offset-2">
                     <h5 class="answer" >So what’s the verdict?<br>Are you ready to create a safety net for your loved ones?</h5>
                     <div class="row quiz-btn-row">
-                        <div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="getQuote-form.do">Get a Quote</a><br><a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Restart Quiz</a></div>
+                        <div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="getQuote-form.do">Get a Quote</a><br><a href="javascript:openHomeLink()">Restart Quiz</a></div>
                     </div>
                 </div>
             </div>
@@ -167,7 +176,6 @@
             </div>
         </div>
     </div>
-   	
     <div id="footer-carousel">
     <p id="astrik-home">*Individual cases may vary due to dependencies on specific underwriting criteria in the application process.</p>
         <div id="footerCarousel" class = "carousel slide">
