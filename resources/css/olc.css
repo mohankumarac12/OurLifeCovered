@@ -385,15 +385,32 @@ body {
         @media (max-width: 1224px) {
           body div.container-fluid div#hero div.main-cta form.cta-form h3 {
             font-size: 18px; } }
-        body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control::-ms-expand {
-          display: none; }
-        @media (max-width: 768px) {
-          body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
-            margin-bottom: 10px; } }
-        @media (max-width: 460px) {
-          body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
+        body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 {
+          position: relative; }
+          body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8:after {
+            font-family: FontAwesome;
             font-size: 14px;
-            font-weight: 500; } }
+            line-height: 1;
+            position: absolute;
+            top: 17px;
+            right: 27px;
+            content: '\f078';
+            pointer-events: none;
+            color: #515151;
+            text-shadow: none; }
+          body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none; }
+            body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control::-ms-expand {
+              display: none; }
+            @media (max-width: 768px) {
+              body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
+                margin-bottom: 10px; } }
+            @media (max-width: 460px) {
+              body div.container-fluid div#hero div.main-cta form.cta-form div.row div.col-sm-8 select.form-control {
+                font-size: 14px;
+                font-weight: 500; } }
   body div.container-fluid div.quiz {
     max-width: 755px;
     min-height: 400px;

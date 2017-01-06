@@ -119,7 +119,6 @@ body {
     background: white;
 
     @include OpenSans300();
-
     div#ta-code {
         padding: 5px 0;
         small {
@@ -127,7 +126,6 @@ body {
             color: $midgrey;
         }
     }
-
     div#loading {
         position: fixed;
         z-index: 1001;
@@ -467,7 +465,21 @@ body {
                     }
                     div.row {
                         div.col-sm-8 {
+                            position: relative;
+                            &:after {
+                                font-family: FontAwesome;
+                                font-size: 14px;
+                                line-height: 1;
+                                position: absolute;
+                                top: 17px;
+                                right: 27px;
+                                content: '\f078';
+                                pointer-events: none;
+                                color: $text;
+                                text-shadow: none;
+                            }
                             select.form-control {
+                                appearance: none;
                                 &::-ms-expand {
                                     display: none;
                                 }
