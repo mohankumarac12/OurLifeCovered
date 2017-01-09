@@ -980,7 +980,7 @@ body {
         font-size: 10px;
         line-height: 1;
         position: absolute;
-        top: 11px;
+        top: 34px;
         right: 9px;
         content: '\f078';
         pointer-events: none; }
@@ -2844,3 +2844,39 @@ body {
                 body footer div.container div.row div.col-md-12 ul li a:hover, body footer div.container div.row div.col-md-12 ul li a.active {
                   color: white;
                   border-bottom: 1px solid white; }
+ 
+ .error-text {
+ color : #ff3e3e !important;
+ padding: 9px 0 9px 9px;
+ }     
+ 
+ span .error-text {
+ color : #ff3e3e !important;
+ padding-left: 0px;
+ }         
+ 
+ .success-text{color:#2ecc71}                  
+ 
+ #contact-time-zone{
+    width: 466px;
+    padding: 8px;
+    font-size: 16px;
+ }
+ 
+.required:before {
+	content: "*";
+	position: relative;
+	left: -8px;
+	color: #ff3e3e;
+	top: 3px
+}
+/* .inline-select {
+	display: inline-block;
+	position: relative
+} */
+#astrik-home{
+	text-align: left;
+    padding-left: 250px;
+    font-size: small;
+    height: 10px;
+} 
