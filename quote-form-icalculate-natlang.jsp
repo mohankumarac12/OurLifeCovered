@@ -2,8 +2,7 @@
 <body>
 <%@include file="header.jsp"%>
 <script type="text/javascript">
-sessionStorage.setItem('src',"${src}");
-
+	sessionStorage.setItem('src',"${src}");
 </script>
 	<div id="calculator" class="background-wrap">
 		<div class="overlay"></div>
@@ -18,6 +17,7 @@ sessionStorage.setItem('src',"${src}");
 				</div>
 			</div>
 		</section>
+		
 		<section id="needs-calculator" class="quote">
 			<section class="quote-tabs">
 				<div class="container">
@@ -160,12 +160,17 @@ sessionStorage.setItem('src',"${src}");
 							name="needsCalculatorDemographicsForm">
 							<span id="tell-story">Tell us your story:</span>
 							<div class="error-text"></div>
-							<div class="inline-text required">
+							<!-- <div class="inline-text required">
 								<label class=" " for="calc-first-name">Hi, my name is</label> <input
 									required="" class=" " type="text" id="calc-first-name"
 									name="first-name" maxlength="25"
 									placeholder="your first and last name">
-							</div>
+							</div> -->
+							<div class="inline-text required">
+                                <label class=" " for="calc-first-name">Hi, my name is</label>
+                                <input required="" class=" " type="text" style="width: 128px; height: 45px" id="calc-first-name" name="first-name" maxlength="13" placeholder="your first ">
+                                <input required="" class=" " type="text" style="width: 128px; height: 45px" id="calc-last-name" name="last-name" maxlength="12" placeholder="and last name">
+                            </div>
 							<!-- <div class="inline-text required">
                                 <input type=hidden  class=" " type="text" id="calc-last-name" name="last-name" value="abc" maxlength="25">
                               
@@ -248,11 +253,12 @@ sessionStorage.setItem('src',"${src}");
 										<option value="2">non-smoker</option>
 										<option value="1">smoker</option>
 								</select>
-								</span>, <label for="calc-coverage">my coverage is</label> <input
-									pattern="[0-9]*" type="text" id="calc-coverage" name="coverage"
-									maxlength="25" disabled value="${coverage}" />
+								</span>, <label for="calc-coverage">and I want coverage of <input
+									pattern="[0-9]*" type="text"   id="calc-coverage" name="coverage"
+									style="width: 128px; height: 45px"; maxlength="25" disabled value="${coverage}" />
+									</label>
 							</div>
-							<div class="inline-select required complete">
+							<!-- <div class="inline-select required complete">
 								<label for="calc-premium">I am looking for a policy that
 									costs about</label> <span class="select-wrapper  small"> <select
 									required name="coverage" id="calc-premium" class="small">
@@ -270,10 +276,9 @@ sessionStorage.setItem('src',"${src}");
 										<option value="100">$100</option>
 								</select>
 								</span> <label>per month.</label>
-							</div>
+							</div> -->
 							<div class="inline-select required ">
-								<label for="rec-coverage" class="adj"> I require number
-									of years to maintain coverage is </label> <span
+								<label for="rec-coverage" class="adj"> I want the number of coverage years to be </label> <span
 									class="select-wrapper  small"> <select required=""
 									name="rec-coverage" id="rec-coverage" class="small">
 										<option value="10">10</option>

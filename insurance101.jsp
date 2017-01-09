@@ -167,12 +167,40 @@
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
                             <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a non profit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
                             <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
-                            <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls ></video>
+                            
+                            <!-- commneted  for testing purpose -->
+                            <!-- <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls >
+                            <source src="https://files.brightcove.com/homepage-background-v3.mp4" type="video/mp4"></video>
                             <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
                             <script id="pageScript" type="text/javascript">
                                 var myPlayer = videojs("brigcovepersonalplayer");
-                            </script>
-                        </div>
+                            </script> -->
+						
+						<!-- added for testing purpose -->
+						<video data-video-id="5076962725001" data-account="1507807800001"
+							data-player="BkTGbgSq" data-embed="default"
+							style="width: 100%; height: auto; padding-bottom: 56.25%;"
+							data-application-id class="video-js" controls>
+						</video>
+						<script
+							src="//players.brightcove.net/1507807800001/BkTGbgSq_default/index.min.js"></script>
+						<script id="pageScript" type="text/javascript">
+							var myPlayer = videojs("5076962725001");
+						</script>
+
+
+						<video data-video-id="4924793818001" data-account="4486098250001"
+							data-player="HyV9Hkf5" data-embed="default"
+							style="width: 100%; height: auto; padding-bottom: 56.25%;"
+							data-application-id class="video-js" controls>
+						</video>
+						<script
+							src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
+						<script id="pageScript" type="text/javascript">
+							var myPlayer = videojs("4924793818001");
+						</script>
+						
+					</div>
                         <div id="lend_hand">
                             <div class="content-wrapper">
                                 <div class="col-sm-5">

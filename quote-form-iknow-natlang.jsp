@@ -1,5 +1,7 @@
 <%@include file="header.jsp" %>
-
+	<script type="text/javascript">
+		sessionStorage.setItem('src',"${src}");
+	</script>
     <div id="quote_form_natlang" class="background-wrap">
         <section class="quote-header text-center">
             <div class="container">
@@ -21,7 +23,8 @@
                             </div>
                             <div class="inline-text required">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name">
+                                <input required="" class=" " type="text"  id="calc-first-name" style="width: 128px; height: 45px" name="first-name" maxlength="13" placeholder="your first ">
+                                 <input required="" class=" " type="text" id="calc-last-name" style="width: 128px; height: 45px" name="last-name" maxlength="12" placeholder="and last name">
                             </div>
                             <!-- <div class="inline-text required">
                                 <input type=hidden  type="text"  value="xyz" id="calc-last-name" name="last-name" maxlength="25">
@@ -109,13 +112,13 @@
                                         <option value="1">smoker</option>
                                     </select>
                                 </span>,
-                                <label class="inline-select required complete" for="calc-annual-income">and I want coverage amount as </label>
+                                <label class="inline-select required complete" for="calc-annual-income">and I want coverage of </label>
                                 <!-- <input required="" class=" " type="text" id="calc-annual-income" name="annual-income" maxlength="25" placeholder="$50,000"> -->
                                <c:choose>
 								<c:when test="${isMultiCarrier eq 'true' }">
                                  	<span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
-                                                <option value="25000" selected="">$25,000</option>
+                                                <option value="25000" selected>$25,000</option>
                                                 <option value="50000">$50,000</option>
                                                 <option value="75000">$75,000</option>
                                                 <option value="100000">$100,000</option>
@@ -129,7 +132,7 @@
 								<c:otherwise>
 									<span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
-                                                <option value="100000" selected="">$100,000</option>
+                                                <option value="100000" selected>$100,000</option>
                                                 <option value="200000">$200,000</option>
                                                 <option value="350000">$350,000</option>
                                                 <option value="500000">$500,000</option>
@@ -143,7 +146,7 @@
 							</c:choose>
                                          <!-- <label>annually.</label> -->
                             </div>
-                           <div class="inline-select required complete">
+                         <!--   <div class="inline-select required complete">
                                 <label for="calc-premium">I am looking for a policy that costs about</label>
                                 <span class="select-wrapper  small">
                                     <select required name="rec-premium" id="calc-premium" class="small">
@@ -162,9 +165,9 @@
                                     </select>
                                 </span>
                                 <label>per month.</label>
-                            </div>
+                            </div> -->
                             <div class="inline-select required ">
-                                <label for="rec-coverage" class="adj"> I require number of years to maintain coverage is </label>
+                                <label for="rec-coverage" class="adj"> I want the number of coverage years to be </label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="rec-coverage" id="rec-coverage" class="small">
                                         <option value="10">10</option>

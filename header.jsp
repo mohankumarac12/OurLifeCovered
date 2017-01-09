@@ -20,15 +20,9 @@
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- <script src="https://use.typekit.net/qns3hng.js"></script> -->
-    <script src="https://use.typekit.net/flk8jvc.js"></script>
-    <script>
-    var domainName = 'devweb01.eastus.cloudapp.azure.com';
-    try {
-        Typekit.load({
-            async: false
-        });
-    } catch (e) {}
-    </script>
+    <!-- <script src="https://use.typekit.net/flk8jvc.js"></script> -->
+ 	<script src="https://use.typekit.net/rvb3yyz.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="text/javascript">
     
     openHomeLink = function() {

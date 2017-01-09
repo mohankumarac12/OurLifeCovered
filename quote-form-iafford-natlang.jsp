@@ -21,8 +21,13 @@
                             </div>
                             <div class="inline-text required">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name">
+                                <input required="" class=" " type="text"  id="calc-first-name" name="first-name" style="width: 128px; height: 45px" maxlength="13" placeholder="your first ">
+                                 <input required="" class=" " type="text"  id="calc-last-name" name="last-name" style="width: 128px; height: 45px" maxlength="12" placeholder="and last name">
                             </div>
+                            <!-- <div class="inline-text required">
+                                <label class=" " for="calc-first-name">Hi, my name is</label>
+                                <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name">
+                            </div> -->
                             <!-- <div class="inline-text required">
                                 <input type=hidden  class=" " type="text" id="calc-last-name" name="last-name" maxlength="25">
                                 <label class=" " for="calc-last-name">Last Name</label>
@@ -35,8 +40,8 @@
                                 <label for="calc-gender">I'm a</label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="gender" id="calc-gender" class="small">
-                                        <option value="M">male</option>
-                                        <option value="F">female</option>
+                                        <option value="M" ${gender eq 'male' ? 'selected':''}>male</option>
+                                        <option value="F" ${gender eq 'female' ? 'selected':''}>female</option>
                                     </select>
                                 </span>
                                 <label for="calc-state">living in</label>
@@ -104,11 +109,10 @@
                                         <option value="2">non-smoker</option>
                                         <option value="1">smoker</option>
                                     </select>
-                                </span>,                               
-                               
-                           			<label for="calc-coverage">my coverage is</label>
-									<input pattern="[0-9]*" type="text" id="calc-coverage" name="coverage" maxlength="25" disabled value="${coverage}"/> 
-									
+                                </span>,                                                              
+                           			<label for="calc-coverage">and I want coverage of
+									<input pattern="[0-9]*" type="text"  id="calc-coverage" style="width: 128px; height: 45px";name="coverage" maxlength="25" disabled value="${coverage}"/> 
+									</label>
 							<!-- <input required="" class=" " type="text" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first and last name"> -->
                                 
                             </div>
@@ -117,12 +121,12 @@
                                 <span class="select-wrapper  small">
                                     <select required name="coverage" id="calc-premium" class="small">
                                         <option value="20">$20</option>
-                                        <option value="25" selected>$25</option>
+                                        <option value="25" ${affordablePremium eq 'twentyfive' ? 'selected':''}>$25</option>
                                         <option value="30">$30</option>
                                         <option value="35">$35</option>
-                                        <option value="40">$40</option>
+                                        <option value="40" ${affordablePremium eq 'forty' ? 'selected':''}>$40</option>
                                         <option value="45">$45</option>
-                                        <option value="50">$50</option>
+                                        <option value="50" ${affordablePremium eq 'fifty' ? 'selected':''}>$50</option>
                                         <option value="60">$60</option>
                                         <option value="70">$70</option>
                                         <option value="80">$80</option>
@@ -133,7 +137,7 @@
                                 <label>per month.</label>
                             </div>
                              <div class="inline-select required ">
-                                <label for="rec-coverage" class="adj"> I require number of years to maintain coverage is </label>
+                                <label for="rec-coverage" class="adj"> I want the number of coverage years to be </label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="rec-coverage" id="rec-coverage" class="small">
                                         <option value="10">10</option>
