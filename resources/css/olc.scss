@@ -1987,6 +1987,37 @@ body {
                                     }
                                 }
                             }
+                            div#disclaimers {
+                                float: none;
+                                width: 100%;
+                                max-width: 590px;
+                                margin: 0 auto 75px;
+                                padding: 0;
+                                @media (max-width: 830px) {
+                                    max-width: 500px;
+                                    margin: 0 auto 50px;
+                                }
+                                h4 {
+                                    font-size: 17px;
+                                    font-weight: 700;
+                                    margin: 0 0 15px;
+                                    text-align: left;
+                                    color: #333;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    display: inline-block;
+                                    margin-bottom: 10px;
+                                    cursor: pointer;
+                                    &:last-of-type {
+                                        margin-bottom: 0;
+                                    }
+                                    @media (max-width: 768px) {
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
