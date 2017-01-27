@@ -366,7 +366,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 44,
                         savings: 19,
-                        coverage: 750000 
+                        coverage: 350000
                     },
                     female: {
                         premium: 25,
@@ -374,7 +374,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 40,
                         savings: 15,
-                        coverage: 1200000 
+                        coverage: 500000
                     }
                 },
                 thirty: {
@@ -384,7 +384,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 44,
                         savings: 19,
-                        coverage: 725000 
+                        coverage: 350000
                     },
                     female: {
                         premium: 25,
@@ -392,7 +392,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 42,
                         savings: 17,
-                        coverage: 1100000 
+                        coverage: 500000 
                     }
                 },
                 thirtyfive: {
@@ -402,7 +402,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 46,
                         savings: 21,
-                        coverage: 625000 
+                        coverage: 250000 
                     },
                     female: {
                         premium: 25,
@@ -410,7 +410,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 51,
                         savings: 26,
-                        coverage: 850000 
+                        coverage: 350000 
                     }
                 },
                 forty: {
@@ -420,7 +420,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 50,
                         savings: 25,
-                        coverage: 425000
+                        coverage: 250000
                     },
                     female: {
                         premium: 25,
@@ -428,7 +428,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 51,
                         savings: 26,
-                        coverage: 575000
+                        coverage: 250000
                     }
                 },
                 fortyfive: {
@@ -438,7 +438,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 50,
                         savings: 26,
-                        coverage: 262500
+                        coverage: 100000
                     },
                     female: {
                         premium: 25,
@@ -446,7 +446,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 41,
                         savings: 16,
-                        coverage: 350000
+                        coverage: 100000
                     }
                 },
                 fifty: {
@@ -456,7 +456,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 37,
                         savings: 12,
-                        coverage: 150000 
+                        coverage: 50000 
                     },
                     female: {
                         premium: 25,
@@ -464,11 +464,11 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 50,
                         savings: 25,
-                        coverage: 175000 
+                        coverage: 50000 
                     }
                 }
             },
-            forty: {
+    		forty: {
                 twentyfive: {
                     male: {
                         premium: 100,
@@ -476,7 +476,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 167,
                         savings: 45,
-                        coverage: 1800000
+                        coverage: 750000
                     },
                     female: {
                         premium: 100,
@@ -484,7 +484,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 162,
                         savings: 45,
-                        coverage: 2000000
+                        coverage: 1000000
                     }
                 },
                 thirty: {
@@ -494,7 +494,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 175,
                         savings: 40,
-                        coverage: 1500000
+                        coverage: 750000
                     },
                     female: {
                         premium: 100,
@@ -502,7 +502,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 45,
-                        coverage: 2000000
+                        coverage: 1000000
                     }
                 },
                 thirtyfive: {
@@ -512,7 +512,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 205,
                         savings: 60,
-                        coverage: 1325000
+                        coverage: 500000
                     },
                     female: {
                         premium: 100,
@@ -520,7 +520,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 215,
                         savings: 52,
-                        coverage: 1700000
+                        coverage: 750000
                     }
                 },
                 forty: {
@@ -530,7 +530,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 207,
                         savings: 65,
-                        coverage: 1000000
+                        coverage: 350000
                     },
                     female: {
                         premium: 100,
@@ -538,7 +538,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 194,
                         savings: 41,
-                        coverage: 1150000
+                        coverage: 500000
                     }
                 },
                 fortyfive: {
@@ -548,7 +548,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 173,
                         savings: 59,
-                        coverage: 575000
+                        coverage: 175000
                     },
                     female: {
                         premium: 100,
@@ -556,7 +556,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 55,
-                        coverage: 675000
+                        coverage: 300000
                     }
                 },
                 fifty: {
@@ -566,7 +566,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 162,
                         savings: 25,
-                        coverage: 325000
+                        coverage: 100000
                     },
                     female: {
                         premium: 100,
@@ -574,7 +574,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 36,
-                        coverage: 425000
+                        coverage: 125000
                     }
                 }
             },
@@ -586,7 +586,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 84,
                         savings: 34,
-                        coverage: 1800000
+                        coverage: 1000000
                     },
                     female: {
                         premium: 50,
@@ -594,7 +594,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 82,
                         savings: 32,
-                        coverage: 2000000
+                        coverage: 1300000
                     }
                 },
                 thirty: {
@@ -604,7 +604,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 89,
                         savings: 39,
-                        coverage: 1700000
+                        coverage: 1000000
                     },
                     female: {
                         premium: 50,
@@ -612,7 +612,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 88,
                         savings: 38,
-                        coverage: 2000000
+                        coverage: 1300000
                     }
                 },
                 thirtyfive: {
@@ -622,7 +622,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 102,
                         savings: 52,
-                        coverage: 1400000
+                        coverage: 700000
                     },
                     female: {
                         premium: 50,
@@ -630,7 +630,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 107,
                         savings: 57,
-                        coverage: 1800000
+                        coverage: 850000
                     }
                 },
                 forty: {
@@ -640,7 +640,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 95,
                         savings: 45,
-                        coverage: 1100000
+                        coverage: 500000
                     },
                     female: {
                         premium: 50,
@@ -648,7 +648,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 93,
                         savings: 43,
-                        coverage: 1300000
+                        coverage: 650000
                     }
                 },
                 fortyfive: {
@@ -658,7 +658,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 81,
                         savings: 31,
-                        coverage: 825000
+                        coverage: 300000
                     },
                     female: {
                         premium: 50,
@@ -666,7 +666,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 90,
                         savings: 40,
-                        coverage: 925000
+                        coverage: 375000
                     }
                 },
                 fifty: {
@@ -676,7 +676,7 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 77,
                         savings: 27,
-                        coverage: 450000
+                        coverage: 125000
                     },
                     female: {
                         premium: 50,
@@ -684,7 +684,7 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 92,
                         savings: 42,
-                        coverage: 550000
+                        coverage: 150000
                     }
                 }
             },        
