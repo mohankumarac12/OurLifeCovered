@@ -1954,28 +1954,28 @@ body {
               padding: 20px; }
               body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row:before, body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row:after {
                 display: none; }
-              body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class {
+              body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class {
                 padding-top: 10px;
                 text-align: center; }
-                body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class sup {
+                body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class sup {
                   font-size: 48px;
                   top: -1em;
                   color: #f498c2; }
                   @media (max-width: 1200px) {
-                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class sup {
+                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class sup {
                       font-size: 36px; } }
-                body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span {
+                body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span {
                   font-size: 67px;
                   font-weight: 700;
                   line-height: 1;
                   color: #f498c2; }
                   @media (max-width: 1200px) {
-                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span {
+                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span {
                       font-size: 50px; } }
                   @media (max-width: 414px) {
-                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span {
+                    body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span {
                       font-size: 38px; } }
-                  body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span.freq {
+                  body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span.freq {
                     font-size: 35px;
                     line-height: 0;
                     position: relative;
@@ -1983,10 +1983,10 @@ body {
                     vertical-align: baseline;
                     color: #f498c2; }
                     @media (max-width: 1200px) {
-                      body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span.freq {
+                      body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span.freq {
                         font-size: 26px; } }
                     @media (max-width: 414px) {
-                      body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.best-class span.freq {
+                      body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.standard-class span.freq {
                         font-size: 20px; } }
               body div.background-wrap#quote_multicarrier section#quote-page div.container div.column form div.row div.comparison {
                 width: 240px;
@@ -2895,7 +2895,8 @@ body {
 	position: relative;
 	left: -8px;
 	color: #ff3e3e;
-	top: 3px
+	top: 3px;
+	display : none
 }
 /* .inline-select {
 	display: inline-block;
