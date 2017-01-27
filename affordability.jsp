@@ -44,10 +44,10 @@ sessionStorage.setItem('src',"${src}");
                                             <option value="female" selected>Female</option>
                                         </select>
                                     </div>
-                               <input type="hidden" id="hiddenCoverage" name="totalCoverage" class="quoted-amount" value="$1,200,000">
+                               <input type="hidden" id="hiddenCoverage" name="totalCoverage" class="quoted-amount" value="$500,000">
                             </div>
                             <div class="secondary-container">
-                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$1,200,000</span> in 10-year term coverage.<!-- , and save close to <span id="totalSavings" class="quoted-amount">$15</span> per month over standard premium rates.<sup>*</sup> -->
+                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$500,000</span> in 10-year term coverage.<!-- , and save close to <span id="totalSavings" class="quoted-amount">$15</span> per month over standard premium rates.<sup>*</sup> -->
                             </div>
                             <div class="gobutton-container">
                                 <input type="button" class="btn btn-primary" value="Start My Quote" id="main-affordable-form" wpvalue="continue" onclick="return validatePremiumMlc();">

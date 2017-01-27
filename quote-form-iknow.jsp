@@ -157,7 +157,10 @@
                                         <label for="calc-coverage1">Coverage</label>
                                         <span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
-                                                <option value="100000" selected>$100,000</option>
+                                                <option value="25000" selected>$25,000</option>
+                                                <option value="50000">$50,000</option>
+                                                <option value="75000">$75,000</option>
+                                                <option value="100000">$100,000</option>
                                                 <option value="200000">$200,000</option>
                                                 <option value="350000">$350,000</option>
                                                 <option value="500000">$500,000</option>
@@ -210,8 +213,8 @@
                         </form>
                         <div id="disclaimers" class="col-md-4 col-md-offset-1">
                               <h4 class="text-center margin-bottom-s">Disclaimer</h4>
-                              <p class="disclaimers-content">The quotes that will be provided reflect the best values available based only on your selection of age, gender and smoking status. These quotes were produced automatically.</p>
-                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="policyForms.do">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having Health IQ contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, Health IQ will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.do">legal policy</a> to better understand the processing and information being made available. <a href="policyForms.do">Click here</a> for policy forms and descriptions of available plans.</p>
+                              <p class="disclaimers-content">The quotes that will be provided are based on your selection of age, gender and smoking status. These quotes were produced automatically.</p>
+                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="policyForms.do">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having our call center partner contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, our call center partner will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.do">legal policy</a> to better understand the processing and information being made available. <a href="policyForms.do">Click here</a> for policy forms and descriptions of available plans.</p>
                         </div>
                     </div>
                 </div>

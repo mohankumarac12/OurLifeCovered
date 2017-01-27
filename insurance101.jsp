@@ -155,7 +155,7 @@
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>A medical exam depends on the coverage amount selected. In most cases, your health and family history provide enough information to forgot a medical exam. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium. For healthy people like you, your premiums could potentially be less than half of those paid by the average insured.</p>
+                                        <p>A medical exam depends on the coverage amount selected. Other key factors such as occupation, hobbies, and driving record give the insurer a window into your health and potential risk factors in your life. All of these factors provide the insurer enough information to set your premium.</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,30 +166,17 @@
                             <h2>Have you met our corporate partner BFF?</h2>
                             <img id="lh-logo" src="resources/images/life-happens-logo.jpg">
                             <p>OUR LIFE COVERED<sup>SM</sup> has partnered with Life Happens, a non profit organization that is just as dedicated as we are to educating people about the importance of protecting themselves and their families with the coverage they need.</p>
-                            <p>Danica Patrick, professional race car driver and the 2016 spokesperson for Life Insurance Awareness Month, sums up the difference life insurance can make.</p>
+                                                        
                             
-                            <!-- commneted  for testing purpose -->
                             <!-- <video id='brigcovepersonalplayer' data-account="4486098250001" data-player="HyV9Hkf5" data-video-id="4924793818001" data-embed="default" style="width: 100%; height:auto; padding-bottom: 56.25%;" class="video-js bc-video" controls >
                             <source src="https://files.brightcove.com/homepage-background-v3.mp4" type="video/mp4"></video>
                             <script src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
                             <script id="pageScript" type="text/javascript">
                                 var myPlayer = videojs("brigcovepersonalplayer");
-                            </script> -->
+                            </script> -->						
 						
-						<!-- added for testing purpose -->
-						<video data-video-id="5076962725001" data-account="1507807800001"
-							data-player="BkTGbgSq" data-embed="default"
-							style="width: 100%; height: auto; padding-bottom: 56.25%;"
-							data-application-id class="video-js" controls>
-						</video>
-						<script
-							src="//players.brightcove.net/1507807800001/BkTGbgSq_default/index.min.js"></script>
-						<script id="pageScript" type="text/javascript">
-							var myPlayer = videojs("5076962725001");
-						</script>
-
-
-						<video data-video-id="4924793818001" data-account="4486098250001"
+						
+						<video data-video-id="4667321659001" data-account="4486098250001"
 							data-player="HyV9Hkf5" data-embed="default"
 							style="width: 100%; height: auto; padding-bottom: 56.25%;"
 							data-application-id class="video-js" controls>
@@ -197,7 +184,7 @@
 						<script
 							src="//players.brightcove.net/4486098250001/HyV9Hkf5_default/index.min.js"></script>
 						<script id="pageScript" type="text/javascript">
-							var myPlayer = videojs("4924793818001");
+							var myPlayer = videojs("4667321659001");
 						</script>
 						
 					</div>

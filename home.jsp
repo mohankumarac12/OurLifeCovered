@@ -139,7 +139,16 @@ if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
                 <div class="col-xs-8 col-xs-offset-2">
                     <h5 class="answer" >So what’s the verdict?<br>Are you ready to create a safety net for your loved ones?</h5>
                     <div class="row quiz-btn-row">
-                        <div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="getQuote-form.do">Get a Quote</a><br><a href="javascript:openHomeLink()">Restart Quiz</a></div>
+                        <div class="col-xs-8 col-xs-offset-2"> <a class="btn quiz-cta" href="getQuote-form.do">Get a Quote</a><br>
+                       		 <c:choose>
+								<c:when test="${isMultiCarrier eq 'true' }">				
+									<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Restart Quiz</a>
+								</c:when>
+								<c:otherwise>
+		 					 		<a href="home.do?src=${srcHome}">Restart Quiz</a>
+								</c:otherwise>
+							</c:choose>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,7 +198,7 @@ if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
                     <img src = "resources/images/carousel-1.jpg">
                     <div class="carousel-caption">
                         <h4 class="hero-caption">We do the leg work.</h4>
-                        <p>Tell us a bit about your lifestyle, and we’ll search from hundreds of policies to find the right match for you. Get your quote, apply, and get covered. Fast and simple.</p>
+                        <p>Tell us a bit about your lifestyle, and we’ll search from hundreds of product term length and coverage amounts to find the right match for you. Get your quote, apply, and get covered. Fast and simple.</p>
                         <a class="btn" href="calculator.do">Find the Right Fit</a>
                     </div>
                 </div>

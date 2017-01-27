@@ -25,16 +25,19 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="text/javascript">
     
-    openHomeLink = function() {
+   /*  openHomeLink = function() {
+    	console.log("vochindi")
     	var phoneNumber = "";
     	 if("${phoneNumber}" != "")
     	    	phoneNumber = "phoneNo="+"${phoneNumber}"+"&";
     	    	
     	var url = "home.do?"+phoneNumber+"src=${srcHome}";   	
     	location.href = url;
+    	} */
+    
+    	function myJsFunc() {
+    	    alert("myJsFunc");
     	}
-    
-    
    
     </script>
     <script>
@@ -119,12 +122,12 @@
                     
                         <c:choose>
 							<c:when test="${isMultiCarrier eq 'true' }">				
-								<a id="#myLifeCoveredHeader" href="javascript:openHomeLink()" class="open-home-page-copy">
+								<a id="#myLifeCoveredHeader" href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="open-home-page-copy">
 									<img class="logo" src="resources/images/logo.svg">
 									<span class="logo-phno">${phoneNumber}</span>
 								</c:when>
 							<c:otherwise>
-			 					 <a id="#myLifeCoveredHeader" href="javascript:openHomeLink()" class="open-home-page-copy">
+			 					 <a id="#myLifeCoveredHeader" href="home.do?src=${srcHome}" class="open-home-page-copy">
 									<img class="logo" src="resources/images/olc-logo-everplans.jpg"/><!-- <sup>SM</sup> -->
 									<%-- <span class="logo-phno">${phoneNumber}</span> --%>
 								</a>
@@ -133,7 +136,14 @@
                         <ul id="top_nav_menu">
                        		<li class="menu-header mobile-only">Navigate</li>
                        		<li>
-                       			<a href="javascript:openHomeLink()">Home</a>
+                       			<c:choose>
+									<c:when test="${isMultiCarrier eq 'true' }">				
+										<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
+									</c:when>
+									<c:otherwise>
+			 					 		<a href="home.do?src=${srcHome}">Home</a>
+									</c:otherwise>
+							    </c:choose>
                        		</li>
                             <li>
                                 <a href="insurance101.do">Insurance 101</a>

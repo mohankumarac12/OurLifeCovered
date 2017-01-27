@@ -18,27 +18,24 @@
                 <div class="row">
                     <div class="col-md-12">
                         <form action="" id="needs-calculator-demographics-form" name="needsCalculatorDemographicsForm">
-                            <span id="tell-story">Tell us your story:</span>
+                            <span id="tell-story">Tell us your complete story:</span>
                             <div class="error-text">
                             </div>
-                            <div class="inline-text required">
+                            <div class="inline-text  ">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text"  id="calc-first-name" style="width: 128px; height: 45px" name="first-name" maxlength="13" placeholder="your first ">
-                                 <input required="" class=" " type="text" id="calc-last-name" style="width: 128px; height: 45px" name="last-name" maxlength="12" placeholder="and last name">
-                            </div>
-                            <!-- <div class="inline-text required">
-                                <input type=hidden  type="text"  value="xyz" id="calc-last-name" name="last-name" maxlength="25">
-                                <label class=" " for="calc-last-name">Last Name</label>
-                            </div> -->
-                            <div class="inline-text required">
+                                <input required="" class=" " type="text"  id="calc-first-name" style="width: 128px; height: 45px" name="first-name" maxlength="25" placeholder="your first ">
+                                 <input required="" class=" " type="text" id="calc-last-name" style="width: 140px; height: 45px" name="last-name" maxlength="25" placeholder="and last name">
+                            </div>                           
+                            <div class="inline-text ">
                                 <label class=" " for="calc-date-of-birth">and I was born on</label>
                                 <input required="" class=" " type="text" pattern="[0-9]*" id="calc-date-of-birth" name="date-of-birth" placeholder="your birthdate">.
                             </div>
-                            <!--  <div class="inline-text required">
-                                <input type ="hidden"   value="1234567891" pattern="[0-9]*" id="calc-form-phone" name="calc-form-phone">
-                                
-                            </div> -->
-                            <div class="inline-select required complete">
+                             <div class="inline-text ">
+                                <label class=" " for="contact-form-phone">My phone number is </label>
+                                <input class=" " type="text"  id="calc-form-phone"  pattern="[0-9]*" style="width: 152px;" name="calc-form-phone">.
+                             </div>   
+                                                      
+                            <div class="inline-select  complete">
                                 <label for="calc-gender">I'm a</label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="gender" id="calc-gender" class="small">
@@ -104,7 +101,7 @@
                                     </select>
                                 </span>.
                             </div>
-                            <div class="inline-select required complete">
+                            <div class="inline-select  complete">
                                 <label for="calc-smoker">I'm a</label>
                                 <span class="select-wrapper small">
                                     <select required="" name="smoker" id="calc-smoker" class="small">
@@ -112,8 +109,7 @@
                                         <option value="1">smoker</option>
                                     </select>
                                 </span>,
-                                <label class="inline-select required complete" for="calc-annual-income">and I want coverage of </label>
-                                <!-- <input required="" class=" " type="text" id="calc-annual-income" name="annual-income" maxlength="25" placeholder="$50,000"> -->
+                                <label class="inline-select  complete" for="calc-annual-income">and I want a coverage amount of </label>                               
                                <c:choose>
 								<c:when test="${isMultiCarrier eq 'true' }">
                                  	<span class="select-wrapper  small">
@@ -127,12 +123,15 @@
                                                 <option value="500000">$500,000</option>
                                                 <option value="1000000">$1,000,000</option> 
                                             </select>
-                                        </span>
+                                        </span>.
                                	</c:when>
 								<c:otherwise>
 									<span class="select-wrapper  small">
                                            <select required="" name="coverage" id="calc-coverage" class="small" onchange="selectedValue(this)" onload="selectedValue(this)">
-                                                <option value="100000" selected>$100,000</option>
+                                                <option value="25000" selected>$25,000</option>
+                                                <option value="50000">$50,000</option>
+                                                <option value="75000">$75,000</option>
+                                                <option value="100000">$100,000</option>
                                                 <option value="200000">$200,000</option>
                                                 <option value="350000">$350,000</option>
                                                 <option value="500000">$500,000</option>
@@ -141,32 +140,11 @@
                                                 <option value="1500000">$1,500,000</option>
                                                 <option value="2000000">$2,000,000</option> 
                                             </select>
-                                        </span>
+                                        </span>.
 								</c:otherwise>
-							</c:choose>
-                                         <!-- <label>annually.</label> -->
-                            </div>
-                         <!--   <div class="inline-select required complete">
-                                <label for="calc-premium">I am looking for a policy that costs about</label>
-                                <span class="select-wrapper  small">
-                                    <select required name="rec-premium" id="calc-premium" class="small">
-                                        <option value="20">$20</option>
-                                        <option value="25" selected>$25</option>
-                                        <option value="30">$30</option>
-                                        <option value="35">$35</option>
-                                        <option value="40">$40</option>
-                                        <option value="45">$45</option>
-                                        <option value="50">$50</option>
-                                        <option value="60">$60</option>
-                                        <option value="70">$70</option>
-                                        <option value="80">$80</option>
-                                        <option value="90">$90</option>
-                                        <option value="100">$100</option>
-                                    </select>
-                                </span>
-                                <label>per month.</label>
-                            </div> -->
-                            <div class="inline-select required ">
+							</c:choose>                                        
+                            </div>                       
+                            <div class="inline-select">
                                 <label for="rec-coverage" class="adj"> I want the number of coverage years to be </label>
                                 <span class="select-wrapper  small">
                                     <select required="" name="rec-coverage" id="rec-coverage" class="small">
@@ -176,9 +154,9 @@
                                         <option value="25">25</option>
                                         <option value="30">30</option>
                                     </select>
-                                </span>
+                                </span>.
                             </div>
-                            <div class="inline-text required email">
+                            <div class="inline-text email">
                                 <label class=" " for="calc-email-address">Provide your email address:</label>
                                 <input required="" class="  " type="text" id="calc-email-address" name="email-address" maxlength="100">
                             </div>
@@ -206,6 +184,11 @@
                             <input type="hidden" id="calc-policy_term" name="policy_term">
                             <input type="hidden" id="calc-path_selected" name="path_selected" value="2">
                         </form>
+                          <div id="disclaimers" class="col-md-4 col-md-offset-1">
+                              <h4 class="text-center margin-bottom-s">Disclaimer</h4>
+                              <p class="disclaimers-content">The quotes that will be provided are based on your selection of age, gender and smoking status. These quotes were produced automatically.</p>
+                              <p class="disclaimers-content">Final rates are always subject to underwriting approval by the insurance company. <a href="policyForms.do">Click here</a> to better understand the underwriting criteria. You have an option of continuing with Two Rivers Agency and apply online, or having our call center partner contact you shortly to gather additional information and to further assure that your customized quote is accurate. After speaking with you, our call center partner will send your customized quote via email. It will weigh responses to health and lifestyle questions to more accurately estimate your rate. Please read through our <a href="legalInformation.do">legal policy</a> to better understand the processing and information being made available. <a href="policyForms.do">Click here</a> for policy forms and descriptions of available plans.</p>
+                        </div>
                     </div>
                 </div>
             </div>

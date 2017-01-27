@@ -15,12 +15,12 @@
 		                <div id="transamerica_logo">
 		                    <img class="transamerica" src="resources/images/transamerica.svg" alt="Transamerica Logo">
 		                </div>
-		                <div class="best-class">
+		                <div class="best-class" style="display:none;">
 		                    <span class="currency">$</span>
 		                    <span class="price">25</span>
 		                    <span class="freq">/mo.</span>
 		                </div>
-		                 <div class="standard-class" style="display:none;">
+		                 <div class="standard-class">
 		                    <span class="currency">$</span>
 		                    <span class="price">25</span>
 		                    <span class="freq">/mo.</span>

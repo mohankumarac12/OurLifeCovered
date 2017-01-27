@@ -10,8 +10,7 @@ sessionStorage.setItem('src',"${src}");
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Let's Get Started</h1>
-					<p>Complete the below to find out the level of coverage you
-						need.</p>
+					<p style="max-width: 318px;">Complete the below to find out the level of coverage you need.</p>
 				</div>
 			</div>
 		</div>
@@ -307,18 +306,17 @@ sessionStorage.setItem('src',"${src}");
 						</form>
 						<div id="disclaimers" class="col-md-4 col-md-offset-1">
 							<h4 class="text-center margin-bottom-s">Disclaimer</h4>
-							<p class="disclaimers-content">The quotes that will be
-								provided reflect the best values available based only on your
-								selection of age, gender and smoking status. These quotes were
-								produced automatically.</p>
+							<p class="disclaimers-content">The quotes that will be provided 
+								are based on your selection of age, gender and smoking 
+								status. These quotes were produced automatically.</p>
 							<p class="disclaimers-content">
 								Final rates are always subject to underwriting approval by the
 								insurance company. <a href="policyForms.do">Click here</a> to better
 								understand the underwriting criteria. You have an option of
 								continuing with Two Rivers Agency and apply online, or having
-								Health IQ contact you shortly to gather additional information
+								our call center partner contact you shortly to gather additional information
 								and to further assure that your customized quote is accurate.
-								After speaking with you, Health IQ will send your customized
+								After speaking with you, our call center partner will send your customized
 								quote via email. It will weigh responses to health and lifestyle
 								questions to more accurately estimate your rate. Please read
 								through our <a href="legalInformation.do">legal policy</a> to better

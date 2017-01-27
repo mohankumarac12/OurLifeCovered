@@ -11,7 +11,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Let's Get Started</h1>
-						<p>Complete the below to find out the level of coverage you
+						<p style="max-width: 318px;">Complete the below to find out the level of coverage you
 							need.</p>
 					</div>
 				</div>
@@ -158,30 +158,24 @@
 					<div class="col-md-12">
 						<form action="" id="needs-calculator-demographics-form"
 							name="needsCalculatorDemographicsForm">
-							<span id="tell-story">Tell us your story:</span>
-							<div class="error-text"></div>
-							<!-- <div class="inline-text required">
-								<label class=" " for="calc-first-name">Hi, my name is</label> <input
-									required="" class=" " type="text" id="calc-first-name"
-									name="first-name" maxlength="25"
-									placeholder="your first and last name">
-							</div> -->
-							<div class="inline-text required">
+							<span id="tell-story">Tell us your complete story:</span>
+							<div class="error-text"></div>							
+							<div class="inline-text">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text" style="width: 128px; height: 45px" id="calc-first-name" name="first-name" maxlength="13" placeholder="your first ">
-                                <input required="" class=" " type="text" style="width: 128px; height: 45px" id="calc-last-name" name="last-name" maxlength="12" placeholder="and last name">
-                            </div>
-							<!-- <div class="inline-text required">
-                                <input type=hidden  class=" " type="text" id="calc-last-name" name="last-name" value="abc" maxlength="25">
-                              
-                            </div>  -->
-							<div class="inline-text required">
+                                <input required="" class=" " type="text" style="width: 128px; height: 45px" id="calc-first-name" name="first-name" maxlength="25" placeholder="your first ">
+                                <input required="" class=" " type="text" style="width: 140px; height: 45px" id="calc-last-name" name="last-name" maxlength="25" placeholder="and last name">
+                            </div>							
+							<div class="inline-text">
 								<label class=" " for="calc-date-of-birth">and I was born
 									on</label> <input required="" class=" " type="text" pattern="[0-9]*"
 									id="calc-date-of-birth" name="date-of-birth"
 									placeholder="your birthdate">.
-							</div>							
-							<div class="inline-select required complete">
+							</div>
+							 <div class="inline-text">
+                                <label class=" " for="contact-form-phone">My phone number is </label>
+                                <input class=" " type="text"  id="calc-form-phone"  pattern="[0-9]*" style="width: 152px;" name="calc-form-phone" >.
+                             </div> 						
+							<div class="inline-select complete">
 								<label for="calc-gender">I'm a</label> <span
 									class="select-wrapper  small"> <select required=""
 									name="gender" id="calc-gender" class="small">
@@ -246,38 +240,19 @@
 								</select>
 								</span>.
 							</div>
-							<div class="inline-select required complete">
+							<div class="inline-select complete">
 								<label for="calc-smoker">I'm a</label> <span
 									class="select-wrapper small"> <select required=""
 									name="smoker" id="calc-smoker" class="small">
 										<option value="2">non-smoker</option>
 										<option value="1">smoker</option>
 								</select>
-								</span>, <label for="calc-coverage">and I want coverage of <input
+								</span>, <label for="calc-coverage">and I want a coverage amount of <input
 									pattern="[0-9]*" type="text"   id="calc-coverage" name="coverage"
-									style="width: 128px; height: 45px"; maxlength="25" disabled value="${coverage}" />
+									style="width: 128px; height: 45px"; maxlength="25" disabled value="${coverage}" />.
 									</label>
-							</div>
-							<!-- <div class="inline-select required complete">
-								<label for="calc-premium">I am looking for a policy that
-									costs about</label> <span class="select-wrapper  small"> <select
-									required name="coverage" id="calc-premium" class="small">
-										<option value="20">$20</option>
-										<option value="25" selected>$25</option>
-										<option value="30">$30</option>
-										<option value="35">$35</option>
-										<option value="40">$40</option>
-										<option value="45">$45</option>
-										<option value="50">$50</option>
-										<option value="60">$60</option>
-										<option value="70">$70</option>
-										<option value="80">$80</option>
-										<option value="90">$90</option>
-										<option value="100">$100</option>
-								</select>
-								</span> <label>per month.</label>
-							</div> -->
-							<div class="inline-select required ">
+							</div>							
+							<div class="inline-select">
 								<label for="rec-coverage" class="adj"> I want the number of coverage years to be </label> <span
 									class="select-wrapper  small"> <select required=""
 									name="rec-coverage" id="rec-coverage" class="small">
@@ -293,7 +268,7 @@
 									name="annual-income" maxlength="25" placeholder="$50,000">
 								<label>annually.</label>
 							</div>
-							<div class="inline-text required email">
+							<div class="inline-text email">
 								<label class=" " for="calc-email-address">Provide your
 									email address:</label> <input required="" class="  " type="text"
 									id="calc-email-address" name="email-address" maxlength="100">
@@ -336,6 +311,27 @@
 								type="hidden" id="calc-path_selected" name="path_selected"
 								value="2">
 						</form>
+						<div id="disclaimers" class="col-md-4 col-md-offset-1">
+							<h4 class="text-center margin-bottom-s">Disclaimer</h4>
+							<p class="disclaimers-content">The quotes that will be provided are based 
+								on your selection of age, gender and smoking status. These quotes were
+								produced automatically.</p>
+							<p class="disclaimers-content">
+								Final rates are always subject to underwriting approval by the
+								insurance company. <a href="policyForms.do">Click here</a> to better
+								understand the underwriting criteria. You have an option of
+								continuing with Two Rivers Agency and apply online, or having
+								our call center partner contact you shortly to gather additional information
+								and to further assure that your customized quote is accurate.
+								After speaking with you, our call center partner will send your customized
+								quote via email. It will weigh responses to health and lifestyle
+								questions to more accurately estimate your rate. Please read
+								through our <a href="legalInformation.do">legal policy</a> to better
+								understand the processing and information being made available.
+								<a href="policyForms.do">Click here</a> for policy forms and
+								descriptions of available plans.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
