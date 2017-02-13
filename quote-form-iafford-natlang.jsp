@@ -1,3 +1,26 @@
+<head>
+<!-- Bing Ads Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- End Bing Ads Code -->
+<!-- FACEBOOK REMARKETING CODE -->
+<!-- Place Between <head> and </head> -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '365200520508834'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
 <%@include file="header.jsp" %>
 
     <div id="quote_form_natlang" class="background-wrap">
@@ -21,8 +44,8 @@
                             </div>
                             <div class="inline-text">
                                 <label class=" " for="calc-first-name">Hi, my name is</label>
-                                <input required="" class=" " type="text"  id="calc-first-name" name="first-name" style="width: 128px; height: 45px" maxlength="25" placeholder="your first ">
-                                 <input required="" class=" " type="text"  id="calc-last-name" name="last-name" style="width: 140px; height: 45px" maxlength="25" placeholder="and last name">
+                                <input required="" class=" " type="text"  id="calc-first-name" name="first-name" style="width: 128px; height: 45px" maxlength="25" placeholder="your first "  readonly value="${sessionProfile.firstName}">
+                                 <input required="" class=" " type="text"  id="calc-last-name" name="last-name" style="width: 140px; height: 45px" maxlength="25" placeholder="and last name" value="${sessionProfile.lastName}">
                             </div>                            
                             <div class="inline-text">
                                 <label class=" " for="calc-date-of-birth">and I was born on</label>
@@ -34,11 +57,11 @@
                              </div> 
                             <div class="inline-select  complete">
                                 <label for="calc-gender">I'm a</label>
-                                <span class="select-wrapper  small">
-                                    <select required="" name="gender" id="calc-gender" class="small">
-                                        <option value="M" ${gender eq 'male' ? 'selected':''}>male</option>
-                                        <option value="F" ${gender eq 'female' ? 'selected':''}>female</option>
-                                    </select>
+                                <span class="select-wrapper  small remove-dropdown-arrow">
+                                <select name="gender" id="calc-gender" class="small disableWithSerialize">
+                                	<option value="M" ${gender eq 'male' ? 'selected':''}>Male</option>
+                                    <option value="F" ${gender eq 'female' ? 'selected':''}>Female</option>
+								</select>
                                 </span>
                                 <label for="calc-state">living in</label>
                                 <span class="select-wrapper  small">
@@ -100,20 +123,20 @@
                             </div>
                             <div class="inline-select complete">
                                 <label for="calc-smoker">I'm a</label>
-                                <span class="select-wrapper small">
-                                    <select required="" name="smoker" id="calc-smoker" class="small">
-                                        <option value="2">non-smoker</option>
-                                        <option value="1">smoker</option>
-                                    </select>
+                                <span class="select-wrapper small remove-dropdown-arrow">
+                                <select name="smoker" id="calc-smoker" class="small disableWithSerialize">
+                                	<option value="1" ${affordableSmoker eq 1 ? 'selected':''}>Smoker</option>
+									<option value="2" ${affordableSmoker eq 2 ? 'selected':''}>Non-Smoker</option>
+                                </select>
                                 </span>,                                                              
                            			<label for="calc-coverage">and I want a coverage amount of 
-									<input pattern="[0-9]*" type="text"  id="calc-coverage" style="width: 128px; height: 45px";name="coverage" maxlength="25" disabled value="${coverage}"/> 
+									<input pattern="[0-9]*" type="text"  id="calc-coverage" style="width: 128px; height: 45px";name="coverage" maxlength="25" value="${coverage}" readonly/> 
 									</label>.                                
                             </div>
                            <div class="inline-select  complete">
                                 <label for="calc-premium">I am looking for a policy that costs about</label>
-                                <span class="select-wrapper  small">
-                                    <select required name="coverage" id="calc-premium" class="small">
+                                <span class="select-wrapper  small remove-dropdown-arrow">
+                                   <select required name="coverage" id="calc-premium" class="small disableWithSerialize">
                                         <option value="20">$20</option>
                                         <option value="25" ${affordablePremium eq 'twentyfive' ? 'selected':''}>$25</option>
                                         <option value="30">$30</option>
@@ -126,14 +149,14 @@
                                         <option value="80">$80</option>
                                         <option value="90">$90</option>
                                         <option value="100">$100</option>
-                                    </select>
+                                   </select>
                                 </span>
                                 <label>per month.</label>
                             </div>
                              <div class="inline-select">
                                 <label for="rec-coverage" class="adj"> I want the number of coverage years to be </label>
-                                <span class="select-wrapper  small">
-                                    <select required="" name="rec-coverage" id="rec-coverage" class="small">
+                                <span class="select-wrapper small remove-dropdown-arrow">
+                                    <select required="" name="rec-coverage" id="rec-coverage" class="small disableWithSerialize">
                                         <option value="10">10</option>
                                         <option value="15">15</option>
                                         <option value="20">20</option>
@@ -144,7 +167,7 @@
                             </div>
                             <div class="inline-text  email">
                                 <label class=" " for="calc-email-address">Provide your email address:</label>
-                                <input required="" class="  " type="text" id="calc-email-address" name="email-address" maxlength="100">
+                                <input required="" class="  " type="text" id="calc-email-address" name="email-address" maxlength="100" readonly value="${sessionProfile.demographicVO.emailAddress}">
                             </div>
                             <p id="check-all">Please check all that apply:</p>
                             <div class="inline-checkbox margin-top-s">
@@ -168,7 +191,7 @@
                             </div>
                             <input type="hidden" id="calc-requested_coverage" name="requested_coverage">
                             <input type="hidden" id="calc-policy_term" name="policy_term">
-                            <input type="hidden" id="calc-path_selected" name="path_selected" value="2">
+                            <input type="hidden" id="calc-path_selected" name="path_selected" value="3">
                         </form>
                         <div id="disclaimers" class="col-md-4 col-md-offset-1">
                               <h4 class="text-center margin-bottom-s">Disclaimer</h4>

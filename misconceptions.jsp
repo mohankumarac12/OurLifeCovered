@@ -5,7 +5,7 @@
     <!--<head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>MY LIFE COVERED&trade;</title>
+        <title>OUR LIFE COVERED<sup>SM</sup></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -22,7 +22,7 @@
          <script src="https://use.typekit.net/yty8keo.js"></script>
         <script>
       	//Woopra Domanin name
-        var domainName = '<spring:eval expression="@propertyConfigurer.getProperty('domain.name')" />';
+        var domainName = 'ourlifecovered.com';
         
         try {
         Typekit.load({
@@ -69,25 +69,30 @@
         /></noscript>
         </script>
     </head>-->
-    <body onload="changeVisiblityForQuote();">
-	<!--
-	Start of DoubleClick Floodlight Tag: Please do not remove
-	Activity name of this tag: EliteFitCovered.com - 12 Common Misconceptions
-	URL of the webpage where the tag is expected to be placed: https://www.mylifecovered.net/myLifeCovered/misconceptions.do
-	This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
-	Creation Date: 10/27/2016
-	-->
-	<script type="text/javascript">
-	var axel = Math.random() + "";
-	var a = axel * 10000000000000;
-	document.write('<iframe src="https://6194995.fls.doubleclick.net/activityi;src=6194995;type=conte0;cat="${sesCat}";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+    <head>
+    <!-- Bing Ads Code -->
+	<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+	<!-- End Bing Ads Code -->
+	<!-- FACEBOOK REMARKETING CODE -->
+	<!-- Place Between <head> and </head> -->
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '365200520508834'); // Insert your pixel ID here.
+	fbq('track', 'PageView');
 	</script>
-	<noscript>
-	<iframe src="https://6194995.fls.doubleclick.net/activityi;src=6194995;type=conte0;cat=${sesCat};dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1;num=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-	</noscript>
-	<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
-    
-       
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
+    </head>
+    <body onload="changeVisiblityForQuote();">    
     <section id="misconceptions" class="cover main-section">
                 <div class="overlay"></div>
                 <div class="container">
@@ -100,7 +105,7 @@
                                 <div class="col-md-6 clearfix icon-misconception">
                                     <img src="resources/images/2x.svg">
                                     <h3>Twice my salary is more than enough</h3>
-                                    <p style="display: none;">The amount of life insurance you need is specific to your situation. Generally, 8-10 times your income is a good rule of thumb. MY LIFE COVERED™ offers a needs calculator to help you find out just how much coverage is right for you.</p>
+                                    <p style="display: none;">The amount of life insurance you need is specific to your situation. Generally, 8-10 times your income is a good rule of thumb. OUR LIFE COVERED<sup>SM</sup> offers a needs calculator to help you find out just how much coverage is right for you.</p>
                                     <a href="#" class="secondary">Read More</a>
                                 </div>
                                 <div class="col-md-6 clearfix icon-misconception">

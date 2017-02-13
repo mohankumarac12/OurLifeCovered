@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>MY LIFE COVERED&trade;</title>
+        <title>OUR LIFE COVERED<sup>SM</sup></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="resources/images/favicon.ico" rel="shortcut icon">
@@ -25,7 +25,7 @@
         <!-- <script src="https://use.typekit.net/cws2ybo.js"></script> -->
        <script>
   	//Woopra Domanin name
-    var domainName = '<spring:eval expression="@propertyConfigurer.getProperty('domain.name')" />';
+    var domainName = 'ourlifecovered.com';
     sessionStorage.setItem('getQuoteVisibility', 'none');
     sessionStorage.setItem('src', "${src}");
     try {
@@ -75,24 +75,29 @@
 		src="https://www.facebook.com/tr?id=1064726673573667&ev=PageView&noscript=1"
 		/></noscript>
 	</script>	
+	<!-- Bing Ads Code -->
+	<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+	<!-- End Bing Ads Code -->
+	<!-- FACEBOOK REMARKETING CODE -->
+	<!-- Place Between <head> and </head> -->
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '365200520508834'); // Insert your pixel ID here.
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
 	</head>
     <body onload="renderRedBannerContent()">
-    <!--
-	Start of DoubleClick Floodlight Tag: Please do not remove
-	Activity name of this tag: EliteFitCovered.com - 12 Common Misconceptions
-	URL of the webpage where the tag is expected to be placed: https://www.mylifecovered.net/myLifeCovered/misconceptions.do
-	This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
-	Creation Date: 10/27/2016
-	-->
-	<script type="text/javascript">
-	var axel = Math.random() + "";
-	var a = axel * 10000000000000;
-	document.write('<iframe src="https://6194995.fls.doubleclick.net/activityi;src=6194995;type=conte0;cat="${sesCat}";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-	</script>
-	<noscript>
-	<iframe src="https://6194995.fls.doubleclick.net/activityi;src=6194995;type=conte0;cat=${sesCat};dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1;num=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-	</noscript>
-	<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
     <%@include file="header.jsp" %>
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -154,7 +159,7 @@
                             <p>I'm Todd Seabaugh, a CrossFit&reg; Affiliate owner and athlete since 2008. While attending the 2016 Reebok CrossFit Games&reg; in Carson, CA, I was blown away by the dedication and discipline I saw in each and every competitor. I decided shortly after to start promoting life insurance to adult athletes and other super-fit individuals to help them take advantage of higher coverage amounts and lower rates that may be available to them based on their individual health.</p>
                             <p>Because of this lifestyle, we are all stronger both physically and mentally. But family members need a recovery plan in case something happens to us. Today, I want to challenge you to get this done. Will you make the commitment to protect the ones you care about the most?</p>
                             <p class='small'><img src='./resources/images/todd_seabaugh.png' style='width:187px;' /><br />Todd Seabaugh, CrossFit&reg; Affiliate Owner</p>
-                            <small>All licensed trademarks are the property of their respective owners, who are not affiliated with MY LIFE COVERED&trade; and do not endorse its product and services.</small>
+                            <small>All licensed trademarks are the property of their respective owners, who are not affiliated with OUR LIFE COVERED<sup>SM</sup> and do not endorse its product and services.</small>
                         </div>
                         <div class="col-md-5 margin-bottom-m" id="home-page-aside-copy-container">
                             <h2>Need a quick rundown on insurance lingo?</h2>

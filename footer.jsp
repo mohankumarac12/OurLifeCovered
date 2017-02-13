@@ -10,7 +10,7 @@
 									<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
 								</c:when>
 								<c:otherwise>
-		 					 		<a href="home.do?src=${srcHome}">Home</a>
+		 					 		<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
 								</c:otherwise>
 						    </c:choose>
                        	</li>
@@ -39,8 +39,8 @@
 							</a>
 						</c:when>
 						<c:otherwise>
-							<a href="home.do?src=${srcHome}" class="main_logo">
-							<img class="logo" src="resources/images/footer-logo.png">
+							<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="main_logo">
+							<img class="logo" src="resources/images/logo.svg">
 							</a>
 						</c:otherwise>
 					</c:choose>
@@ -61,7 +61,7 @@
 	<script type="text/javascript" src="resources/js/myLifeCoveredRGility.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap.js"></script>
 	<script type="text/javascript" src="resources/js/olc.js"></script>
-	<!-- <script type="text/javascript" src="resources/js/myLifeCoveredWoopra.js"></script> -->
+	<script type="text/javascript" src="resources/js/myLifeCoveredWoopra.js"></script>
 </body>
 
 </html>

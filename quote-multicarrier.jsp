@@ -1,3 +1,33 @@
+<head>
+<!-- Bing Ads Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- End Bing Ads Code -->
+<!-- FACEBOOK CONVERSION CODE -->
+<!-- Place Straight After </head> -->
+
+<!-- Facebook Lead Code -->
+<script>fbq('track', 'Lead');</script>
+<!-- END FACEBOOK CONVERSION CODE -->
+<!-- Google Code for Quote Complete Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 862595896;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "V25eCMfVym0QuNaomwM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/862595896/?label=V25eCMfVym0QuNaomwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- End Google Code for Quote Complete Conversion Page -->
+</head>
 <%@include file="header.jsp" %>
 <script type="text/javascript">
     window.history.forward();

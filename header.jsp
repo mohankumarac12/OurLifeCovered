@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="resources/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="resources/css/bootstrap.css?v=3.0.0">
-    <link rel="stylesheet" href="resources/css/olc.css?v=3.0.0">
+    <link rel="stylesheet" href="resources/css/olc.css?v=3.0.6">
     <!--[if IE 9]>
         <link rel="stylesheet" href="resources/css/ie9.css">
     <![endif]-->
@@ -24,7 +24,9 @@
  	<script src="https://use.typekit.net/rvb3yyz.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="text/javascript">
-    
+  	//Woopra Domanin name
+   // var domainName = 'ourlifecovered.com';
+    var domainName = '<spring:eval expression="@propertyConfigurer.getProperty('domain.name')" />';
    /*  openHomeLink = function() {
     	console.log("vochindi")
     	var phoneNumber = "";
@@ -55,34 +57,6 @@
     ga('create', 'UA-79521976-1', 'auto');
     ga('send', 'pageview');
     </script>
-    <!-- Start of Woopra Code -->
-    <script>
-    (function() {
-        var t, i, e, n = window,
-            o = document,
-            a = arguments,
-            s = "script",
-            r = ["config", "track", "identify", "visit", "push", "call", "trackForm", "trackClick"],
-            c = function() {
-                var t, i = this;
-                for (i._e = [], t = 0; r.length > t; t++)(function(t) {
-                    i[t] = function() {
-                        return i._e.push([t].concat(Array.prototype.slice.call(arguments, 0))), i
-                    }
-                })(r[t])
-            };
-        for (n._w = n._w || {}, t = 0; a.length > t; t++) n._w[a[t]] = n[a[t]] = n[a[t]] || new c;
-        i = o.createElement(s), i.async = 1, i.src = "//static.woopra.com/js/w.js", e = o.getElementsByTagName(s)[0], e.parentNode.insertBefore(i, e)
-    })("woopra");
-    woopra.config({
-        domain: 'devweb01.eastus.cloudapp.azure.com'
-    });
-    //TRACK COMPLETE SITE
-    woopra.track();
-    //TRACK THE COVERAGE CALCULATOR FORM
-    woopra.trackForm("Coverage", "#needs-calculator-form");
-    </script>
-    <!-- End of Woopra Code -->
     <script>
     ! function(f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -127,8 +101,8 @@
 									<span class="logo-phno">${phoneNumber}</span>
 								</c:when>
 							<c:otherwise>
-			 					 <a id="#myLifeCoveredHeader" href="home.do?src=${srcHome}" class="open-home-page-copy">
-									<img class="logo" src="resources/images/olc-logo-everplans.jpg"/><!-- <sup>SM</sup> -->
+			 					 <a id="#myLifeCoveredHeader" href="home.do?phoneNo=${phoneNumber}&src=${srcHome}" class="open-home-page-copy">
+									<img class="logo" src="resources/images/logo.svg"/><!-- <sup>SM</sup> -->
 									<%-- <span class="logo-phno">${phoneNumber}</span> --%>
 								</a>
 							</c:otherwise>
@@ -141,7 +115,7 @@
 										<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
 									</c:when>
 									<c:otherwise>
-			 					 		<a href="home.do?src=${srcHome}">Home</a>
+			 					 		<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Home</a>
 									</c:otherwise>
 							    </c:choose>
                        		</li>

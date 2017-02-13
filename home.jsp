@@ -1,12 +1,34 @@
-﻿<%@include file="header.jsp" %>
+﻿<head>
+<!-- Bing Ads Code -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5538524"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5538524&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- End Bing Ads Code -->
+<!-- FACEBOOK REMARKETING CODE -->
+<!-- Place Between <head> and </head> -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '365200520508834'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=365200520508834&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
+<%@include file="header.jsp" %>
 <script type="text/javascript">
-var pathName = window.location.href;
-if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
+sessionStorage.setItem('affordableHome',"false");
+if("${isMultiCarrier}" == "true") {
 	sessionStorage.setItem("isMultiCarrier",true);
 } else {
 	sessionStorage.setItem("isMultiCarrier",false);
 }
-
 </script>
 <div class="container-fluid">
     <div id="hero" class="homepage">
@@ -30,7 +52,7 @@ if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
                         </select>
                     </div>
                     <div class="col-sm-4">
-                        <input class="btn btn-primary" type="button" value="Let's Go!" onclick="return validateOLCWorkFlow()">
+                        <input class="btn btn-primary" type="button" value="Let's Go!" wpvalue="lets_go" onclick="return validateOLCWorkFlow()">
                     </div>
                 </div>
             </form>
@@ -145,7 +167,7 @@ if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
 									<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Restart Quiz</a>
 								</c:when>
 								<c:otherwise>
-		 					 		<a href="home.do?src=${srcHome}">Restart Quiz</a>
+		 					 		<a href="home.do?phoneNo=${phoneNumber}&src=${srcHome}">Restart Quiz</a>
 								</c:otherwise>
 							</c:choose>
                         </div>
@@ -195,7 +217,15 @@ if(pathName.search("phoneNo") >= 0 && "${isMultiCarrier}" == "true") {
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src = "resources/images/carousel-1.jpg">
+                    <!-- <img src = "resources/images/carousel-1.jpg"> -->
+                     <c:choose>
+							<c:when test="${isMultiCarrier eq 'true' }">				
+								<img src = "resources/images/carousel-1.jpg">
+								</c:when>
+							<c:otherwise>
+			 					 <img src = "resources/images/carousel-1-single.jpg">
+							</c:otherwise>
+					</c:choose>
                     <div class="carousel-caption">
                         <h4 class="hero-caption">We do the leg work.</h4>
                         <p>Tell us a bit about your lifestyle, and we’ll search from hundreds of product term length and coverage amounts to find the right match for you. Get your quote, apply, and get covered. Fast and simple.</p>
