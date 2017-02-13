@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     // open and close the mobile menu
     $('#open_menu').on('click', function(e) {
         e.preventDefault();
@@ -357,6 +356,7 @@ $(document).ready(function() {
     };
 
   //for 10 years term array.
+  //tempTable[premium][age][gender];
     var tempTable = {
             twentyfive: {
                 twentyfive: {
@@ -366,7 +366,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 44,
                         savings: 19,
-                        coverage: 350000
+                        coverageNS: 350000,
+                        coverageS: 100000                         
                     },
                     female: {
                         premium: 25,
@@ -374,7 +375,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 40,
                         savings: 15,
-                        coverage: 500000
+                        coverageNS: 500000,
+                        coverageS: 250000
                     }
                 },
                 thirty: {
@@ -384,7 +386,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 44,
                         savings: 19,
-                        coverage: 350000
+                        coverageNS: 350000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 25,
@@ -392,7 +395,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 42,
                         savings: 17,
-                        coverage: 500000 
+                        coverageNS: 500000,
+                        coverageS:100000 
                     }
                 },
                 thirtyfive: {
@@ -402,7 +406,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 46,
                         savings: 21,
-                        coverage: 250000 
+                        coverageNS: 250000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 25,
@@ -410,7 +415,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 51,
                         savings: 26,
-                        coverage: 350000 
+                        coverageNS: 350000,
+                        coverageS: 100000 
                     }
                 },
                 forty: {
@@ -420,7 +426,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 50,
                         savings: 25,
-                        coverage: 250000
+                        coverageNS: 250000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 25,
@@ -428,7 +435,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 51,
                         savings: 26,
-                        coverage: 250000
+                        coverageNS: 250000,
+                        coverageS: 100000
                     }
                 },
                 fortyfive: {
@@ -438,7 +446,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 50,
                         savings: 26,
-                        coverage: 100000
+                        coverageNS: 100000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 25,
@@ -446,7 +455,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 41,
                         savings: 16,
-                        coverage: 100000
+                        coverageNS: 175000,
+                        coverageS: 100000
                     }
                 },
                 fifty: {
@@ -456,7 +466,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 37,
                         savings: 12,
-                        coverage: 50000 
+                        coverageNS: 50000,
+                        coverageS: 50000 
                     },
                     female: {
                         premium: 25,
@@ -464,7 +475,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 50,
                         savings: 25,
-                        coverage: 50000 
+                        coverageNS: 50000,
+                        coverageS: 50000
                     }
                 }
             },
@@ -476,7 +488,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 167,
                         savings: 45,
-                        coverage: 750000
+                        coverageNS: 750000,
+                        coverageS: 250000
                     },
                     female: {
                         premium: 100,
@@ -484,7 +497,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 162,
                         savings: 45,
-                        coverage: 1000000
+                        coverageNS: 1000000,
+                        coverageS: 350000
                     }
                 },
                 thirty: {
@@ -494,7 +508,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 175,
                         savings: 40,
-                        coverage: 750000
+                        coverageNS: 750000,
+                        coverageS: 250000 
                     },
                     female: {
                         premium: 100,
@@ -502,7 +517,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 45,
-                        coverage: 1000000
+                        coverageNS: 1000000,
+                        coverageS: 350000
                     }
                 },
                 thirtyfive: {
@@ -512,7 +528,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 205,
                         savings: 60,
-                        coverage: 500000
+                        coverageNS: 500000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 100,
@@ -520,7 +537,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 215,
                         savings: 52,
-                        coverage: 750000
+                        coverageNS: 750000,
+                        coverageS: 250000
                     }
                 },
                 forty: {
@@ -530,7 +548,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 207,
                         savings: 65,
-                        coverage: 350000
+                        coverageNS: 350000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 100,
@@ -538,7 +557,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 194,
                         savings: 41,
-                        coverage: 500000
+                        coverageNS: 500000,
+                        coverageS: 100000
                     }
                 },
                 fortyfive: {
@@ -548,7 +568,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 173,
                         savings: 59,
-                        coverage: 175000
+                        coverageNS: 250000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 100,
@@ -556,7 +577,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 55,
-                        coverage: 300000
+                        coverageNS: 300000,
+                        coverageS: 100000
                     }
                 },
                 fifty: {
@@ -566,7 +588,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 162,
                         savings: 25,
-                        coverage: 100000
+                        coverageNS: 100000,
+                        coverageS: 50000
                     },
                     female: {
                         premium: 100,
@@ -574,7 +597,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 175,
                         savings: 36,
-                        coverage: 125000
+                        coverageNS: 125000,
+                        coverageS: 50000
                     }
                 }
             },
@@ -586,7 +610,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 84,
                         savings: 34,
-                        coverage: 1000000
+                        coverageNS: 1000000,
+                        coverageS: 350000
                     },
                     female: {
                         premium: 50,
@@ -594,7 +619,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 82,
                         savings: 32,
-                        coverage: 1300000
+                        coverageNS: 1300000,
+                        coverageS: 500000
                     }
                 },
                 thirty: {
@@ -604,7 +630,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 89,
                         savings: 39,
-                        coverage: 1000000
+                        coverageNS: 1000000,
+                        coverageS: 350000
                     },
                     female: {
                         premium: 50,
@@ -612,7 +639,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 88,
                         savings: 38,
-                        coverage: 1300000
+                        coverageNS: 1300000,
+                        coverageS: 350000
                     }
                 },
                 thirtyfive: {
@@ -622,7 +650,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 102,
                         savings: 52,
-                        coverage: 700000
+                        coverageNS: 750000,
+                        coverageS: 250000
                     },
                     female: {
                         premium: 50,
@@ -630,7 +659,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 107,
                         savings: 57,
-                        coverage: 850000
+                        coverageNS: 1000000,
+                        coverageS: 250000
                     }
                 },
                 forty: {
@@ -640,7 +670,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 95,
                         savings: 45,
-                        coverage: 500000
+                        coverageNS: 500000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 50,
@@ -648,7 +679,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 93,
                         savings: 43,
-                        coverage: 650000
+                        coverageNS: 650000,
+                        coverageS: 250000
                     }
                 },
                 fortyfive: {
@@ -658,7 +690,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 81,
                         savings: 31,
-                        coverage: 300000
+                        coverageNS: 350000,
+                        coverageS: 100000
                     },
                     female: {
                         premium: 50,
@@ -666,7 +699,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 90,
                         savings: 40,
-                        coverage: 375000
+                        coverageNS: 375000,
+                        coverageS: 100000
                     }
                 },
                 fifty: {
@@ -676,7 +710,8 @@ $(document).ready(function() {
                         gender: 1,
                         standard: 77,
                         savings: 27,
-                        coverage: 125000
+                        coverageNS: 125000,
+                        coverageS: 50000
                     },
                     female: {
                         premium: 50,
@@ -684,7 +719,8 @@ $(document).ready(function() {
                         gender: 2,
                         standard: 92,
                         savings: 42,
-                        coverage: 150000
+                        coverageNS: 150000,
+                        coverageS: 50000
                     }
                 }
             },        
@@ -703,10 +739,14 @@ $(document).ready(function() {
         premium = $("#affordablePremium").val();
         age = $("#affordableAge").val();
         gender = $("#affordableGender").val();
+        smokerStatus = $("#affordableSmoker").val();
         var coverageObj = tempTable[premium][age][gender];
-
-        coverage = coverageObj.coverage;
-        /*This block of code for restricting the coverage maximum to 2M. by venkat*/
+        
+        if(smokerStatus == "2")
+        	coverage = coverageObj.coverageNS;
+        else
+        	coverage = coverageObj.coverageS;
+        /*This block of code for restricting the coverage maximum to 2M. by Venkat*/
         if(coverage>2e6)
             coverage = 2000000;
         
@@ -722,7 +762,11 @@ $(document).ready(function() {
         totalSavings.html(savingsAsDollar);
         $("#hiddenCoverage").val(coverageAsDollar);
     }
-
+    
+    if(sessionStorage.getItem('affordableHome') == "true"){
+    	getCoverage();
+    }
+    
     affordDropdown.on("change", function() {
         getCoverage();
     });
@@ -881,15 +925,13 @@ $(document).ready(function() {
                     break;
                 }
         }
-
         $("#quiz-content-" + currentPage).hide();
         $("#quiz-content-" + nextPage).fadeIn();
 
         currentPage = nextPage;
-
     });
 });
-
+	
 // make the sliders stick to the bottom
 // of the page on Multicarrier quote
 function checkOffset() {
