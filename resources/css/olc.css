@@ -171,7 +171,7 @@ body {
         display: -ms-flexbox !important;
         display: flex !important;
         float: right;
-        margin: 0;
+        margin: 0 0 0 auto;
         padding: 0;
         list-style-type: none;
         text-align: right; }
@@ -189,6 +189,7 @@ body {
                     flex-direction: column;
             width: 50%;
             height: auto;
+            margin: 0;
             padding: 0;
             -webkit-transition: all .5s ease;
             transition: all .5s ease;
@@ -259,6 +260,7 @@ body {
           body header div.container div.row div.col-md-12 a#open_menu {
             display: block;
             float: right;
+            margin: 0 0 0 auto;
             padding: 15px;
             color: white; }
             body header div.container div.row div.col-md-12 a#open_menu:hover {
@@ -888,14 +890,14 @@ body {
               body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right {
                 max-width: 100%; }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
-                  font-size: 21px;
+                  font-size: 25px;
                   margin-bottom: 20px; }
                   @media (max-width: 768px) {
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right h2 {
                       font-size: 16px;
                       margin-bottom: 15px; } }
                 body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
-                  font-size: 14px; }
+                  font-size: 16px; }
                   @media (max-width: 768px) {
                     body section.main-section#insurance101 div.container div.row div.col-md-12 div.page#whats_right p {
                       font-size: 12px; } }
@@ -2686,27 +2688,92 @@ body {
               padding: 20px; } }
           body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form {
             margin: 0; }
-            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
+              position: relative;
+              display: inline-block;
               text-align: left; }
-              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:nth-of-type(2) {
-                margin: 0 28px; }
-              @media (max-width: 630px) {
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
+                width: 337px; }
+                @media (max-width: 817px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(2) {
+                    width: 100%; } }
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
+                width: calc(100% - 361px);
+                margin: 0 0 0 17px; }
+                @media (max-width: 817px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text:nth-of-type(3) {
+                    width: 100%; } }
+              @media (max-width: 817px) {
+                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text {
+                  width: 100%;
+                  margin: 0 0 10px !important; } }
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text label {
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 5px;
+                text-align: center;
+                color: white; }
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.2;
+                display: block;
+                width: 100%;
+                height: 41.5px;
+                margin: 0;
+                padding: 0 11px;
+                letter-spacing: .3px;
+                color: #2b2b2b;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: none;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none; }
+                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input::-ms-clear {
+                  display: none; }
+                @media (max-width: 817px) {
+                  body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.inline-text input {
+                    font-size: 17px;
+                    width: 100%;
+                    max-width: 100% !important;
+                    height: 35px; } }
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
+              font-size: 12px;
+              line-height: 1.2;
+              display: block;
+              width: 100%;
+              max-width: 512px;
+              margin: 5px auto 15px;
+              color: white; }
+              @media (max-width: 817px) {
+                body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form small {
+                  margin: 0 auto 20px; } }
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
+              margin-right: 16px;
+              text-align: left; }
+              body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:last-of-type {
+                margin-right: 0; }
+              @media (max-width: 817px) {
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper {
                   width: 100%;
                   margin: 0 0 10px !important; } }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper:after {
                 font-size: 12px;
-                top: calc(50% + 18px);
+                top: calc(50% + 15px);
                 right: 12px;
                 content: '\f04b';
                 -webkit-transform: translateY(-50%) rotate(90deg);
                         transform: translateY(-50%) rotate(90deg);
                 color: #828282; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper label {
-                font-size: 21px;
+                font-size: 16px;
                 font-weight: 700;
                 display: block;
                 margin-bottom: 5px;
+                text-align: center;
                 color: white; }
               body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
                 font-size: 22px;
@@ -2716,7 +2783,6 @@ body {
                 height: 41.5px;
                 margin: 0;
                 padding: 0 38px 0 11px;
-                text-indent: -2px;
                 color: #2b2b2b;
                 box-shadow: none;
                 -webkit-appearance: none;
@@ -2724,7 +2790,7 @@ body {
                         appearance: none; }
                 body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select::-ms-expand {
                   display: none; }
-                @media (max-width: 630px) {
+                @media (max-width: 817px) {
                   body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container form div.select-wrapper select {
                     font-size: 17px;
                     width: 100%;
@@ -2807,8 +2873,10 @@ body {
           width: 100%; }
           body footer div.container div.row div.col-md-12.sitemap {
             width: 100%;
-            margin-top: 0; }
+            margin-top: 0;
+            margin-bottom: 40px; }
           body footer div.container div.row div.col-md-12.social-icons {
+            display: none;
             margin: 40px 0;
             text-align: center; }
             body footer div.container div.row div.col-md-12.social-icons a {
@@ -2907,4 +2975,99 @@ body {
     padding-left: 250px;
     font-size: small;
     height: 10px;
-} 
+}                   
+ body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper.remove-dropdown-arrow:after,
+ body div.background-wrap#calculator section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper.remove-dropdown-arrow:after, 
+ body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-text span.select-wrapper.remove-dropdown-arrow:after,
+ body div.background-wrap#quote_form section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper.remove-dropdown-arrow:after {
+   	font-family: FontAwesome;
+    font-size: 10px;
+    line-height: 1;
+    position: absolute;
+    top: 11px;
+    right: 9px;
+  	content: ''; !important;
+    pointer-events: none; }
+ body div.background-wrap#quote_form_natlang section.quote div.container div.row div.col-md-12 form div.inline-select span.select-wrapper.remove-dropdown-arrow:after {
+    font-family: FontAwesome;
+    font-size: 10px;
+    line-height: 1;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    content: ''; !important;
+    pointer-events: none;
+    color: white; }
+    
+ section#unsubscribe {
+    min-height: 700px;
+    padding: 16% 0;
+	}
+ @media ( min-width :1200px) {
+	.unsubcontainer {
+		width: 94%
+	}
+ }
+/*  .btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before
+	{
+	content: " ";
+	display: table
+} */
+      body section.main-section div.container div.row div.margin-bottom-m {
+        margin-bottom: 35px; }
+    #unsubscribe p.successMsg {
+    margin-top: 37px;
+    width: 300px;
+    margin-left: 40%;
+    text-align: center;
+    color: rgb(78, 169, 78);
+}
+p.unsubscribe.my-unsub-changes {
+    text-align: center;
+    margin-top: 95px;
+}
+input#email {
+    width: 255px;
+    /* font-size: 18px; */
+    /* font-weight: normal; */
+    line-height: 1;
+    /* float: right; */
+    padding: 13px 11px 9px 11px;
+    text-align: right;
+    letter-spacing: .2px;
+     color: #4a4a4a; 
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f7f7f7;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-appearance: none;
+}
+input:invalid,input:required {
+	box-shadow: none
+}
+input.btn.btn-primary.unsub-submitbtn {
+    margin-top: -7px;
+    margin-left: 8px;
+    }
+ .my-unsub-changes .btn-primary {
+	background: #71c97a;!important;
+    border: none;
+    font-size: 16px;
+    padding: 6px 15px;
+    line-height: 32px;
+    font-weight: 600;
+    transition: opacity .3s;
+    text-transform: uppercase;
+}
+.olc-unsubscribe h3{
+	font-size: 28px; !important;
+	font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif; !important;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+p.my-unsub-changes input[type='submit']:hover {
+	    background: #54a85c;
+	}
